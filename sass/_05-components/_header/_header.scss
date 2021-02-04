@@ -1,0 +1,30 @@
+header {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  grid-area: banner;
+  padding: 16px;
+  grid-column: 3 / 11;
+  
+  & nav ul {
+    display: flex;
+    
+    & li a {
+      position: relative;
+      color: $text;
+      padding: 16px;
+      cursor: pointer;
+      
+      &:hover:after {
+        content: "";
+        position: absolute;
+        width: 70%;
+        height: 3px;
+        background: $o-300;
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
+      }
+    }
+  }
+}

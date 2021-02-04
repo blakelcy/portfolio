@@ -1,0 +1,22 @@
+section.c-splash {
+  grid-area: splash;
+  grid-column: 3 / 11;
+
+  @include for-size(mobile) {
+    grid-column: 3 / 7;
+    margin-top: 120px;
+
+  }
+    
+    &:after {
+      content: '^';
+      position: absolute;
+      color: $o-300;
+      width: 24px;
+      height: 24px;
+      bottom: 16px;
+      left: 50%;
+      transform: rotate(180deg);
+      font-size: 24px;
+    }
+}

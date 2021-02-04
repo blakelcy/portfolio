@@ -1,0 +1,27 @@
+footer {
+  grid-area: footer;
+  height: $footer-small;
+  position: relative;
+  display: grid;
+  grid: 200px 1fr / repeat(12, 1fr);
+  transform-origin: 0;
+  width: 100%;
+  background: $o-300;
+  
+  & .stripe {
+    grid-column: 1 / 13;
+    transform: skewY(-3deg) translateY(-100px);
+    background: $o-300;
+    z-index: 1;
+  }
+  
+  & .content {
+    grid-column: 1 / 13;
+    background: $o-300;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    color: $bg;
+  }
+
+}
