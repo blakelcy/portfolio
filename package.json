@@ -3,16 +3,10 @@
   "version": "1.0.0",
   "description": "Porfolio Site",
   "main": "index.js",
-  "dependencies": {
-    "node-sass": "^5.0.0"
-  },
-  "devDependencies": {
-    "browser-sync": "^2.26.14"
-  },
-  "scripts": {
-    "sass": "node-sass sass/main.scss src/main.css -w",
-    "start": "browser-sync start --server --files '**/*.scss, **/*.html, !node_modules/**/*' --directory --port 7777 --browser 'FirefoxDeveloperEdition'"
-  },
+  "scripts": {},
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "sass": "^1.65.1"
+  }
 }

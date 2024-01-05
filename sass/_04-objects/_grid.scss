@@ -1,8 +1,8 @@
 .homepage .grid {
-  grid-template-rows: 86px calc(100vh - 118px) 1fr $footer-small;
+  grid-template-rows: 44px calc(100vh - 118px) 1fr $footer-small;
   grid-template-areas: 
     "banner banner banner banner banner banner banner banner banner banner banner banner"
-    "splash splash splash splash splash splash splash splash splash splash splash splash"
+    "hero hero hero hero hero hero hero hero hero hero hero hero"
     "content content content content content content content content content content content content"
     "footer footer footer footer footer footer footer footer footer footer footer footer";
 }
@@ -17,7 +17,7 @@
 
 .grid {
   display: grid;
-  grid-gap: 16px;
+  grid-gap: 0 16px;
   grid-template-columns: repeat(12, 1fr);
 }
 

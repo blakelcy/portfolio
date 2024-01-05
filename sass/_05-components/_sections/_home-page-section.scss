@@ -1,22 +1,49 @@
-section.c-splash {
-  grid-area: splash;
-  grid-column: 3 / 11;
+section.c-hero {
+  grid-area: hero;
+  grid-column: 1 / 13;
+}
 
-  @include for-size(mobile) {
-    grid-column: 3 / 7;
-    margin-top: 120px;
-
+.c-hero {
+  max-height: 100%;
+  width: 100%;
+  z-index: 1;
+  display: flex;
+  &__left, &__right {
+    width: 50%;
+    height: 100%;
   }
-    
-    &:after {
-      content: '^';
-      position: absolute;
-      color: $o-300;
-      width: 24px;
-      height: 24px;
-      bottom: 16px;
-      left: 50%;
-      transform: rotate(180deg);
-      font-size: 24px;
+
+  &__left {
+    display: grid;
+    grid-template-rows: 40px 220px 1fr;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-areas: "space space space space space space"
+    "profile profile profile profile profile profile"
+    "text text text text text text";
+    & img {
+      grid-area: profile;
     }
+    & .c-hero__blurb {
+      grid-area: text;
+      grid-column: 2 / 6;
+
+      & p {         
+        line-height: 24px;
+      }
+    }
+  }
+  &__right {
+    background-image: url("../../../src/assets/Topography.svg");
+    background-repeat: no-repeat;
+    position: relative;
+
+    & > .color-burn {
+      width: 100%;
+      height: 100%;
+      background-color: #0E1F12;
+      mix-blend-mode: color-burn;
+      position: absolute;
+
+    }
+  }
 }

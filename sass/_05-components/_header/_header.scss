@@ -3,28 +3,33 @@ header {
   justify-content: flex-end;
   align-items: center;
   grid-area: banner;
-  padding: 16px;
-  grid-column: 3 / 11;
+  grid-column: 2 / 12;
   
-  & nav ul {
-    display: flex;
-    
-    & li a {
-      position: relative;
-      color: $text;
-      padding: 16px;
-      cursor: pointer;
+  & nav {
+    width: 100%;
+    & ul {
+      display: flex;
+  
+      & li:first-of-type {
+        flex-grow: 2;
+  
+        & a {
+          text-align: left;
+          font-family: "Jost";
+          text-transform: uppercase;
+          font-weight: 700;
+        }
+      }
       
-      &:hover:after {
-        content: "";
-        position: absolute;
-        width: 70%;
-        height: 3px;
-        background: $o-300;
-        bottom: 0;
-        left: 50%;
-        transform: translateX(-50%);
+      & li a {
+        position: relative;
+        color: $text;
+        padding: 16px;
+        text-align: right;
+        cursor: pointer;
       }
     }
   }
+  
+  
 }
