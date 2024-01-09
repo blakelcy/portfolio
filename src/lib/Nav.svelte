@@ -1,6 +1,7 @@
-<script>
+<script lang="ts">
+    import { base } from '$app/paths';
 </script>
-
+<!-- <a href="{base}/">Home</a> -->
 <div class="nav">
 	<div class="left-half">
 		<a href="/" class="nav-logo">Casey Blakely</a>
