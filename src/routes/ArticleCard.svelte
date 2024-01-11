@@ -10,8 +10,9 @@
 	<div class="article-img">
 		<img src={image} {alt} />
 	</div>
+	<p class="card-title">{company}</p>
 	<div class="card-grid">
-		<p><span>{company}</span>{paragraph1}</p>
+		<p>{paragraph1}</p>
 		<p>{paragraph2}</p>
 	</div>
 </div>
@@ -44,17 +45,20 @@
 		transform: scale(1.1);
 	}
 
+	.card-title {
+		margin: 0;
+		font-weight: 900;
+		padding-bottom: .5rem
+	}
+
 	.card-grid {
 		display: grid;
 		grid-template-columns: repeat(2, 1fr);
-		gap: 1rem;
+		gap: .75rem;
 	}
 	.card-grid > p {
 		font-size: 0.75rem;
 		margin: 0;
 	}
 
-	.card-grid > p > span {
-		font-weight: 900;
-	}
 </style>

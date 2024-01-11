@@ -3,6 +3,9 @@
 
 	export let bar = true;
 	export let bordered = true;
+	export let redText = false;
+	export let gridThree = false;
+	export let gridFour = false;
 	export let title = 'Default';
 	// Define the content for the article
 	export let articleParagraphs = [];
@@ -16,9 +19,9 @@
 	}
 </script>
 
-<section class="grid-full article-section">
+<section class="grid-full article-section" class:redText>
 	<h2 class="article-title">{title}</h2>
-	<div class="article-grid">
+	<div class="article-grid" class:gridFour>
 		{#each articleParagraphs as paragraph, index}
 			<p class="article-layout col-{index + 1}">{paragraph}</p>
 		{/each}
@@ -29,7 +32,7 @@
 			<span></span>
 		</div>
 	{/if}
-	<div class="article-grid" class:bordered>
+	<div class="article-grid grid-3" class:bordered>
 		{#each articleCards as card, index}
 			<p class="article-layout col-{index + 1}">
 				<ArticleCard {...card} />
@@ -43,6 +46,10 @@
 		padding: 0 1rem;
 	}
 
+	.article-section.redText {
+		color: red;
+	}
+
 	.article-section > .article-grid:first-of-type {
 		margin-bottom: 2rem;
 	}
@@ -50,11 +57,12 @@
 		font-weight: 700;
 	}
 
-	.article-grid {
+	.article-grid,.article-grid.grid-3, .article-grid.gridFour {
 		display: grid;
-		grid-template-columns: repeat(12, 1fr);
+		grid-template-columns: repeat(1, 1fr);
 		gap: 16px;
 	}
+
 	.article-grid > span {
 		display: block;
 		grid-column: 1 /13;
@@ -74,21 +82,87 @@
 	}
 
 	.article-layout.col-1 {
-		grid-column: 1 / 3;
+		grid-column: 1 / 1;
 	}
 	.article-layout.col-2 {
-		grid-column: 3 / 5;
+		grid-column: 1 / 1;
 	}
 	.article-layout.col-3 {
-		grid-column: 5 / 7;
+		grid-column: 1 / 1;
 	}
 	.article-layout.col-4 {
-		grid-column: 7 / 9;
+		grid-column: 1 / 1;
 	}
 	.article-layout.col-5 {
-		grid-column: 9 / 11;
+		grid-column: 1 / 1;
 	}
 	.article-layout.col-6 {
-		grid-column: 11 / 13;
+		grid-column: 1 / 1;
 	}
+
+	@media (min-width: 500px) {
+
+	.article-grid {
+		grid-template-columns: repeat(2, 1fr);
+	}
+
+	.article-layout.col-1 {
+		grid-column: 1 / 1;
+		grid-row: 1 /1;
+	}
+	.article-layout.col-2 {
+		grid-column: 1 / 1;
+		grid-row: 2 /2;
+	}
+	.article-layout.col-3 {
+		grid-column: 1 / 1;
+		grid-row: 3 /3;
+	}
+	.article-layout.col-4 {
+		grid-column: 2 / 2;
+		grid-row: 1 /1;
+	}
+	.article-layout.col-5 {
+		grid-column: 2 / 2;
+		grid-row: 2 /2;
+	}
+	.article-layout.col-6 {
+		grid-column: 2 / 2;
+		grid-row: 3 /3;
+	}
+}
+
+	@media (min-width: 768px) {
+	.article-grid {
+		grid-template-columns: repeat(6, 1fr);
+	}
+	.article-grid.grid-3 {
+		grid-template-columns: repeat(3, 1fr);
+	}
+
+	.article-layout.col-1 {
+		grid-column: 1 / 1;
+		grid-row: 1 /1;
+	}
+	.article-layout.col-2 {
+		grid-column: 2 / 2;
+		grid-row: 1 /1;
+	}
+	.article-layout.col-3 {
+		grid-column: 3 / 3;
+		grid-row: 1 /1;
+	}
+	.article-layout.col-4 {
+		grid-column: 4 / 4;
+		grid-row: 1 /1;
+	}
+	.article-layout.col-5 {
+		grid-column: 5 / 5;
+		grid-row: 1 /1;
+	}
+	.article-layout.col-6 {
+		grid-column: 6 / 6;
+		grid-row: 1 /1;
+	}
+}
 </style>
