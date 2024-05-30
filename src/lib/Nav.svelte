@@ -5,7 +5,7 @@ import { base } from '$app/paths';
 <div class="nav">
 	<div class="left-half">
 		<a href="{base}/" class="nav-logo">Casey Blakely</a>
-		<p class="nav-sub-logo">Official Map and Guide</p>
+		<p class="nav-sub-logo">Official Map and Guides</p>
 	</div>
 	<div class="right-half">
 		<div class="sub-grid">
