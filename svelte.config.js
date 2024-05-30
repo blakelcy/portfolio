@@ -5,12 +5,7 @@ const dev = process.env.NODE_ENV === "production";
 /** @type {import('@sveltejs/kit').Config} */
 const config = {
   kit: {
-    adapter: adapter({
-      pages: "docs",
-      assets: "docs",
-      fallback: null,
-      precompress: false,
-    }),
+    adapter: adapter(),
     paths: {
       base: dev ? "/portfolio" : "",
     },
