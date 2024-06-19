@@ -18,19 +18,19 @@
 			image: groceryImg,
 			alt: 'ai generated image of a grocery store',
 			company: 'The Kroger Company ',
-			paragraph1: 'Product designer for their fresh department associates.',
+			paragraph1: 'Product designer for their fresh department associates. (Case Study in Progress)',
 			paragraph2: ''
 		},
 		{
 			image: truckerImg,
 			alt: 'ai generated image of a truck driver',
 			company: 'CLC Lodging ',
-			paragraph1: 'Lead designer and ux consultant for their redesign.',
+			paragraph1: 'Lead designer and ux consultant for their redesign. (Case Study in Progress)',
 			paragraph2: ''
 		},
 		{
 			image: founderImg,
-			alt: 'ai generated image of a truck driver',
+			alt: 'ai generated image of a truck driver (More to come!)',
 			company: 'Kwipoo',
 			paragraph1: 'Co-Founder',
 			paragraph2: ''
