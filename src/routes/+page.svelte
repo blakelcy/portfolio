@@ -30,9 +30,9 @@
 		},
 		{
 			image: founderImg,
-			alt: 'ai generated image of a truck driver (More to come!)',
+			alt: 'ai generated image of a truck driver',
 			company: 'Kwipoo',
-			paragraph1: 'Co-Founder',
+			paragraph1: 'Co-Founder (More to come!)',
 			paragraph2: ''
 		}
 		// Add more cards as needed
