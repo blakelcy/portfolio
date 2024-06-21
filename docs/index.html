@@ -1,247 +1,29 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-
-<head>
-	<meta charset="utf-8" />
-	<link rel="icon" href="./favicon.png" />
-	<meta name="viewport" content="width=device-width, initial-scale=1" />
-	<meta name="color-scheme" content="dark light" />
-	
-		<link href="./_app/immutable/assets/0.BFIIiURH.css" rel="stylesheet">
-		<link href="./_app/immutable/assets/2.XrPnBzza.css" rel="stylesheet">
-		<link rel="modulepreload" href="./_app/immutable/entry/start.Fo2FhKXu.js">
-		<link rel="modulepreload" href="./_app/immutable/chunks/entry.iUImef4w.js">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" href="./favicon.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="color-scheme" content="dark light" />
+    
+		<link href="./_app/immutable/assets/0.pk80Z8Vm.css" rel="stylesheet">
+		<link href="./_app/immutable/assets/2.erSWtNB8.css" rel="stylesheet">
+		<link rel="modulepreload" href="./_app/immutable/entry/start.EckoiiJu.js">
+		<link rel="modulepreload" href="./_app/immutable/chunks/entry.7gW4ZzDo.js">
 		<link rel="modulepreload" href="./_app/immutable/chunks/scheduler.6h9Eb0fi.js">
-		<link rel="modulepreload" href="./_app/immutable/entry/app._UJVHbuC.js">
+		<link rel="modulepreload" href="./_app/immutable/chunks/paths.7TZbwmCF.js">
+		<link rel="modulepreload" href="./_app/immutable/entry/app.bw9wEixN.js">
 		<link rel="modulepreload" href="./_app/immutable/chunks/index.Nq_3vCqA.js">
-		<link rel="modulepreload" href="./_app/immutable/nodes/0.qOeWVb7M.js">
-		<link rel="modulepreload" href="./_app/immutable/nodes/2.VspAwvQY.js">
+		<link rel="modulepreload" href="./_app/immutable/nodes/0.41lJi44O.js">
+		<link rel="modulepreload" href="./_app/immutable/nodes/2.b7_XR_lD.js">
+  </head>
 
-	<style>
-		body {
-			--bg-1: #fffff0;
-			--bg-2: #faf0e6;
-			--bg-3: hsl(206, 20%, 80%);
-			--fg-1: hsl(0, 0%, 13%);
-			--fg-2: hsl(0, 0%, 20%);
-			--fg-2: hsl(0, 0%, 30%);
-			--link: hsl(208, 77%, 47%);
-			--link-hover: hsl(208, 77%, 55%);
-			--link-active: hsl(208, 77%, 40%);
-			--border-radius: 4px;
-			--font: 'Helvetica Neue', sans-serif;
-			--font-mono: ui-monospace, 'Cascadia Code', 'Source Code Pro', Menlo, Consolas,
-				'DejaVu Sans Mono', monospace;
-			background: var(--bg-1);
-			color: var(--fg-1);
-			font-family: var(--font);
-			line-height: 1.5;
-			margin: 0;
-			height: calc(100vh - 2rem);
-		}
-
-		h1,
-		h2,
-		h3,
-		h4,
-		h5,
-		h6 {
-			font-weight: normal;
-			font-variant-numeric: tabular-nums;
-			line-height: 1.1;
-		}
-
-		:is(h1, h2, h3, h4, h5, h6, p) {
-			margin: 1rem 0.1rem;
-		}
-
-		main {
-			background-color: var(--bg-1);
-			display: grid;
-			grid-template-columns: repeat(12, 1fr);
-			grid-template-rows: 350px auto auto 20px;
-			gap: 16px;
-		}
-
-		label {
-			margin: 0.5rem 0.1rem;
-		}
-
-		:is(h1, h2, h3, h4, h5, h6, p, label):first-child {
-			margin-top: 0;
-		}
-
-		:is(h1, h2, h3, h4, h5, h6, p, label):last-child {
-			margin-bottom: 0;
-		}
-
-		a {
-			color: var(--link);
-		}
-
-		a:hover {
-			color: var(--link-hover);
-		}
-
-		a:active {
-			color: var(--link-active);
-		}
-
-		label {
-			display: flex;
-			gap: 0.5rem;
-			align-items: center;
-		}
-
-		label input {
-			margin: 0;
-		}
-
-		button,
-		input,
-		select {
-			font-family: inherit;
-			font-size: inherit;
-		}
-
-		button {
-			background: var(--link);
-			color: var(--bg-1);
-			padding: 0.5rem 1rem;
-			border: none;
-			border-radius: var(--border-radius);
-		}
-
-		button:hover {
-			background: var(--link-hover);
-		}
-
-		button:active {
-			background: var(--link-active);
-		}
-
-		:is(button, button:hover, button:active):disabled {
-			background: var(--link);
-			filter: grayscale(1);
-			opacity: 0.4;
-		}
-
-		input,
-		textarea,
-		select {
-			padding: 0.5rem;
-			border: 1px solid var(--bg-2);
-			border-radius: var(--border-radius);
-			box-sizing: border-box;
-		}
-
-		input,
-		textarea {
-			background: var(--bg-1);
-			color: inherit;
-		}
-
-		select:not([multiple]) {
-			background: var(--bg-2);
-		}
-
-		textarea {
-			font-family: var(--font-mono);
-			font-size: 0.9rem;
-		}
-
-		form {
-			display: flex;
-			flex-direction: column;
-			gap: 1rem;
-			align-items: baseline;
-		}
-
-		ul:has(li):has(form) {
-			list-style: none;
-			padding: 0;
-		}
-
-		li form {
-			flex-direction: row;
-			gap: 0.5rem;
-			margin: 0.5rem 0;
-		}
-
-		nav {
-			position: relative;
-			display: flex;
-			justify-content: end;
-			align-items: center;
-			gap: 1em;
-			padding: 1em;
-			background: var(--bg-2);
-			z-index: 2;
-			margin: 0 0 1em 0;
-			border-radius: var(--border-radius);
-		}
-
-		nav a {
-			text-decoration: none;
-		}
-
-		nav a[aria-current='true'] {
-			border-bottom: 2px solid;
-		}
-
-		ul:has(form) {
-			list-style: none;
-			padding: 0;
-		}
-
-		progress {
-			margin: 0.5rem 0;
-		}
-
-		progress:first-child {
-			margin-top: 0;
-		}
-
-		progress:lsat-child {
-			margin-bottom: 0;
-		}
-
-		.error {
-			color: red;
-		}
-
-		code {
-			background: var(--bg-2);
-			font-family: var(--font-mono);
-			font-size: 0.9em;
-			padding: 0.15rem 0.3rem;
-			border-radius: var(--border-radius);
-		}
-
-		body.dark {
-			--bg-1: hsl(0, 0%, 18%);
-			--bg-2: hsl(0, 0%, 30%);
-			--bg-3: hsl(0, 0%, 40%);
-			--fg-1: hsl(0, 0%, 90%);
-			--fg-2: hsl(0, 0%, 70%);
-			--fg-3: hsl(0, 0%, 60%);
-			--link: hsl(206, 96%, 72%);
-			--link-hover: hsl(206, 96%, 78%);
-			--link-active: hsl(206, 96%, 64%);
-		}
-
-		.grid-full {
-			grid-column: 1 / 13;
-		}
-	</style>
-</head>
-
-<body>
-	<div style="display: contents">  <div class="nav svelte-18b4z3e" data-svelte-h="svelte-1bwo9x7"><div class="left-half svelte-18b4z3e"><a href="./" class="nav-logo svelte-18b4z3e">Casey Blakely</a> <p class="nav-sub-logo svelte-18b4z3e">Official Map and Guide</p></div> <div class="right-half svelte-18b4z3e"><div class="sub-grid svelte-18b4z3e"><div class="col-1 svelte-18b4z3e"><p class="svelte-18b4z3e">c.blakely34@gmail.com</p> <p class="svelte-18b4z3e">casey.blakely@adventureware.com</p></div> <div class="col-2 svelte-18b4z3e"><p class="svelte-18b4z3e">Co-Founder of <a href="https://www.adventureware.com" target="_blank" class="svelte-18b4z3e">Adventureware</a></p> <p class="svelte-18b4z3e"><a href="https://www.kwipoo.app" target="_blank" class="svelte-18b4z3e">Kwipoo</a></p></div></div></div> </div> <main><section class="grid-full banner-container svelte-b22sf"><img class="banner-image svelte-b22sf" src="file:///C:/Users/cblak/Development/Portfolio/portfolio/.svelte-kit/output/server/entries/pages/pnw_forest.png" alt="MidJourney generated image of a forest in the Pacific North West"> </section> <section class="grid-full article-section svelte-1493tsa"><h2 class="article-title svelte-1493tsa">The Growth and Experience of a Consultant</h2> <div class="article-grid svelte-1493tsa"><p class="article-layout col-1 svelte-1493tsa">Without a doubt, my decision to join a contractor software company has accelerated my learning and professional growth beyond my expectations. The dynamic environment and challenges have propelled me to gain valuable experience in multiple industries.</p><p class="article-layout col-2 svelte-1493tsa">I had started with Cardinal Solutions Group in my last semester of my senior college year as an intern. The work, in truth, was tedious as I was entering in content for The Christ Hospitals new website. However, it introduced me into the world of a mid-sized consultancy and a</p><p class="article-layout col-3 svelte-1493tsa">career full of variety. After college I was fortunate enough to work full time for Cardinal Solutions, starting as a developer. While I was pretty garbage at C# and asp.net development, I was pretty decent at front end development. More importantly I enjoyed it. I quickly worked to switch gears </p><p class="article-layout col-4 svelte-1493tsa">and developed my front end expertise. I worked on various projects writing the html and css, from pattern libraries to full scale projects. But as technology evolved, so to were expectations for front end developers. Frameworks like bootstrap reduced the need for custom css.</p><p class="article-layout col-5 svelte-1493tsa">So I decided to transition more into the design side of projects. I had already worked closely with my design coworkers, and I knew my interests did not live in writing javascript, so this felt like the best career move. I still think it was, I enjoyed the processes relevant to design, especially UX research.</p><p class="article-layout col-6 svelte-1493tsa">Talking to users and helping solve problems became a real area of interest for me, which ultimately lead me to co-founding a company with my friend. The aim of which is to help people organize their things and return them sustainably to the earth when they are done with them.</p></div> <div class="article-grid svelte-1493tsa" data-svelte-h="svelte-1y4lop0"><span class="svelte-1493tsa"></span></div> <div class="article-grid grid-3 svelte-1493tsa bordered"><p class="article-layout col-1 svelte-1493tsa"><div class="article-card svelte-d8g6wd"><div class="article-img svelte-d8g6wd"><img src="file:///C:/Users/cblak/Development/Portfolio/portfolio/.svelte-kit/output/server/entries/pages/grocery.png" alt="ai generated image of a grocery store" class="svelte-d8g6wd"></div> <p class="card-title svelte-d8g6wd">The Kroger Company </p> <div class="card-grid svelte-d8g6wd"><p class="svelte-d8g6wd">Product designer for their fresh department associates. (Case Study in Progress)</p> <p class="svelte-d8g6wd"></p></div> </div> </p><p class="article-layout col-2 svelte-1493tsa"><div class="article-card svelte-d8g6wd"><div class="article-img svelte-d8g6wd"><img src="file:///C:/Users/cblak/Development/Portfolio/portfolio/.svelte-kit/output/server/entries/pages/trucker.png" alt="ai generated image of a truck driver" class="svelte-d8g6wd"></div> <p class="card-title svelte-d8g6wd">CLC Lodging </p> <div class="card-grid svelte-d8g6wd"><p class="svelte-d8g6wd">Lead designer and ux consultant for their redesign. (Case Study in Progress)</p> <p class="svelte-d8g6wd"></p></div> </div> </p><p class="article-layout col-3 svelte-1493tsa"><div class="article-card svelte-d8g6wd"><div class="article-img svelte-d8g6wd"><img src="file:///C:/Users/cblak/Development/Portfolio/portfolio/.svelte-kit/output/server/entries/pages/founder.png" alt="ai generated image of a truck driver" class="svelte-d8g6wd"></div> <p class="card-title svelte-d8g6wd">Kwipoo</p> <div class="card-grid svelte-d8g6wd"><p class="svelte-d8g6wd">Co-Founder (More to come!)</p> <p class="svelte-d8g6wd"></p></div> </div> </p></div> </section> </main> <footer class="svelte-bykwoz" data-svelte-h="svelte-91m2p9"><p class="svelte-bykwoz">Reprint 2024</p> <div class=" svelte-bykwoz"></div> </footer> 
+  <body>
+      <nav class="svelte-1bh1gfq" data-svelte-h="svelte-12kxgc8"><div class="wrapper"><div class="nav-content"><h1>Casey Blakely</h1> <p>Official Map and Guide</p></div> <div class="nav-content"><p>c.blakely34@gmail.com</p> <p>casey.blakely@adventureware.com</p></div> <div class="nav-content"><p>Co-Founder of:</p> <a href="https://www.adventureware.com" target="_blank">Adventureware</a><br> <a href="https://www.kwipoo.app" target="_blank">Kwipoo</a></div></div> </nav> <main><section class="grid-full banner-container svelte-h5abtq"><img class="banner-image svelte-h5abtq" src="file:///C:/Users/cblak/Development/Portfolio/portfolio/.svelte-kit/output/server/entries/pages/pnw_forest.png" alt="MidJourney generated image of a forest in the Pacific North West"> </section> <section class="svelte-58lj7y"><div class="wrapper"><h2>The Growth and Experience of a Consultant</h2> <div class="article-grid"><p>Without a doubt, my decision to join a contractor software company has accelerated my learning and professional growth beyond my expectations. The dynamic environment and challenges have propelled me to gain valuable experience in multiple industries.</p><p>I had started with Cardinal Solutions Group in my last semester of my senior college year as an intern. The work, in truth, was tedious as I was entering in content for The Christ Hospitals new website. However, it introduced me into the world of a mid-sized consultancy and a</p><p>career full of variety. After college I was fortunate enough to work full time for Cardinal Solutions, starting as a developer. While I was pretty garbage at C# and asp.net development, I was pretty decent at front end development. More importantly I enjoyed it. I quickly worked to switch gears </p><p>and developed my front end expertise. I worked on various projects writing the html and css, from pattern libraries to full scale projects. But as technology evolved, so to were expectations for front end developers. Frameworks like bootstrap reduced the need for custom css.</p><p>So I decided to transition more into the design side of projects. I had already worked closely with my design coworkers, and I knew my interests did not live in writing javascript, so this felt like the best career move. I still think it was, I enjoyed the processes relevant to design, especially UX research.</p><p>Talking to users and helping solve problems became a real area of interest for me, which ultimately lead me to co-founding a company with my friend. The aim of which is to help people organize their things and return them sustainably to the earth when they are done with them.</p></div> <div class="divider"></div> <div class="article-grid bordered"><p class="article-layout col-1"><div class="article-card svelte-1dfl9x3"><div class="img-wrapper"><img src="file:///C:/Users/cblak/Development/Portfolio/portfolio/.svelte-kit/output/server/entries/pages/grocery.png" alt="ai generated image of a grocery store"></div> <h4>The Kroger Company * Product Designer UI/UX</h4> <div class="card-grid"><p>Product designer for their fresh department associates. (Case Study in Progress)</p> <p></p></div> </div> </p><p class="article-layout col-2"><div class="article-card svelte-1dfl9x3"><div class="img-wrapper"><img src="file:///C:/Users/cblak/Development/Portfolio/portfolio/.svelte-kit/output/server/entries/pages/trucker.png" alt="ai generated image of a truck driver"></div> <h4>CLC Lodging * Product Designer/Business Analyst</h4> <div class="card-grid"><p>Lead designer and ux consultant for their redesign. (Case Study in Progress)</p> <p></p></div> </div> </p><p class="article-layout col-3"><div class="article-card svelte-1dfl9x3"><div class="img-wrapper"><img src="file:///C:/Users/cblak/Development/Portfolio/portfolio/.svelte-kit/output/server/entries/pages/founder.png" alt="ai generated image of a truck driver"></div> <h4>Kwipoo</h4> <div class="card-grid"><p>Co-Founder (More to come!)</p> <p></p></div> </div> </p></div></div> </section> </main> <footer class="svelte-zt8psm" data-svelte-h="svelte-91m2p9"><p class="svelte-zt8psm">Reprint 2024</p> <div class=" svelte-zt8psm"></div> </footer> 
 			
 			<script>
 				{
-					__sveltekit_5t87o5 = {
+					__sveltekit_yt1062 = {
 						assets: "/portfolio",
 						base: new URL(".", location).pathname.slice(0, -1),
 						env: null
@@ -252,8 +34,8 @@
 					const data = [null,null];
 
 					Promise.all([
-						import("./_app/immutable/entry/start.Fo2FhKXu.js"),
-						import("./_app/immutable/entry/app._UJVHbuC.js")
+						import("./_app/immutable/entry/start.EckoiiJu.js"),
+						import("./_app/immutable/entry/app.bw9wEixN.js")
 					]).then(([kit, app]) => {
 						kit.start(app, element, {
 							node_ids: [0, 2],
@@ -264,14 +46,13 @@
 					});
 				}
 			</script>
-		</div>
+		
 
-	<script>
-		const theme = new URL(window.location).searchParams.get('theme');
+    <script>
+      const theme = new URL(window.location).searchParams.get("theme");
 
-		document.body.classList.remove('light', 'dark');
-		document.body.classList.add(theme || 'light');
-	</script>
-</body>
-
+      document.body.classList.remove("light", "dark");
+      document.body.classList.add(theme || "light");
+    </script>
+  </body>
 </html>
