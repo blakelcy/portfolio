@@ -1,87 +1,52 @@
 <script>
-import { base } from '$app/paths';
+  import { base } from "$app/paths";
 </script>
 
-<div class="nav">
-	<div class="left-half">
-		<a href="{base}/" class="nav-logo">Casey Blakely</a>
-		<p class="nav-sub-logo">Official Map and Guide</p>
-	</div>
-	<div class="right-half">
-		<div class="sub-grid">
-			<div class="col-1">
-				<p>c.blakely34@gmail.com</p>
-				<p>casey.blakely@adventureware.com</p>
-			</div>
-			<div class="col-2">
-				<p>
-					Co-Founder of <a href="https://www.adventureware.com" target="_blank">Adventureware</a>
-				</p>
-				<p><a href="https://www.kwipoo.app" target="_blank">Kwipoo</a></p>
-			</div>
-		</div>
-	</div>
-</div>
+<nav>
+  <div class="wrapper">
+    <div class="nav-content">
+      <h1>Casey Blakely</h1>
+      <p>Official Map and Guide</p>
+    </div>
+    <div class="nav-content">
+      <p>c.blakely34@gmail.com</p>
+      <p>casey.blakely@adventureware.com</p>
+    </div>
+    <div class="nav-content">
+      <p>Co-Founder of:</p>
+      <a href="https://www.adventureware.com" target="_blank">Adventureware</a
+      ><br />
+      <a href="https://www.kwipoo.app" target="_blank">Kwipoo</a>
+    </div>
+  </div>
+</nav>
 
-<style>
-	/* Styling for the navigation */
-	.nav {
-		background-color: black;
-		display: grid;
-		grid-template-columns: repeat(12, 1fr);
-		gap: 16px;
-		padding: 1rem 2rem;
-	}
-
-	.left-half {
-		grid-column-start: 1;
-		grid-column-end: 7;
-	}
-
-	.right-half {
-		grid-column-start: 7;
-		grid-column-end: 13;
-	}
-
-	.sub-grid {
-		display: grid;
-		grid-template-columns: repeat(6, 1fr);
-		gap: 3rem;
-	}
-
-	.sub-grid > div > p {
-		font-size: 1rem;
-		color: white;
-		font-weight: 700;
-		margin: 0;
-		line-height: 1.6;
-	}
-
-	.sub-grid > div > p > a {
-		color: white;
-	}
-
-	.sub-grid > .col-1 {
-		grid-column: 1 / 4;
-	}
-	.sub-grid > .col-2 {
-		grid-column: 5 / 7;
-	}
-
-	.nav-logo,
-	.nav-sub-logo {
-		font-weight: bold;
-		color: white;
-	}
-
-	.nav-logo {
-		display: block;
-		font-size: 2.5rem;
-		margin-bottom: 2.5rem;
-		text-decoration: none;
-	}
-
-	.nav-sub-logo {
-		font-size: 1rem;
-	}
+<style lang="scss">
+  nav {
+    background-color: black;
+    color: white;
+    padding: 1rem;
+    & > .wrapper {
+      & > .nav-content {
+        margin-bottom: 1rem;
+        & > h1 {
+          font-size: 2.5rem;
+          line-height: 2.5rem;
+          @media screen and (min-width: 960px) {
+            margin-bottom: 40px;
+          }
+        }
+        & > a {
+          color: white;
+        }
+        @media screen and (min-width: 960px) {
+          margin-bottom: 0px;
+        }
+      }
+      @media screen and (min-width: 960px) {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+      }
+    }
+  }
 </style>

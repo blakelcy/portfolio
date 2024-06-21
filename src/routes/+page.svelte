@@ -17,14 +17,14 @@
 		{
 			image: groceryImg,
 			alt: 'ai generated image of a grocery store',
-			company: 'The Kroger Company ',
+			company: 'The Kroger Company * Product Designer UI/UX',
 			paragraph1: 'Product designer for their fresh department associates. (Case Study in Progress)',
 			paragraph2: ''
 		},
 		{
 			image: truckerImg,
 			alt: 'ai generated image of a truck driver',
-			company: 'CLC Lodging ',
+			company: 'CLC Lodging * Product Designer/Business Analyst',
 			paragraph1: 'Lead designer and ux consultant for their redesign. (Case Study in Progress)',
 			paragraph2: ''
 		},
@@ -52,7 +52,7 @@
 		{
 			image: groceryImg,
 			alt: 'ai generated image of a grocery store',
-			company: 'The Kroger Company ',
+			company: 'The Kroger Company * Product Designer UI/UX',
 			paragraph1: 'Product designer for their fresh',
 			paragraph2: 'department associates.'
 		},

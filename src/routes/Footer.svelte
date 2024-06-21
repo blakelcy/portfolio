@@ -6,6 +6,7 @@
 <style>
 	footer {
 		width: 100%;
+		box-sizing: border-box;
 	}
 
 	footer > p {
