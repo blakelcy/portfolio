@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" href="../../favicon.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="color-scheme" content="dark light" />
+    
+		<link href="../../_app/immutable/assets/0.VeE92Nlu.css" rel="stylesheet">
+		<link href="../../_app/immutable/assets/Nav.G2JApq7b.css" rel="stylesheet">
+		<link rel="modulepreload" href="../../_app/immutable/entry/start.uMQ6CQYz.js">
+		<link rel="modulepreload" href="../../_app/immutable/chunks/entry.78bQm4gf.js">
+		<link rel="modulepreload" href="../../_app/immutable/chunks/scheduler.GyfY70HZ.js">
+		<link rel="modulepreload" href="../../_app/immutable/chunks/paths.uRa_NBpa.js">
+		<link rel="modulepreload" href="../../_app/immutable/entry/app.U51HNZYe.js">
+		<link rel="modulepreload" href="../../_app/immutable/chunks/index.qNTfrIfu.js">
+		<link rel="modulepreload" href="../../_app/immutable/nodes/0.CXo3WFqN.js">
+		<link rel="modulepreload" href="../../_app/immutable/nodes/4.ufozr0IY.js">
+  </head>
+
+  <body>
+       <footer class="svelte-zt8psm" data-svelte-h="svelte-91m2p9"><p class="svelte-zt8psm">Reprint 2024</p> <div class=" svelte-zt8psm"></div> </footer> 
+			
+			<script>
+				{
+					__sveltekit_qjg1kj = {
+						assets: "/portfolio",
+						base: new URL("../..", location).pathname.slice(0, -1),
+						env: null
+					};
+
+					const element = document.currentScript.parentElement;
+
+					const data = [null,null];
+
+					Promise.all([
+						import("../../_app/immutable/entry/start.uMQ6CQYz.js"),
+						import("../../_app/immutable/entry/app.U51HNZYe.js")
+					]).then(([kit, app]) => {
+						kit.start(app, element, {
+							node_ids: [0, 4],
+							data,
+							form: null,
+							error: null
+						});
+					});
+				}
+			</script>
+		
+
+    <script>
+      const theme = new URL(window.location).searchParams.get("theme");
+
+      document.body.classList.remove("light", "dark");
+      document.body.classList.add(theme || "light");
+    </script>
+  </body>
+</html>
