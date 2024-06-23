@@ -1,6 +1,14 @@
+<script>
+  import { base } from "$app/paths";
+</script>
+
 <nav>
   <div class="wrapper">
-    <img style="max-width: 400px" src="/assets/clcLodgingLog.png" alt="" />
+    <img
+      style="max-width: 400px"
+      src="{base}/assets/clcLodgingLog.png"
+      alt=""
+    />
     <div class="list-itmes"></div>
   </div>
   <div class="wrapper">
@@ -22,7 +30,11 @@
     </section>
     <div class="article-text img-col">
       <div class="flex-img">
-        <img style="max-width: 111px" src="/assets/headshotCasey.png" alt="" />
+        <img
+          style="max-width: 111px"
+          src="{base}/assets/headshotCasey.png"
+          alt=""
+        />
         <p>
           <strong>Casey B.</strong> Senior Analyst and Designer/Researcher, Casey
           performed the initial Heuristic Analysis on the CLC Mobile application
@@ -63,13 +75,17 @@
     </section>
     <div class="article-text img-col">
       <div class="flex-img">
-        <img style="max-width: 111px" src="/assets/headshotCasey.png" alt="" />
+        <img
+          style="max-width: 111px"
+          src="{base}/assets/headshotCasey.png"
+          alt=""
+        />
         <p>
           <strong>Casey B.</strong> Senior Analyst and Designer.
         </p>
         <img
           style="max-width: 80px"
-          src="/assets/headshotNiaSimone.png"
+          src="{base}/assets/headshotNiaSimone.png"
           alt=""
         />
         <p>
@@ -142,7 +158,7 @@
         mockups for the Search, Hotel Details, and Hotel Booking screens.
       </p>
     </div>
-    <img src="/assets/figure1.png" alt="" />
+    <img src="{base}/assets/figure1.png" alt="" />
   </div>
   <div class="section-title">
     <h3>Concept Mockups</h3>
@@ -181,7 +197,7 @@
         ultimately wanted to move forward with a full redesign of the app.
       </p>
     </div>
-    <img style="max-width: 274px" src="/assets/figure2.png" alt="" />
+    <img style="max-width: 274px" src="{base}/assets/figure2.png" alt="" />
   </div>
 
   <div class="section-title grid-col-3">
@@ -206,7 +222,7 @@
           implemented.
         </p>
       </div>
-      <img src="/assets/figure3.png" alt="" />
+      <img src="{base}/assets/figure3.png" alt="" />
     </div>
   </div>
   <div class="article-text grid-col-2">
@@ -281,12 +297,12 @@
           the development team.
         </p>
       </div>
-      <img src="/assets/hrz-figure4.png" alt="" />
+      <img src="{base}/assets/hrz-figure4.png" alt="" />
     </div>
   </div>
   <div class="section-title grid-col-3">
     <div class="test">
-      <img src="/assets/figure5.png" alt="" />
+      <img src="{base}/assets/figure5.png" alt="" />
     </div>
   </div>
   <div class="section-title grid-col-3">
@@ -302,7 +318,7 @@
           list items.
         </p>
       </div>
-      <img src="/assets/figure6.png" alt="" />
+      <img src="{base}/assets/figure6.png" alt="" />
     </div>
   </div>
 </div>

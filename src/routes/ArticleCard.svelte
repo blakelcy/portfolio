@@ -1,4 +1,5 @@
 <script>
+  import { base } from "$app/paths";
   export let image;
   export let alt;
   export let company;
@@ -7,7 +8,7 @@
   export let link; // Add a link prop
 </script>
 
-<a href={link} class="article-card">
+<a href="{base}{link}" class="article-card">
   <div class="article-img">
     <img src={image} {alt} />
   </div>
