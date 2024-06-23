@@ -14,8 +14,8 @@
     </div>
     <div class="nav-content">
       <p>Co-Founder of:</p>
-      <a href="https://www.adventureware.com" target="_blank">Adventureware</a
-      ><br />
+      <a href="https://www.adventureware.com" target="_blank">Adventureware</a>
+      <br />
       <a href="https://www.kwipoo.app" target="_blank">Kwipoo</a>
     </div>
   </div>
@@ -39,13 +39,23 @@
         & > a {
           color: white;
         }
+
+        &.img {
+          overflow: hidden;
+          margin-bottom: 0.5rem;
+
+          & > img {
+            display: block;
+            max-width: 100%;
+          }
+        }
         @media screen and (min-width: 960px) {
           margin-bottom: 0px;
         }
       }
       @media screen and (min-width: 960px) {
         display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
       }
     }
   }
