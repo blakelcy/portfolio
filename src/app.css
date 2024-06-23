@@ -82,3 +82,14 @@ h6 {
 #__next {
   isolation: isolate;
 }
+
+@font-face {
+  font-family: "CustomFont";
+  src:
+    /*  url("/fonts/custom-font.woff2") format("woff2"),
+      url("/fonts/custom-font.woff") format("woff"),*/ url("/fonts/NationalPark-Regular.ttf")
+    format("truetype");
+  font-weight: normal;
+  font-style: normal;
+  letter-spacing: 2px;
+}

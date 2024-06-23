@@ -54,6 +54,7 @@
         font-weight: 700;
         line-height: 120%;
         margin-bottom: 0.25rem;
+        font-family: "CustomFont", sans-serif;
       }
 
       & > .article-grid {
