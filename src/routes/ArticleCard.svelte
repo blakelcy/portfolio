@@ -1,18 +1,13 @@
 <script>
-  import { goto } from "$app/navigation";
   export let image;
   export let alt;
   export let company;
   export let paragraph1;
   export let paragraph2;
   export let link; // Add a link prop
-
-  function navigateTo() {
-    goto(link);
-  }
 </script>
 
-<div class="article-card" on:click={navigateTo}>
+<a href={link} class="article-card">
   <div class="article-img">
     <img src={image} {alt} />
   </div>
@@ -21,13 +16,15 @@
     <p>{paragraph1}</p>
     <p>{paragraph2}</p>
   </div>
-</div>
+</a>
 
 <style>
   .article-card {
     position: relative;
     display: flex;
     flex-direction: column;
+    text-decoration: none;
+    color: #0d0d0d;
   }
 
   .article-img {
