@@ -22,7 +22,7 @@
 <section class:redText>
   <div class="wrapper">
     <h2>{title}</h2>
-    <div class="article-grid" class:gridFour>
+    <div class="main-text-grid" class:gridFour>
       {#each articleParagraphs as paragraph}
         <p>{paragraph}</p>
       {/each}
@@ -57,13 +57,22 @@
         font-family: "CustomFont", sans-serif;
       }
 
-      & > .article-grid {
+      & > .article-grid,
+      .main-text-grid {
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
         gap: 0.75rem 1rem;
 
         & > p {
           font-size: 1rem;
+        }
+      }
+
+      & > .main-text-grid {
+        & > p {
+          @media screen and (min-width: 960px) {
+            column-count: 5;
+          }
         }
       }
 

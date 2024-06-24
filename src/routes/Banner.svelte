@@ -14,12 +14,13 @@
   .banner-container {
     position: relative;
     overflow: hidden;
+    max-height: 800px;
   }
 
   /* Optional styling for the image */
   .banner-image {
     display: block;
-    max-width: 100%;
+    width: 100%;
     transition: transform 0.33s ease;
   }
 

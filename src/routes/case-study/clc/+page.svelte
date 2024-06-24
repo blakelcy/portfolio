@@ -159,6 +159,9 @@
       </p>
     </div>
     <img src="{base}/assets/figure1.png" alt="" />
+    <figure class="img-figure-text">
+      Example slide from the Heuristic Analysis for CLC
+    </figure>
   </div>
   <div class="section-title">
     <h3>Concept Mockups</h3>
@@ -197,7 +200,12 @@
         ultimately wanted to move forward with a full redesign of the app.
       </p>
     </div>
-    <img style="max-width: 274px" src="{base}/assets/figure2.png" alt="" />
+    <img
+      style="max-width: 274px; align-self: end;"
+      src="{base}/assets/figure2.png"
+      alt=""
+    />
+    <figure class="img-figure-text">Mockup of the Hotel Details screen</figure>
   </div>
 
   <div class="section-title grid-col-3">
@@ -223,6 +231,9 @@
         </p>
       </div>
       <img src="{base}/assets/figure3.png" alt="" />
+      <figure class="img-figure-text">
+        Mural canvas for CLC discoveries (not all shown)
+      </figure>
     </div>
   </div>
   <div class="article-text grid-col-2">
@@ -298,11 +309,17 @@
         </p>
       </div>
       <img src="{base}/assets/hrz-figure4.png" alt="" />
+      <figure class="img-figure-text">
+        Redesigned screens of the major flow
+      </figure>
     </div>
   </div>
   <div class="section-title grid-col-3">
     <div class="test">
       <img src="{base}/assets/figure5.png" alt="" />
+      <figure class="img-figure-text">
+        Previous screens of the major flow
+      </figure>
     </div>
   </div>
   <div class="section-title grid-col-3">
@@ -319,6 +336,9 @@
         </p>
       </div>
       <img src="{base}/assets/figure6.png" alt="" />
+      <figure class="img-figure-text">
+        Structure page of the guidelines prototype created for CLC
+      </figure>
     </div>
   </div>
 </div>
@@ -435,5 +455,11 @@
 
   img {
     width: 100%;
+  }
+
+  .img-figure-text {
+    text-align: right;
+    color: rgba(13, 13, 13, 0.6);
+    font-size: 0.75rem;
   }
 </style>
