@@ -1,26 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <link rel="icon" href="../../favicon.png" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="color-scheme" content="dark light" />
-    
-		<link href="../../_app/immutable/assets/0.VeE92Nlu.css" rel="stylesheet">
-		<link href="../../_app/immutable/assets/Nav.G2JApq7b.css" rel="stylesheet">
-		<link href="../../_app/immutable/assets/4.T9dOWFL7.css" rel="stylesheet">
-		<link rel="modulepreload" href="../../_app/immutable/entry/start.sTXnBUBF.js">
-		<link rel="modulepreload" href="../../_app/immutable/chunks/entry.xcbW0_9M.js">
-		<link rel="modulepreload" href="../../_app/immutable/chunks/scheduler.Yh7pOIz6.js">
-		<link rel="modulepreload" href="../../_app/immutable/chunks/paths.Vw1hqt_m.js">
-		<link rel="modulepreload" href="../../_app/immutable/entry/app.JSCbRqku.js">
-		<link rel="modulepreload" href="../../_app/immutable/chunks/index.hBS5QyE0.js">
-		<link rel="modulepreload" href="../../_app/immutable/nodes/0.2TrFBSNk.js">
-		<link rel="modulepreload" href="../../_app/immutable/nodes/4.L-3xqXey.js">
-  </head>
-
-  <body>
-      <nav class="svelte-w1wstp" data-svelte-h="svelte-1dq0oyy"><div class="wrapper svelte-w1wstp" style="padding: 3rem 1rem 0rem 1rem;"><img src="../../assets/kroger-footer-logo.png" alt="" style="max-height: 160px; width: auto; padding-left: 6rem;" class="svelte-w1wstp"> <div class="list-itmes svelte-w1wstp"><h3>Roles</h3> <ul class="list-outside inline-block"><li>UX Researcher</li> <li>Product Designer</li></ul></div> <i style="font-size: 10px;">*Not all solutions can be shown due to intellectual property of client*</i></div> <div class="wrapper svelte-w1wstp"><section class="section-title svelte-w1wstp"><h3 class="svelte-w1wstp">Fresh For Everyone</h3> <div class="section-text col-cnt-2 svelte-w1wstp"><p class="svelte-w1wstp"><strong>&quot;Fresh for Everyone&quot;</strong> is more than just a slogan; it&#39;s
+import{s as _,n as q}from"../chunks/scheduler.Yh7pOIz6.js";import{S as j,i as O,e as p,s as m,c as w,k as u,f as g,l as v,g as s,d as a}from"../chunks/index.hBS5QyE0.js";import{b as f}from"../chunks/paths.Vw1hqt_m.js";function B(W){let o,D=`<div class="wrapper svelte-w1wstp" style="padding: 3rem 1rem 0rem 1rem;"><img src="${f}/assets/kroger-footer-logo.png" alt="" style="max-height: 160px; width: auto; padding-left: 6rem;" class="svelte-w1wstp"/> <div class="list-itmes svelte-w1wstp"><h3>Roles</h3> <ul class="list-outside inline-block"><li>UX Researcher</li> <li>Product Designer</li></ul></div> <i style="font-size: 10px;">*Not all solutions can be shown due to intellectual property of client*</i></div> <div class="wrapper svelte-w1wstp"><section class="section-title svelte-w1wstp"><h3 class="svelte-w1wstp">Fresh For Everyone</h3> <div class="section-text col-cnt-2 svelte-w1wstp"><p class="svelte-w1wstp"><strong>&quot;Fresh for Everyone&quot;</strong> is more than just a slogan; it&#39;s
           the brand ethos that Kroger operates under. This universal tagline, in
           its simplicity and directness, is crafted to immediately convey an understanding
           of the uniquely egalitarian nature of the American brand. It underscores
@@ -36,14 +14,14 @@
           Seafood.</p></div></section></div> <div class="wrapper svelte-w1wstp"><section class="section-title svelte-w1wstp"><h3 class="svelte-w1wstp">Fresh Production</h3> <div class="section-text"><p class="svelte-w1wstp"><strong>Teamwork is key.</strong> I had an excellent team surrounding and
           supporting me on this product, but nothing would have gotten accomplished
           without my amazing product owner Sarah Pruscia and Technical Lead Ryan
-          Ware.</p></div></section> <div class="article-text img-col svelte-w1wstp"><div class="flex-img svelte-w1wstp"><img style="max-width: 111px" src="../../assets/headshotSarah.png" alt="" class="svelte-w1wstp"> <p class="svelte-w1wstp"><strong>Sarah Pruscia</strong> brought the project owner experience and
-          stability the team needed to bring the app enterprise wide.</p> <img style="max-width: 111px" src="../../assets/headshotRyan.png" alt="" class="svelte-w1wstp"> <p class="svelte-w1wstp"><strong>Ryan Ware</strong> knew Kroger&#39;s technical landscape inside and
+          Ware.</p></div></section> <div class="article-text img-col svelte-w1wstp"><div class="flex-img svelte-w1wstp"><img style="max-width: 111px" src="${f}/assets/headshotSarah.png" alt="" class="svelte-w1wstp"/> <p class="svelte-w1wstp"><strong>Sarah Pruscia</strong> brought the project owner experience and
+          stability the team needed to bring the app enterprise wide.</p> <img style="max-width: 111px" src="${f}/assets/headshotRyan.png" alt="" class="svelte-w1wstp"/> <p class="svelte-w1wstp"><strong>Ryan Ware</strong> knew Kroger&#39;s technical landscape inside and
           out, often leading to quicker and more quality solutions.</p></div> <div class="col-cnt-2 svelte-w1wstp"><p class="svelte-w1wstp"><strong>Meet the Team.</strong> Sarah Pruscia (left) joined our team a
           few months after I myself. Before her, we were a team without a product
           owner. Myself and the technical lead Ryan Ware (right), were wearing multiple
           hats, trying to keep the project moving forward. Once the three came together,
           progress of the app sped along.</p> <p class="svelte-w1wstp">Over the coming months the three of us were able to lead our team and
-          go from 5 test stores to launching enterprise wide in all bakeries.</p></div></div></div></nav> <div class="wrapper svelte-w1wstp" data-svelte-h="svelte-q02is1"><section class="section-title svelte-w1wstp"><h3 class="svelte-w1wstp">The Problem</h3> <div class="section-text"><p class="svelte-w1wstp"><strong>Updating Old Processes.</strong> In 2020, the world shut down for
+          go from 5 test stores to launching enterprise wide in all bakeries.</p></div></div></div>`,y,i,S=`<section class="section-title svelte-w1wstp"><h3 class="svelte-w1wstp">The Problem</h3> <div class="section-text"><p class="svelte-w1wstp"><strong>Updating Old Processes.</strong> In 2020, the world shut down for
         most people. Remote work became the new normal and software companies thrived.
         Kroger was in a unique situation however. While the general operations employees
         could work their jobs remotely, their in-store associates were considered
@@ -65,11 +43,11 @@
         like, trust or use the app. The Michigan store used the app but didn&#39;t
         trust the data. These interviews gave way to our first set of goals.</p></div></div> <div class="section-title svelte-w1wstp"><h3 class="svelte-w1wstp">Success Metrics</h3> <div class="paragraph"><p class="svelte-w1wstp"><strong>KPI&#39;s.</strong> There were multiple KPI’s (Key Performance Indicators}
         we established from quarter to quarter. But in the beginning we had 3 key
-        metrics to measure for our success</p> <ul><li>Adoption from our associates</li> <li>Shrink Reduction in the amount of product thrown away per store</li> <li>Financial Savings by stocking appropriate product amounts</li></ul></div></div></div> <div class="wrapper svelte-w1wstp" data-svelte-h="svelte-1jhh0kn"><div class="section-title svelte-w1wstp"><h3 class="svelte-w1wstp">App Breakdown</h3> <div class="paragraph"><p class="svelte-w1wstp"><strong>The Three Tasks.</strong> Bakery associates were tasked with three
+        metrics to measure for our success</p> <ul><li>Adoption from our associates</li> <li>Shrink Reduction in the amount of product thrown away per store</li> <li>Financial Savings by stocking appropriate product amounts</li></ul></div></div>`,b,r,C=`<div class="section-title svelte-w1wstp"><h3 class="svelte-w1wstp">App Breakdown</h3> <div class="paragraph"><p class="svelte-w1wstp"><strong>The Three Tasks.</strong> Bakery associates were tasked with three
         methods of stocking goods on the floor. Today&#39;s preperation, tomorrow&#39;s preperation
         and thawing freezer items. Each one would show what food they needed to prepare,
         and how much. The associate then needed to enter in the amount they actually
-        prepared for the day.</p> <img class="center svelte-w1wstp" src="../../assets/imgBakery.png" style="max-width: 300px;" alt=""> <figure class="img-figure-text center svelte-w1wstp">Simplified recreation of Fresh Production.</figure></div></div> <div class="article-text svelte-w1wstp"><div class="paragraph"><p class="svelte-w1wstp">Often times the associates would over produce claiming that the
+        prepared for the day.</p> <img class="center svelte-w1wstp" src="${f}/assets/imgBakery.png" style="max-width: 300px;" alt=""/> <figure class="img-figure-text center svelte-w1wstp">Simplified recreation of Fresh Production.</figure></div></div> <div class="article-text svelte-w1wstp"><div class="paragraph"><p class="svelte-w1wstp">Often times the associates would over produce claiming that the
         recommendation was innacurate. One of the things our app could not
         account for was local events that may drive production needs up.</p> <p class="svelte-w1wstp"><strong>Prep for Today.</strong> Associates in the Bakery baked a lot of
         fresh goods daily. Those goods, prepped the day before in the
@@ -82,7 +60,7 @@
         how much was on the floor at any given time. The only measure we had was
         how much the associate said they &quot;produced&quot; that day. This contributed to
         further innacuracies in what to produce on a given day. Our data was not
-        correct.</p></div></div></div> <div class="wrapper svelte-w1wstp" data-svelte-h="svelte-1sjv2mo"><div class="section-title svelte-w1wstp"><h3 class="svelte-w1wstp">Design Solution</h3> <div class="section-text"><p class="svelte-w1wstp"><strong>Design Thinking.</strong> After talking and visiting with the associates
+        correct.</p></div></div>`,k,n,L=`<div class="section-title svelte-w1wstp"><h3 class="svelte-w1wstp">Design Solution</h3> <div class="section-text"><p class="svelte-w1wstp"><strong>Design Thinking.</strong> After talking and visiting with the associates
         in the store, it was now time to solve any issues we uncovered and felt were
         priority for the team. We first would add a story to our backlog, assigned
         to me so that I can start mocking out a potential solution. Since we had
@@ -96,7 +74,7 @@
         adoption.</p> <blockquote class="svelte-w1wstp">They didn&#39;t trust the numbers and didn&#39;t want to get in trouble for
         under producing.</blockquote></div></div> <div class="article-text svelte-w1wstp"><div class="paragraph col-cnt-2 svelte-w1wstp"><p class="svelte-w1wstp">We performed a few exercises, one of which was <strong>Crazy 8&#39;s.</strong> I had our team of developers fold a piece of paper into 8 identical squares
         and then spend a minute per square coming up with ideas that can help us
-        better achieve accurate numbers.</p> <img src="../../assets/imgCrazy8.jpg" style="max-width: 300px;" alt="" class="svelte-w1wstp"> <figure class="img-figure-text svelte-w1wstp">Example of Crazy 8&#39;s solution.</figure> <p class="svelte-w1wstp">We came up with a counting solution. We wanted the associate to be able
+        better achieve accurate numbers.</p> <img src="${f}/assets/imgCrazy8.jpg" style="max-width: 300px;" alt="" class="svelte-w1wstp"/> <figure class="img-figure-text svelte-w1wstp">Example of Crazy 8&#39;s solution.</figure> <p class="svelte-w1wstp">We came up with a counting solution. We wanted the associate to be able
         to scan a certain display table and then count what was on it. This
         required multiple steps and a flow that needed to be both easy and
         accurate.</p> <p class="svelte-w1wstp">Our MVP to get this tested ended up being a one time setup where the
@@ -104,8 +82,8 @@
         table, and scan in items to that table. Once that setup was complete
         then the daily interaction for their frozen product would be to scan the
         barcode on the table, count the products on that table, and then get a
-        more accurate production number for the day.</p> <img src="../../assets/imgFlow.png" style="max-width: 300px;" alt="" class="svelte-w1wstp"> <figure class="img-figure-text center svelte-w1wstp">Example of Crazy 8&#39;s solution.</figure> <p class="svelte-w1wstp">I quickly prototyped the screens out and did an initial user test using
-        InVision.</p></div></div></div> <div class="wrapper svelte-w1wstp" data-svelte-h="svelte-c8hr45"><div class="section-title svelte-w1wstp"><h3 class="svelte-w1wstp">The Testing</h3> <div class="section-text"><p class="svelte-w1wstp"><strong>Into the Stores.</strong> My process for testing was to wire up the
+        more accurate production number for the day.</p> <img src="${f}/assets/imgFlow.png" style="max-width: 300px;" alt="" class="svelte-w1wstp"/> <figure class="img-figure-text center svelte-w1wstp">Example of Crazy 8&#39;s solution.</figure> <p class="svelte-w1wstp">I quickly prototyped the screens out and did an initial user test using
+        InVision.</p></div></div>`,x,l,H=`<div class="section-title svelte-w1wstp"><h3 class="svelte-w1wstp">The Testing</h3> <div class="section-text"><p class="svelte-w1wstp"><strong>Into the Stores.</strong> My process for testing was to wire up the
         mockups into InVision, do some basic interactions so the associate could
         tap through the flow, and pull it up on my phone to walk the associates through
         the new screens, asking questions along the way. For the most part I would
@@ -131,7 +109,7 @@
         new process. Once development was finished we did another round of
         testing with the actual device in our test stores. This allowed us to
         continually fix issues, create new enhancements, and ultimately push
-        this app out to all bakery departments across the country.</p></div></div></div> <div class="wrapper svelte-w1wstp" data-svelte-h="svelte-flj9ot"><div class="section-title svelte-w1wstp"><h3 class="svelte-w1wstp">Deploy the App</h3> <div class="section-text"><p class="svelte-w1wstp"><strong>Starting to Trust.</strong> This new solution took months to work
+        this app out to all bakery departments across the country.</p></div></div>`,T,c,P=`<div class="section-title svelte-w1wstp"><h3 class="svelte-w1wstp">Deploy the App</h3> <div class="section-text"><p class="svelte-w1wstp"><strong>Starting to Trust.</strong> This new solution took months to work
         out and develop. Myself and my product owner spent countless hours in stores
         and in meetings with business partners, making sure this solution solved
         the needs of the user and the business. We were confident it was. The feedback
@@ -144,7 +122,7 @@
         counting the items was quick due to being able to scan the barcode as
         well as count on the list of items.</p> <p class="svelte-w1wstp">Through our google analytics, we could see that daily usage of the app
         and daily completion of the tasks were on the rise. Associates were
-        using the app to complete their work for the day.</p></div></div></div> <div class="wrapper svelte-w1wstp" data-svelte-h="svelte-1i4utl5"><div class="section-title svelte-w1wstp"><h3 class="svelte-w1wstp">Goals</h3> <div class="section-text"><p class="svelte-w1wstp"><strong>Did we meet our KPI&#39;s?</strong> The short answer is yes, overtime.
+        using the app to complete their work for the day.</p></div></div>`,I,d,F=`<div class="section-title svelte-w1wstp"><h3 class="svelte-w1wstp">Goals</h3> <div class="section-text"><p class="svelte-w1wstp"><strong>Did we meet our KPI&#39;s?</strong> The short answer is yes, overtime.
         We were able to capture shrink numbers and determine that product was being
         sold around the same amount that was being produced. This was an estimated
         savings of $4M from enterprise launch.</p></div></div> <div class="section-title svelte-w1wstp"><h3 class="svelte-w1wstp">Next Up</h3> <div class="section-text"><p class="svelte-w1wstp"><strong>Expand into more departments!</strong> After Bakery was launched
@@ -156,40 +134,4 @@
         chicken!</p>
       Feel free to ask me more about this process. I applied much of what I learned
       from Bakery towards this new department but ultimately the worlds were very
-      different and new solutions needed to be created.</div></div></div> <div class="wrapper svelte-w1wstp" data-svelte-h="svelte-1xcjlph"><div class="btn-container svelte-w1wstp"><button><a href="../../">Return Home</a></button><button><a href="./../clc">CLC Lodging</a></button></div> </div> <footer class="svelte-zt8psm" data-svelte-h="svelte-91m2p9"><p class="svelte-zt8psm">Reprint 2024</p> <div class=" svelte-zt8psm"></div> </footer> 
-			
-			<script>
-				{
-					__sveltekit_ewfzx0 = {
-						assets: "/portfolio",
-						base: new URL("../..", location).pathname.slice(0, -1),
-						env: null
-					};
-
-					const element = document.currentScript.parentElement;
-
-					const data = [null,null];
-
-					Promise.all([
-						import("../../_app/immutable/entry/start.sTXnBUBF.js"),
-						import("../../_app/immutable/entry/app.JSCbRqku.js")
-					]).then(([kit, app]) => {
-						kit.start(app, element, {
-							node_ids: [0, 4],
-							data,
-							form: null,
-							error: null
-						});
-					});
-				}
-			</script>
-		
-
-    <script>
-      const theme = new URL(window.location).searchParams.get("theme");
-
-      document.body.classList.remove("light", "dark");
-      document.body.classList.add(theme || "light");
-    </script>
-  </body>
-</html>
+      different and new solutions needed to be created.</div></div>`,M,h,A=`<div class="btn-container svelte-w1wstp"><button><a href="${f}/">Return Home</a></button><button><a href="./../clc">CLC Lodging</a></button></div>`;return{c(){o=p("nav"),o.innerHTML=D,y=m(),i=p("div"),i.innerHTML=S,b=m(),r=p("div"),r.innerHTML=C,k=m(),n=p("div"),n.innerHTML=L,x=m(),l=p("div"),l.innerHTML=H,T=m(),c=p("div"),c.innerHTML=P,I=m(),d=p("div"),d.innerHTML=F,M=m(),h=p("div"),h.innerHTML=A,this.h()},l(e){o=w(e,"NAV",{class:!0,"data-svelte-h":!0}),u(o)!=="svelte-1dq0oyy"&&(o.innerHTML=D),y=g(e),i=w(e,"DIV",{class:!0,"data-svelte-h":!0}),u(i)!=="svelte-q02is1"&&(i.innerHTML=S),b=g(e),r=w(e,"DIV",{class:!0,"data-svelte-h":!0}),u(r)!=="svelte-1jhh0kn"&&(r.innerHTML=C),k=g(e),n=w(e,"DIV",{class:!0,"data-svelte-h":!0}),u(n)!=="svelte-1sjv2mo"&&(n.innerHTML=L),x=g(e),l=w(e,"DIV",{class:!0,"data-svelte-h":!0}),u(l)!=="svelte-c8hr45"&&(l.innerHTML=H),T=g(e),c=w(e,"DIV",{class:!0,"data-svelte-h":!0}),u(c)!=="svelte-flj9ot"&&(c.innerHTML=P),I=g(e),d=w(e,"DIV",{class:!0,"data-svelte-h":!0}),u(d)!=="svelte-1i4utl5"&&(d.innerHTML=F),M=g(e),h=w(e,"DIV",{class:!0,"data-svelte-h":!0}),u(h)!=="svelte-1xcjlph"&&(h.innerHTML=A),this.h()},h(){v(o,"class","svelte-w1wstp"),v(i,"class","wrapper svelte-w1wstp"),v(r,"class","wrapper svelte-w1wstp"),v(n,"class","wrapper svelte-w1wstp"),v(l,"class","wrapper svelte-w1wstp"),v(c,"class","wrapper svelte-w1wstp"),v(d,"class","wrapper svelte-w1wstp"),v(h,"class","wrapper svelte-w1wstp")},m(e,t){s(e,o,t),s(e,y,t),s(e,i,t),s(e,b,t),s(e,r,t),s(e,k,t),s(e,n,t),s(e,x,t),s(e,l,t),s(e,T,t),s(e,c,t),s(e,I,t),s(e,d,t),s(e,M,t),s(e,h,t)},p:q,i:q,o:q,d(e){e&&(a(o),a(y),a(i),a(b),a(r),a(k),a(n),a(x),a(l),a(T),a(c),a(I),a(d),a(M),a(h))}}}class E extends j{constructor(o){super(),O(this,o,null,B,_,{})}}export{E as component};

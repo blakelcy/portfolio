@@ -346,7 +346,7 @@
 
 <div class="wrapper">
   <div class="btn-container">
-    <button><a href="/">Return Home</a></button><button
+    <button><a href="{base}/">Return Home</a></button><button
       ><a href="./../kroger">Kroger</a></button
     >
   </div>
