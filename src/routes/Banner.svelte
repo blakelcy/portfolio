@@ -1,11 +1,12 @@
 <script>
-  const imgUrl = new URL("./pnw_forest.png", import.meta.url).href;
+  // @ts-ignore
+  import imgBanner from "$lib/assets/pnw_forest.png?enhanced";
 </script>
 
 <section class="grid-full banner-container">
-  <img
+  <enhanced:img
     class="banner-image"
-    src={imgUrl}
+    src={imgBanner}
     alt="MidJourney generated image of a forest in the Pacific North West"
   />
 </section>
@@ -14,7 +15,7 @@
   .banner-container {
     position: relative;
     overflow: hidden;
-    max-height: 800px;
+    max-height: 600px;
   }
 
   /* Optional styling for the image */

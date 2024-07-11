@@ -4,19 +4,12 @@
 
 <nav>
   <div class="wrapper">
-    <img
+    <enhanced:img
       style="max-width: 400px"
       src="{base}/assets/clcLodgingLog.png"
       alt=""
     />
-    <div class="list-itmes">
-      <h3>Roles</h3>
-      <ul>
-        <li>UX Researcher</li>
-        <li>Product Desiner</li>
-        <li>Business Analyst</li>
-      </ul>
-    </div>
+    <div class="list-itmes"></div>
   </div>
   <div class="wrapper">
     <section class="section-title">
@@ -37,7 +30,7 @@
     </section>
     <div class="article-text img-col">
       <div class="flex-img">
-        <img
+        <enhanced:img
           style="max-width: 111px"
           src="{base}/assets/headshotCasey.png"
           alt=""
@@ -84,7 +77,7 @@
     </section>
     <div class="article-text img-col">
       <div class="flex-img">
-        <img
+        <enhanced:img
           style="max-width: 111px"
           src="{base}/assets/headshotCasey.png"
           alt=""
@@ -92,7 +85,7 @@
         <p>
           <strong>Casey B.</strong> Senior Analyst and Designer.
         </p>
-        <img
+        <enhanced:img
           style="max-width: 80px"
           src="{base}/assets/headshotNiaSimone.png"
           alt=""
@@ -167,7 +160,7 @@
         mockups for the Search, Hotel Details, and Hotel Booking screens.
       </p>
     </div>
-    <img src="{base}/assets/figure1.png" alt="" />
+    <enhanced:img src="{base}/assets/figure1.png" alt="" />
     <figure class="img-figure-text">
       Example slide from the Heuristic Analysis for CLC
     </figure>
@@ -209,10 +202,8 @@
         ultimately wanted to move forward with a full redesign of the app.
       </p>
     </div>
-  </div>
-  <div class="article-text img-col">
-    <img
-      style="max-width: 300px; align-self: start;"
+    <enhanced:img
+      style="max-width: 274px; align-self: end;"
       src="{base}/assets/figure2.png"
       alt=""
     />
@@ -242,13 +233,13 @@
           implemented.
         </p>
       </div>
-      <img src="{base}/assets/figure3.png" style="max-width: 500px;" alt="" />
+      <enhanced:img src="{base}/assets/figure3.png" alt="" />
       <figure class="img-figure-text">
         Mural canvas for CLC discoveries (not all shown)
       </figure>
     </div>
   </div>
-  <div class="article-text grid-col-3">
+  <div class="article-text grid-col-2">
     <div class="">
       <p>
         I lead the discovery sessions with support from Nia-Simone. The goal
@@ -291,6 +282,19 @@
       </p>
     </div>
   </div>
+  <section class="section-title">
+    <h3>Departure</h3>
+    <div class="section-text">
+      <p>
+        <strong>Moving on.</strong> Before I could see the redesign fully implemented,
+        I made the decision to leave my company BDO.
+      </p>
+      <p>
+        As of the time of writing this study, I am unable to determine if the
+        full redesign has been implemented.
+      </p>
+    </div>
+  </section>
 </div>
 <div class="wrapper">
   <div class="section-title grid-col-3">
@@ -309,7 +313,7 @@
           the development team.
         </p>
       </div>
-      <img src="{base}/assets/hrz-figure4.png" alt="" />
+      <enhanced:img src="{base}/assets/hrz-figure4.png" alt="" />
       <figure class="img-figure-text">
         Redesigned screens of the major flow
       </figure>
@@ -317,7 +321,7 @@
   </div>
   <div class="section-title grid-col-3">
     <div class="test">
-      <img src="{base}/assets/figure5.png" alt="" />
+      <enhanced:img src="{base}/assets/figure5.png" alt="" />
       <figure class="img-figure-text">
         Previous screens of the major flow
       </figure>
@@ -336,7 +340,7 @@
           list items.
         </p>
       </div>
-      <img src="{base}/assets/figure6.png" alt="" />
+      <enhanced:img src="{base}/assets/figure6.png" alt="" />
       <figure class="img-figure-text">
         Structure page of the guidelines prototype created for CLC
       </figure>
@@ -459,7 +463,7 @@
   }
 
   .img-figure-text {
-    text-align: left;
+    text-align: right;
     color: rgba(13, 13, 13, 0.6);
     font-size: 0.75rem;
   }

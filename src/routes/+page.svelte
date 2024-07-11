@@ -17,7 +17,7 @@
       paragraph1:
         "Product designer for their fresh department associates. (Case Study in Progress)",
       paragraph2: "",
-      link: "#",
+      link: "/case-study/kroger",
     },
     {
       image: truckerImg,
@@ -33,7 +33,7 @@
       company: "Kwipoo",
       paragraph1: "Co-Founder (More to come!)",
       paragraph2: "",
-      link: "#",
+      link: "/case-study/kwipoo",
     },
     // Add more cards as needed
   ];
