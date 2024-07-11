@@ -384,14 +384,10 @@
         chicken!
       </p>
       <p>
-        <strong>Expand into more departments!</strong> After Bakery was launched
-        we immediately went into discovery with the Deli Department. New challenges
-        awaited us in terms of temperature control, pre-sliced deli meats, and rotisserie
-        chicken!
+        Feel free to ask me more about this process. I applied much of what I
+        learned from Bakery towards this new department but ultimately the
+        worlds were very different and new solutions needed to be created.
       </p>
-      Feel free to ask me more about this process. I applied much of what I learned
-      from Bakery towards this new department but ultimately the worlds were very
-      different and new solutions needed to be created.
     </div>
   </div>
 </div>
