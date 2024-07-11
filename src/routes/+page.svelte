@@ -14,8 +14,7 @@
       image: groceryImg,
       alt: "ai generated image of a grocery store",
       company: "The Kroger Company * Product Designer UI/UX",
-      paragraph1:
-        "Product designer for their fresh department associates. (Case Study in Progress)",
+      paragraph1: "Product designer for their fresh department associates.",
       paragraph2: "",
       link: "/case-study/kroger",
     },
