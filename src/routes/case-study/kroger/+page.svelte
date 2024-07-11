@@ -6,11 +6,7 @@
 
 <nav>
   <div class="wrapper" style="padding: 3rem 1rem 0rem 1rem;">
-    <img
-      src="{base}/assets/kroger-footer-logo.png"
-      alt=""
-      style="max-height: 160px; width: auto; padding-left: 6rem;"
-    />
+    <img class="nav-img" src="{base}/assets/kroger-footer-logo.png" alt="" />
     <div class="list-itmes">
       <h3>Roles</h3>
       <ul class="list-outside inline-block">
@@ -18,7 +14,7 @@
         <li>Product Designer</li>
       </ul>
     </div>
-    <i style="font-size: 10px;"
+    <i class="disclaimer"
       >*Not all solutions can be shown due to intellectual property of client*</i
     >
   </div>
@@ -266,7 +262,7 @@
       </p>
       <img src="{base}/assets/imgFlow.png" style="max-width: 300px;" alt="" />
       <figure class="img-figure-text center">
-        Example of Crazy 8's solution.
+        Quick user flow of solution.
       </figure>
       <p>
         I quickly prototyped the screens out and did an initial user test using
@@ -408,6 +404,20 @@
     & .wrapper:first-child {
       padding: 0;
     }
+  }
+
+  .nav-img {
+    width: auto;
+    padding-left: 6rem;
+
+    @media screen and (min-width: 960px) {
+      max-height: 160px;
+    }
+  }
+
+  .disclaimer {
+    font-size: 0.75rem;
+    text-align: center;
   }
   .wrapper {
     display: flex;

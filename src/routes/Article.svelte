@@ -46,7 +46,7 @@
     padding: 1rem;
 
     &.redText {
-      color: red;
+      color: rgb(208, 20, 20);
     }
 
     & > .wrapper {

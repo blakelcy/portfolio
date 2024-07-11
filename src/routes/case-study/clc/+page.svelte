@@ -6,6 +6,7 @@
   <div class="wrapper">
     <img
       style="max-width: 400px"
+      class="center"
       src="{base}/assets/clcLodgingLog.png"
       alt=""
     />
@@ -30,8 +31,10 @@
         </p>
         <p>
           <strong>Requests.</strong> CLC approached BDO, the company I was
-          working for, asking for a <i>Heuristic Analysis</i> of their current mobile
-          applications.
+          working for, asking for us to review their app, figure out what
+          improvements needed to be made and present a few updated concept
+          mockups to them. It was decided to run a <i>Heuristic Analysis</i> of their
+          current mobile application as a guide for improvements to be made.
         </p>
       </div>
     </section>
@@ -51,10 +54,10 @@
       <div class="">
         <p>
           <strong>Reaction.</strong> I presented the Analysis findings along with
-          the concept mockups based on those finding to the stakeholders of CLC Lodging.
-          Walking through the different heuristics first making sure they understood
-          what I was about to discuss. After spending time on the poor or failing
-          pages, I showed off the concepts mocks.
+          the concept mockups based on those findings to the stakeholders of CLC
+          Lodging. Walking through the different heuristics first making sure they
+          understood what I was about to discuss. After spending time on the poor
+          or failing pages, I showed off the concepts mocks.
         </p>
         <p>
           Talking through the different changes I was proposing I wanted to make
@@ -212,11 +215,14 @@
   </div>
   <div class="article-text img-col">
     <img
+      class="center"
       style="max-width: 300px; align-self: start;"
       src="{base}/assets/figure2.png"
       alt=""
     />
-    <figure class="img-figure-text">Mockup of the Hotel Details screen</figure>
+    <figure class="img-figure-text center">
+      Mockup of the Hotel Details screen
+    </figure>
   </div>
 </div>
 <div class="wrapper">
@@ -364,7 +370,7 @@
   .wrapper {
     display: flex;
     flex-direction: column;
-    padding: 2rem 1rem 1rem 1rem;
+    padding: 1rem;
 
     & > * {
       margin-bottom: 1rem;
@@ -474,13 +480,17 @@
   }
 
   .img-figure-text {
-    text-align: right;
+    text-align: left;
     color: rgba(13, 13, 13, 0.6);
     margin-top: 0.5rem;
     font-size: 0.75rem;
 
     &.center {
       text-align: center;
+
+      @media screen and (min-width: 960px) {
+        text-align: left;
+      }
     }
   }
 
