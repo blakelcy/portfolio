@@ -33,7 +33,7 @@
       company: "Kwipoo",
       paragraph1: "Co-Founder (More to come!)",
       paragraph2: "",
-      link: "/case-study/kwipoo",
+      link: "",
     },
     // Add more cards as needed
   ];
