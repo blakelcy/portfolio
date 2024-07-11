@@ -310,7 +310,7 @@
         </p>
       </div>
       <img src="{base}/assets/hrz-figure4.png" alt="" />
-      <figure class="img-figure-text">
+      <figure class="img-figure-text center">
         Redesigned screens of the major flow
       </figure>
     </div>
@@ -341,6 +341,14 @@
         Structure page of the guidelines prototype created for CLC
       </figure>
     </div>
+  </div>
+</div>
+
+<div class="wrapper">
+  <div class="btn-container">
+    <button><a href="/">Return Home</a></button><button
+      ><a href="./../kroger">Kroger</a></button
+    >
   </div>
 </div>
 
@@ -458,9 +466,75 @@
     width: 100%;
   }
 
+  img.center {
+    margin: 0 auto;
+    @media screen and (min-width: 960px) {
+      margin: 0;
+    }
+  }
+
   .img-figure-text {
-    text-align: left;
+    text-align: right;
     color: rgba(13, 13, 13, 0.6);
+    margin-top: 0.5rem;
     font-size: 0.75rem;
+
+    &.center {
+      text-align: center;
+    }
+  }
+
+  .list-itmes {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    @media screen and (min-width: 960px) {
+      flex-direction: row;
+    }
+    & h3 {
+      padding-bottom: 1rem;
+      text-align: center;
+      text-decoration: underline;
+
+      @media screen and (min-width: 960px) {
+        padding-bottom: 0px;
+        text-align: left;
+        text-decoration: none;
+      }
+    }
+    & ul {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+
+      @media screen and (min-width: 960px) {
+        flex-direction: row;
+        gap: 1.5rem;
+      }
+    }
+  }
+  .btn-container {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+
+    @media screen and (min-width: 960px) {
+      flex-direction: row;
+      margin: 0 auto;
+    }
+
+    & button {
+      background-color: #6f4930;
+      border: none;
+      border-radius: 0.75rem;
+
+      & a {
+        display: block;
+        color: white;
+        text-decoration: none;
+        padding: 0.75rem 1rem;
+      }
+    }
   }
 </style>

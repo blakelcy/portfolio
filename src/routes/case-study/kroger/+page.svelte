@@ -15,9 +15,12 @@
       <h3>Roles</h3>
       <ul class="list-outside inline-block">
         <li>UX Researcher</li>
-        <li>Product Desiner</li>
+        <li>Product Designer</li>
       </ul>
     </div>
+    <i style="font-size: 10px;"
+      >*Not all solutions can be shown due to intellectual property of client*</i
+    >
   </div>
   <div class="wrapper">
     <section class="section-title">
@@ -88,8 +91,8 @@
         </p>
 
         <p>
-          Over the coming months the three of us were able to go from 5 test
-          stores to launching enterprise wide in all bakeries.
+          Over the coming months the three of us were able to lead our team and
+          go from 5 test stores to launching enterprise wide in all bakeries.
         </p>
       </div>
     </div>
@@ -168,103 +171,91 @@
         and how much. The associate then needed to enter in the amount they actually
         prepared for the day.
       </p>
-      <img src="{base}/assets/imgBakery.png" style="max-width: 300px;" alt="" />
-      <figure class="img-figure-text">
+      <img
+        class="center"
+        src="{base}/assets/imgBakery.png"
+        style="max-width: 300px;"
+        alt=""
+      />
+      <figure class="img-figure-text center">
         Simplified recreation of Fresh Production.
       </figure>
     </div>
   </div>
   <div class="article-text">
-    <div class="paragraph col-cnt-2">
+    <div class="paragraph">
       <p>
         Often times the associates would over produce claiming that the
-        recommendation was innacurate.
+        recommendation was innacurate. One of the things our app could not
+        account for was local events that may drive production needs up.
+      </p>
+      <p>
+        <strong>Prep for Today.</strong> Associates in the Bakery baked a lot of
+        fresh goods daily. Those goods, prepped the day before in the
+        <strong>Prep for Tomorrow</strong> task flow, were packaged and placed on
+        the store floor. This was able to be accurately accounted for because the
+        product prepped had a different ID than the product created. We knew how
+        much quantity was in the store and from that could calculate usage.
+      </p>
+      <p>
+        <strong>Thaw & Sell.</strong> Because thawed items had the same ID both in
+        the freezer and on the store floor, it was very difficult to know accurate
+        quantities. Sure we could tell when an item was sold, but we had no idea
+        how much was on the floor at any given time. The only measure we had was
+        how much the associate said they "produced" that day. This contributed to
+        further innacuracies in what to produce on a given day. Our data was not
+        correct.
       </p>
     </div>
   </div>
 </div>
-<div class="wrapper">
-  <div class="section-title">
-    <h3>Iteration to Enterprise</h3>
-    <div class="section-text">
-      <p>
-        At first, my process was simple, and in truth laid the foundation of how
-        the app evolved. I would walk in to a store, quick meet and greet with
-        the department lead and associates, determine who was performing what
-        task both on the app and physically, ask some initial questions or
-        perform a user testing interview on a new flow, then proceed to get out
-        of the way as much as possible.
-      </p>
-      <p>
-        Keep in mind this was early 2021, Covid 19 had hit everyone hard,
-        especially front line workers, the very associates I would be talking
-        to. You don’t need me to tell you just how overworked these people were,
-        but I will. They were overworked and understaffed to a level that anyone
-        not working in one of these front lines can’t understand. While I
-        couldn’t help with that, I realized I would be the one helping them in
-        other ways, making their job as easy as possible through this app, and
-        advocating on their behalf to drive features and functionality that will
-        ultimately ease their day to day.
-      </p>
-    </div>
-  </div>
-  <div class="article-text">
-    <div class="paragraph col-cnt-2">
-      <p>
-        The app was pretty simple at this point, you had some set tasks to
-        perform, once you start the task, the app tells you how much you need to
-        make of that product that day. Once you made the product you would then
-        confirm the amount you made, either more or less than recommended.
-      </p>
-      <p>
-        So I talked to the users, what was found confirmed what we expected. Our
-        numbers were different than what they were used to and that they
-        couldn’t use it for any of their frozen products. We knew we had to
-        solve for frozen products, more on that later, and we assumed our
-        numbers were more accurate than what the associates were doing. We had
-        numbers and algorithms on our side, all they had were decades of
-        experience and knowledge about their community. Clearly we were wrong
-        and we started on the journey to make this app better.
-      </p>
-    </div>
-  </div>
-</div>
+
 <div class="wrapper">
   <div class="section-title">
     <h3>Design Solution</h3>
     <div class="section-text">
       <p>
-        After talking and visiting with the associates in the store, it was now
-        time to solve any issues we uncovered and felt were priority for the
-        team. We first would add a story to our backlog, assigned to me so that
-        I can start mocking out a potential solution. Since we had such a robust
-        Design System in place, most of my “low fidelity” wireframes were more
-        in the “high fidelity” realm. Often times I would just “sketch” in
-        Sketch, our chosen design tool. For more complex issues, or for newer,
+        <strong>Design Thinking.</strong> After talking and visiting with the associates
+        in the store, it was now time to solve any issues we uncovered and felt were
+        priority for the team. We first would add a story to our backlog, assigned
+        to me so that I can start mocking out a potential solution. Since we had
+        such a robust Design System in place, most of my “low fidelity” wireframes
+        were more in the “high fidelity” realm. Often times I would just “sketch”
+        in Sketch, our chosen design tool. For more complex issues, or for newer,
         non design system components, I would revert to pen and paper to quickly
         hash out ideas. For the beginning of this app however, we had the design
         in place. The problems came from accuracy of numbers and user adoption.
       </p>
+
       <p>
-        For that frozen problem I previously mentioned, it came down to not
-        being able to know the difference between what was in the freezer and
-        what was thawed and placed on the shelf for the customers to pick up.
-        Our back end systems had no distinction. The solution was for the
-        associate to do a salesfloor count first thing in the morning and then
-        do their regular activities. This would keep a consistent production
-        number within our app.
+        I ran afew workshops within the team to brainstorm solutions for the
+        accuracy issue. I felt this was the bigger deterrant in terms of user
+        adoption.
       </p>
+      <blockquote>
+        They didn't trust the numbers and didn't want to get in trouble for
+        under producing.
+      </blockquote>
     </div>
   </div>
   <div class="article-text">
     <div class="paragraph col-cnt-2">
       <p>
-        We had most of the components created so it became more about the
-        experience of the solution. We wanted this to be as easy and quick as
-        possible to avoid the associate feeling that they are just doing another
-        scan. Eventually we were able to expand this and integrate into other
-        apps that performed scans, but that was a long journey.
+        We performed a few exercises, one of which was <strong
+          >Crazy 8's.</strong
+        > I had our team of developers fold a piece of paper into 8 identical squares
+        and then spend a minute per square coming up with ideas that can help us
+        better achieve accurate numbers.
       </p>
+      <img src="{base}/assets/imgCrazy8.jpg" style="max-width: 300px;" alt="" />
+      <figure class="img-figure-text">Example of Crazy 8's solution.</figure>
+      <p>
+        We came up with a counting solution. We wanted the associate to be able
+        to scan a certain display table and then count what was on it. This
+        required multiple steps and a flow that needed to be both easy and
+        accurate.
+      </p>
+
       <p>
         Our MVP to get this tested ended up being a one time setup where the
         associate would print out a unique barcode, stick it to their physical
@@ -273,6 +264,10 @@
         barcode on the table, count the products on that table, and then get a
         more accurate production number for the day.
       </p>
+      <img src="{base}/assets/imgFlow.png" style="max-width: 300px;" alt="" />
+      <figure class="img-figure-text center">
+        Example of Crazy 8's solution.
+      </figure>
       <p>
         I quickly prototyped the screens out and did an initial user test using
         InVision.
@@ -285,18 +280,15 @@
     <h3>The Testing</h3>
     <div class="section-text">
       <p>
-        My process for testing was to slap the mockups into InVision, do some
-        basic interactions, and pull it up on my phone to walk the associates
-        through the new screens, asking questions along the way. For the most
-        part I would give the associate a high level overview of what they are
-        going to be seeing with the problem we are hoping to solve, but largely
-        let them interact with the prototype on their own and observe any
-        struggles they encounter or any validations of the designs.
+        <strong>Into the Stores.</strong> My process for testing was to wire up the
+        mockups into InVision, do some basic interactions so the associate could
+        tap through the flow, and pull it up on my phone to walk the associates through
+        the new screens, asking questions along the way. For the most part I would
+        give the associate a high level overview of what they are going to be seeing
+        with the problem we are hoping to solve, but largely let them interact with
+        the prototype on their own and observe any struggles they encounter or any
+        validations of the designs.
       </p>
-    </div>
-  </div>
-  <div class="article-text">
-    <div class="paragraph col-cnt-3">
       <p>
         Testing proved to be a little tricky to work through. Often times they
         would notice things like wrong product imagery or incorrect product in
@@ -305,6 +297,10 @@
         the prototyping tool and how I would not wire up the sections of the app
         I wasn’t trying to test.
       </p>
+    </div>
+  </div>
+  <div class="article-text">
+    <div class="paragraph col-cnt-2">
       <p>
         For the new counting feature, I tested in a few stores that weren’t
         familiar with the app to get a fresh impression, as well as another trip
@@ -314,8 +310,8 @@
         understood the need and the outcome. For our Michigan store, they were
         not overly excited about having to count more, but said the process
         seemed quick and easy enough to complete. We found that giving them
-        control of their table and products, correlating that the count they
-        perform directly impacts the amount they will produce, greatly increased
+        control of their table and products and that seeing the count they
+        performed directly impacted the amount they produced, greatly increased
         the trust in the app.
       </p>
       <p>
@@ -326,6 +322,85 @@
         this app out to all bakery departments across the country.
       </p>
     </div>
+  </div>
+</div>
+
+<div class="wrapper">
+  <div class="section-title">
+    <h3>Deploy the App</h3>
+    <div class="section-text">
+      <p>
+        <strong>Starting to Trust.</strong> This new solution took months to work
+        out and develop. Myself and my product owner spent countless hours in stores
+        and in meetings with business partners, making sure this solution solved
+        the needs of the user and the business. We were confident it was. The feedback
+        was positve on both sides.
+      </p>
+      <p>
+        So we launched the app enterprise wide. We created training documents in
+        the app as well as printables for stores. In tandum with our UI
+        solution, we also spent time with our data partners cleaning and fixing
+        our data.
+      </p>
+    </div>
+  </div>
+  <div class="article-text">
+    <div class="paragraph">
+      <p>
+        I won't say we satisfied every associate but the feedback we were
+        getting from leadership and the stores I was able to talk with was
+        positive. After the one time setup of tables, associates found that
+        counting the items was quick due to being able to scan the barcode as
+        well as count on the list of items.
+      </p>
+      <p>
+        Through our google analytics, we could see that daily usage of the app
+        and daily completion of the tasks were on the rise. Associates were
+        using the app to complete their work for the day.
+      </p>
+    </div>
+  </div>
+</div>
+
+<div class="wrapper">
+  <div class="section-title">
+    <h3>Goals</h3>
+    <div class="section-text">
+      <p>
+        <strong>Did we meet our KPI's?</strong> The short answer is yes, overtime.
+        We were able to capture shrink numbers and determine that product was being
+        sold around the same amount that was being produced. This was an estimated
+        savings of $4M from enterprise launch.
+      </p>
+    </div>
+  </div>
+  <div class="section-title">
+    <h3>Next Up</h3>
+    <div class="section-text">
+      <p>
+        <strong>Expand into more departments!</strong> After Bakery was launched
+        we immediately went into discovery with the Deli Department. New challenges
+        awaited us in terms of temperature control, pre-sliced deli meats, and rotisserie
+        chicken!
+      </p>
+      <p>
+        <strong>Expand into more departments!</strong> After Bakery was launched
+        we immediately went into discovery with the Deli Department. New challenges
+        awaited us in terms of temperature control, pre-sliced deli meats, and rotisserie
+        chicken!
+      </p>
+      Feel free to ask me more about this process. I applied much of what I learned
+      from Bakery towards this new department but ultimately the worlds were very
+      different and new solutions needed to be created.
+    </div>
+  </div>
+</div>
+
+<div class="wrapper">
+  <div class="btn-container">
+    <button><a href="/">Return Home</a></button><button
+      ><a href="./../clc">CLC Lodging</a></button
+    >
   </div>
 </div>
 
@@ -443,10 +518,22 @@
     width: 100%;
   }
 
+  img.center {
+    margin: 0 auto;
+    @media screen and (min-width: 960px) {
+      margin: 0;
+    }
+  }
+
   .img-figure-text {
     text-align: right;
     color: rgba(13, 13, 13, 0.6);
+    margin-top: 0.5rem;
     font-size: 0.75rem;
+
+    &.center {
+      text-align: center;
+    }
   }
 
   .list-itmes {
@@ -476,6 +563,38 @@
       @media screen and (min-width: 960px) {
         flex-direction: row;
         gap: 1.5rem;
+      }
+    }
+  }
+
+  blockquote {
+    padding: 1rem;
+    background-color: #6f4930;
+    color: #fff;
+    border-radius: 0.75rem;
+    font-style: italic;
+  }
+
+  .btn-container {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+
+    @media screen and (min-width: 960px) {
+      flex-direction: row;
+      margin: 0 auto;
+    }
+
+    & button {
+      background-color: #6f4930;
+      border: none;
+      border-radius: 0.75rem;
+
+      & a {
+        display: block;
+        color: white;
+        text-decoration: none;
+        padding: 0.75rem 1rem;
       }
     }
   }
