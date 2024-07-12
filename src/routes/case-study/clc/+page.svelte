@@ -145,7 +145,7 @@
       <p>
         From there I decided to break the flow into the four different micro
         flows and perform the analysis on each. I gave each screen in the flow a
-        status; Good, Poor, Fail. If the screen didn’t pass a particular
+        status; <strong>Good, Poor, Fail.</strong> If the screen didn’t pass a particular
         heuristic I marked and explained why.
       </p>
     </div>
@@ -161,9 +161,9 @@
         UI with more consistency between component usage. Some key issues of note
         were it was pretty poor at letting the user know what the error was, leading
         to frustrations. These frustrations were clearly shown in the apps reviews.
-        Additionally there were components that looked like they were a button for
-        example, and yet it acted as a tab. However there were other UI versions
-        of tabs making the interaction confusing.
+        Additionally there were components that looked like they were a button and
+        yet it acted as a tab. What created further confusion was that there were
+        other versions of tabs that made the interaction uncertain.
       </p>
       <p>
         In addition to the heuristic analysis, I created a set of concept

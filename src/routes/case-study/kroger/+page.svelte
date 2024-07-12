@@ -144,7 +144,7 @@
     <h3>Success Metrics</h3>
     <div class="paragraph">
       <p>
-        <strong>KPI's.</strong> There were multiple KPI’s (Key Performance Indicators}
+        <strong>KPI's.</strong> There were multiple KPI’s (Key Performance Indicators)
         we established from quarter to quarter. But in the beginning we had 3 key
         metrics to measure for our success
       </p>
@@ -224,7 +224,7 @@
       </p>
 
       <p>
-        I ran afew workshops within the team to brainstorm solutions for the
+        I ran a few workshops within the team to brainstorm solutions for the
         accuracy issue. I felt this was the bigger deterrant in terms of user
         adoption.
       </p>

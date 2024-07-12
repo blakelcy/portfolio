@@ -1,31 +1,38 @@
-<script>
-  // @ts-ignore
-  import imgBanner from "$lib/assets/pnw_forest.png?enhanced";
-</script>
-
-<section class="grid-full banner-container">
-  <enhanced:img
-    class="banner-image"
-    src={imgBanner}
-    alt="MidJourney generated image of a forest in the Pacific North West"
-  />
+<section class="hero-image">
+  <div class="hero-text">
+    <h1>SR. Product Designer and Strategist</h1>
+    <p>Celebrating over 10 years of product development and design.</p>
+  </div>
 </section>
 
-<style>
-  .banner-container {
+<style lang="scss">
+  .hero-image {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+      url("/src/routes/pnw_forest.png");
+    height: calc(100vh / 2);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
     position: relative;
-    overflow: hidden;
-    max-height: 600px;
   }
+  .hero-text {
+    text-align: left;
+    position: absolute;
+    top: 20%;
+    left: 10%;
+    transform: translate(-10%, -20%);
+    color: white;
 
-  /* Optional styling for the image */
-  .banner-image {
-    display: block;
-    width: 100%;
-    transition: transform 0.33s ease;
-  }
-
-  .banner-image:hover {
-    transform: scale(1.1);
+    & > h1 {
+      font-size: 2rem;
+      max-width: 350px;
+      padding-bottom: 0.5rem;
+      line-height: 1.1;
+    }
+    & > p {
+      font-size: 1rem;
+      max-width: 200px;
+      line-height: 1.5;
+    }
   }
 </style>
