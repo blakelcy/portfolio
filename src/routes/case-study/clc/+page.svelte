@@ -14,7 +14,7 @@
       <h3>Roles</h3>
       <ul>
         <li>UX Researcher</li>
-        <li>Product Desiner</li>
+        <li>Product Designer</li>
         <li>Business Analyst</li>
       </ul>
     </div>
@@ -46,8 +46,8 @@
           alt=""
         />
         <p>
-          <strong>Casey B.</strong> Senior Analyst and Designer/Researcher, Casey
-          performed the initial Heuristic Analysis on the CLC Mobile application
+          <strong>Casey Blakely.</strong> Senior Analyst and Designer/Researcher,
+          Casey performed the initial Heuristic Analysis on the CLC Mobile application
           as well as created concept redesign mocks.
         </p>
       </div>
@@ -57,7 +57,7 @@
           the concept mockups based on those findings to the stakeholders of CLC
           Lodging. Walking through the different heuristics first making sure they
           understood what I was about to discuss. After spending time on the poor
-          or failing pages, I showed off the concepts mocks.
+          or failing pages, I showed off the concept mocks.
         </p>
         <p>
           Talking through the different changes I was proposing I wanted to make
@@ -80,7 +80,7 @@
         </p>
         <p>
           A new team member was added, Nia-Simone Ecleston, and together Casey
-          lead discovery sessions to uncover further understanding of the apps
+          led discovery sessions to uncover further understanding of the app's
           functionality and pain points.
         </p>
       </div>
@@ -93,7 +93,7 @@
           alt=""
         />
         <p>
-          <strong>Casey B.</strong> Senior Analyst and Designer.
+          <strong>Casey Blakely.</strong> Senior Analyst and Designer.
         </p>
         <img
           style="max-width: 80px"
@@ -101,13 +101,13 @@
           alt=""
         />
         <p>
-          <strong>Nia-Simone.</strong> Analyst and Designer
+          <strong>Nia-Simone.</strong> Analyst and Designer.
         </p>
       </div>
       <div class="col-cnt-2">
         <p>
-          <strong>Meet the Team.</strong> Casey Blakely (left) lead the team with
-          support from Nia-Simone (right). Discovery sessions were setup to go over
+          <strong>Meet the Team.</strong> Casey Blakely (left) led the team with
+          support from Nia-Simone (right). Discovery sessions were set up to go over
           individual app screens and potential changes. Nia-Simone was then able
           to redesign screens with oversight and support from Casey. Casey was then
           able to assist in development efforts by being the analyst/designer, making
@@ -115,14 +115,14 @@
         </p>
         <p>
           <strong>Guidelines.</strong> The last deliverable was a guideline document
-          outlining the design changes made by the design team. As we were contractors
-          we wanted to make sure there was a reference for CLC if we were no longer
+          outlining the design changes made by the design team. Since I was a contractor
+          I wanted to make sure there was a reference for CLC if I was no longer
           engaged with them.
         </p>
         <p>
           Outlined in the document were typography, color and spacing usages.
           Additional common components were called out so CLC was aware of what
-          has already been created, hopefully reducing the creation of new one
+          had already been created, hopefully reducing the creation of new one
           off designs.
         </p>
       </div>
@@ -137,16 +137,17 @@
       <p>
         <strong>Jakob Nielson.</strong> For the analysis I first grabbed Nielson’s
         10 Usability Heuristics as a reference. Using this foundation I started breaking
-        out the the app by it’s different flows and screens. I identified the major
-        flow: Login, Search, Hotel Details, and Booking. Alongside this flow were
-        a multitude of one off screens that performed various status or administrative
-        features for the user.
+        out the app by its different flows and screens. I identified the major flow:
+        Login, Search, Hotel Details, and Booking. Alongside this flow were a multitude
+        of one off screens that performed various status or administrative features
+        for the user.
       </p>
       <p>
         From there I decided to break the flow into the four different micro
         flows and perform the analysis on each. I gave each screen in the flow a
-        status; <strong>Good, Poor, Fail.</strong> If the screen didn’t pass a particular
-        heuristic I marked and explained why.
+        status; <strong>Good, Poor, Fail.</strong> From there I decided to break
+        the flow into the four different micro flows and perform the analysis on
+        each. I gave each screen in the flow a status;
       </p>
     </div>
   </section>
@@ -160,7 +161,7 @@
         <strong>Findings.</strong> Overall the app was mostly in need of a fresh
         UI with more consistency between component usage. Some key issues of note
         were it was pretty poor at letting the user know what the error was, leading
-        to frustrations. These frustrations were clearly shown in the apps reviews.
+        to frustrations. These frustrations were clearly shown in the app's reviews.
         Additionally there were components that looked like they were a button and
         yet it acted as a tab. What created further confusion was that there were
         other versions of tabs that made the interaction uncertain.
@@ -181,7 +182,7 @@
       <p>
         <strong>Competitor Analysis.</strong> I decided since I didn’t have access
         to any users, I would have to rely more on my experience and the designs
-        of other competitor apps. I downloaded and went through a meriad of apps:
+        of other competitor apps. I downloaded and went through a myriad of apps:
         Hopper, Booking.com, Expedia, HotelTonight.
       </p>
       <p>
@@ -199,10 +200,10 @@
     <div class="">
       <p>
         <strong>Reaction.</strong> I presented the Analysis findings along with the
-        concept mockups based on those finding to the stakeholders of CLC Lodging.
+        concept mockups based on those findings to the stakeholders of CLC Lodging.
         Walking through the different heuristics first making sure they understood
         what I was about to discuss. After spending time on the poor or failing pages,
-        I showed off the concepts mocks.
+        I showed off the concept mocks.
       </p>
       <p>
         Talking through the different changes I was proposing I wanted to make
@@ -231,20 +232,20 @@
     <div>
       <div class="">
         <p>
-          <strong>A new discovery.</strong> For the redesign we needed to first get
+          <strong>A new discovery.</strong> For the redesign, I needed to first get
           the best estimate of how many screens there were and what the effort of
           each screen would be. I first created a sitemap of the app. From there
-          I estimated out the effort of each; SM - MD - LG. Once that list was complete
+          I estimated the effort of each; SM - MD - LG. Once that list was complete
           and agreed upon with the Project Lead of CLC I set about creating repeating
           meetings to start discussing each part of the app.
         </p>
         <p>
-          We first prioritized what we thought were the more important screens
-          to update. This was done in part to let developers start working on
-          some of the more critical logic changes as well as if budget or time
-          ran out we had the more important screens updated. After talking with
-          the PL, we wanted to make sure this was more of a refreshed UI rather
-          than a complete overhaul. Some UX improvements may not be able to be
+          I first prioritized what I thought were the more important screens to
+          update. This was done in part to let developers start working on some
+          of the more critical logic changes as well as if budget or time ran
+          out I had the more important screens updated. After talking with the
+          PL, I wanted to make sure this was more of a refreshed UI rather than
+          a complete overhaul. Some UX improvements may not be able to be
           implemented.
         </p>
       </div>
@@ -270,15 +271,15 @@
         a few hurdles to work through.
       </p>
       <p>
-        As mentioned our aim was not to affect too much of the current logic,
-        but instead update UI were we could. Some changes were pushed back on
+        As mentioned, my aim was not to affect too much of the current logic,
+        but instead update UI were I could. Some changes were pushed back on
         from the development team but overall the changes were seen as an
         improvement that could be completed.
       </p>
       <p>
         Attending the SCRUM rituals became part of my tasks, walking through and
         sizing stories, attending standup, and answering questions on top of
-        finishing out discover sessions.
+        finishing out discovery sessions.
       </p>
       <p>
         Additionally I made sure to implement a design review meeting as a way
@@ -287,8 +288,8 @@
         quickly as color changes for them.
       </p>
       <p>
-        Overall the team was progressing, albeit slowly. We made the decision to
-        add on additional developers from my company to speed up the process.
+        Overall the team was progressing, albeit slowly. The decision was made
+        to add on additional developers from my company to speed up the process.
       </p>
       <p>
         The design team was able to come in under budget which allowed for me to
@@ -304,10 +305,10 @@
     <div class="">
       <div class="col-cnt-2">
         <p>
-          <strong>A new UI.</strong> We created a lot of new components and UI elements
-          for the redesign, however to save on time we chose to simply have user
-          stories created for the smaller screens. In those stories we would call
-          out the new UI pattern to be used with the correct spacing in place.
+          <strong>A new UI.</strong> I created a lot of new components and UI elements
+          for the redesign, however to save on time I chose to simply have user stories
+          created for the smaller screens. In those stories I would call out the
+          new UI pattern to be used with the correct spacing in place.
         </p>
         <p>
           This worked well for the most part but ultimately cost about the same

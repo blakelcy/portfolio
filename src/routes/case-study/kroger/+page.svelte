@@ -35,11 +35,11 @@
         <p>
           With a heavy focus on product design and design lead mentality, Kroger
           has two pillars that they focus their design experience on. Customer
-          Experience and Associate Experience. CX focused on the customers
+          Experience and Associate Experience. CX focused on the customer's
           journey when shopping online via the website or apps. AX focused on
           the experience of the tools the associates used to perform their jobs.
-          I worked for AX for their fresh departments: Bakery, Deli, Meat &
-          Seafood.
+          My contributions were for AX for their fresh departments: Bakery,
+          Deli, Meat & Seafood.
         </p>
       </div>
     </section>
@@ -109,7 +109,7 @@
         was limited by safety regulations.
       </p>
       <p>
-        Such was the state of the product I enherited when joining Kroger in
+        Such was the state of the product I inherited when joining Kroger in
         early 2021. <strong>Fresh Production</strong> was the app being created to
         replace the old hardware and process for bakery associates to plan the amount
         of stock they needed for a given day. The team had seen heavy turnover in
@@ -120,21 +120,21 @@
   <div class="article-text">
     <div class="paragraph">
       <p>
-        I set about getting familiar with the current state of the app and how
+        I started to get familiar with the current state of the app and how
         user's were reacting to it. We had five test stores using our app, one
-        of which was local to me in Cincinnati, OH. Another was in Michigan. The
-        rest were out of state. For those I set up Teams calls to discuss
-        ceertain flows of the app and get feedback.
+        of which was local to me in Cincinnati, OH. The rest were out of state.
+        So, I set up Teams calls to discuss certain flows of the app and get
+        feedback.
       </p>
       <p>
         Talking to users is one of the best parts about being a Product
-        Designer. You get to experience how that person interacts wih your app,
-        see their reactions and hopefully find out real problems they have that
-        you can solve. In Kroger's case, I was fortunate enough to see how their
-        bakery associates worked and what they had to do on a daily basis.
+        Designer. You get to experience how that person interacts with your app,
+        see their reactions and find out real problems they have that you can
+        solve. In Kroger's case, I got to see how their bakery associates worked
+        and what they had to do on a daily basis.
       </p>
       <p>
-        For the two stores I was able to go in to, the Cincinnati store did not
+        For the stores I was able to go in to, the Cincinnati store did not
         like, trust or use the app. The Michigan store used the app but didn't
         trust the data. These interviews gave way to our first set of goals.
       </p>
@@ -145,11 +145,11 @@
     <div class="paragraph">
       <p>
         <strong>KPI's.</strong> There were multiple KPI’s (Key Performance Indicators)
-        we established from quarter to quarter. But in the beginning we had 3 key
+        we established from quarter to quarter. In the beginning we had three key
         metrics to measure for our success
       </p>
       <ul>
-        <li>Adoption from our associates</li>
+        <li>Adoption from associates</li>
         <li>Shrink Reduction in the amount of product thrown away per store</li>
         <li>Financial Savings by stocking appropriate product amounts</li>
       </ul>
@@ -162,7 +162,7 @@
     <div class="paragraph">
       <p>
         <strong>The Three Tasks.</strong> Bakery associates were tasked with three
-        methods of stocking goods on the floor. Today's preperation, tomorrow's preperation
+        methods of stocking goods on the floor. Today's preparation, tomorrow's preparation
         and thawing freezer items. Each one would show what food they needed to prepare,
         and how much. The associate then needed to enter in the amount they actually
         prepared for the day.
@@ -181,8 +181,8 @@
   <div class="article-text">
     <div class="paragraph">
       <p>
-        Often times the associates would over produce claiming that the
-        recommendation was innacurate. One of the things our app could not
+        Often the associates would over-produce, claiming that the
+        recommendation was inaccurate. To their credit, the app could not
         account for was local events that may drive production needs up.
       </p>
       <p>
@@ -196,11 +196,10 @@
       <p>
         <strong>Thaw & Sell.</strong> Because thawed items had the same ID both in
         the freezer and on the store floor, it was very difficult to know accurate
-        quantities. Sure we could tell when an item was sold, but we had no idea
-        how much was on the floor at any given time. The only measure we had was
-        how much the associate said they "produced" that day. This contributed to
-        further innacuracies in what to produce on a given day. Our data was not
-        correct.
+        quantities. We could tell when an item was sold, but we had no idea how much
+        was on the floor at any given time. The only measure we had was how much
+        the associate said they "produced" that day. This contributed to further
+        inaccuracies in what to produce on a given day. Our data was not correct.
       </p>
     </div>
   </div>
@@ -212,20 +211,20 @@
     <div class="section-text">
       <p>
         <strong>Design Thinking.</strong> After talking and visiting with the associates
-        in the store, it was now time to solve any issues we uncovered and felt were
-        priority for the team. We first would add a story to our backlog, assigned
-        to me so that I can start mocking out a potential solution. Since we had
-        such a robust Design System in place, most of my “low fidelity” wireframes
-        were more in the “high fidelity” realm. Often times I would just “sketch”
-        in Sketch, our chosen design tool. For more complex issues, or for newer,
-        non design system components, I would revert to pen and paper to quickly
-        hash out ideas. For the beginning of this app however, we had the design
-        in place. The problems came from accuracy of numbers and user adoption.
+        in the store, it was now time to solve any issues we uncovered and were priority
+        for the team. We first would add a story to our backlog, assigned to me so
+        that I can start mocking out a potential solution. Since we had such a robust
+        Design System in place, most of my “low fidelity” wireframes were more in
+        the “high fidelity” realm. I would often just “sketch” in Sketch, our chosen
+        design tool. For more complex issues, or for newer, non-design system components,
+        I would revert to pen and paper to quickly hash out ideas. For the beginning
+        of this app however, we had the design in place. The problems came from accuracy
+        of numbers and user adoption.
       </p>
 
       <p>
-        I ran a few workshops within the team to brainstorm solutions for the
-        accuracy issue. I felt this was the bigger deterrant in terms of user
+        I ran a several workshops with the team to brainstorm solutions for the
+        accuracy issue. I knew this was the bigger deterrent in terms of user
         adoption.
       </p>
       <blockquote>
@@ -253,19 +252,19 @@
       </p>
 
       <p>
-        Our MVP to get this tested ended up being a one time setup where the
-        associate would print out a unique barcode, stick it to their physical
-        table, and scan in items to that table. Once that setup was complete
-        then the daily interaction for their frozen product would be to scan the
-        barcode on the table, count the products on that table, and then get a
-        more accurate production number for the day.
+        Our MVP (minimum viable product) to get this tested ended up being a
+        onetime setup where the associate would print out a unique barcode,
+        stick it to their physical table, and scan in items to that table. Once
+        that setup was complete then the daily interaction for their frozen
+        product would be to scan the barcode on the table, count the products on
+        that table, and then get a more accurate production number for the day.
       </p>
       <img src="{base}/assets/imgFlow.png" style="max-width: 300px;" alt="" />
       <figure class="img-figure-text center">
         Quick user flow of solution.
       </figure>
       <p>
-        I quickly prototyped the screens out and did an initial user test using
+        I prototyped the screens out and did an initial user test using
         InVision.
       </p>
     </div>
@@ -279,19 +278,19 @@
         <strong>Into the Stores.</strong> My process for testing was to wire up the
         mockups into InVision, do some basic interactions so the associate could
         tap through the flow, and pull it up on my phone to walk the associates through
-        the new screens, asking questions along the way. For the most part I would
-        give the associate a high level overview of what they are going to be seeing
-        with the problem we are hoping to solve, but largely let them interact with
-        the prototype on their own and observe any struggles they encounter or any
-        validations of the designs.
+        the new screens, asking questions along the way. I would give the associate
+        a high level overview of what they are going to be seeing with the problem
+        we are hoping to solve, but largely let them interact with the prototype
+        on their own and observe any struggles they encounter or any validations
+        of the designs.
       </p>
       <p>
-        Testing proved to be a little tricky to work through. Often times they
-        would notice things like wrong product imagery or incorrect product in
-        the activity which would distract them from what it was I was trying to
-        test. Or they wouldn’t be sure what was tappable or not, a limitation of
-        the prototyping tool and how I would not wire up the sections of the app
-        I wasn’t trying to test.
+        Testing proved to be a little tricky to work through. They would notice
+        things like wrong product imagery or incorrect product in the activity
+        which would distract them from what I was actually trying to test. They
+        wouldn’t be sure what was tappable or not, a limitation of the
+        prototyping tool and how I would not wire up the sections of the app I
+        wasn’t trying to test.
       </p>
     </div>
   </div>
@@ -304,11 +303,11 @@
         mentioned above, I collected the feedback from the associates. Most of
         the non-familiar associates were comfortable with the process and
         understood the need and the outcome. For our Michigan store, they were
-        not overly excited about having to count more, but said the process
-        seemed quick and easy enough to complete. We found that giving them
-        control of their table and products and that seeing the count they
-        performed directly impacted the amount they produced, greatly increased
-        the trust in the app.
+        not excited about having to count more, but said the process seemed
+        quick and easy enough to complete. We found that giving them control of
+        their table and products and that seeing the count they performed
+        directly impacted the amount they produced, greatly increased the trust
+        in the app.
       </p>
       <p>
         Once we were satisfied with the feedback, we worked on developing this
@@ -327,14 +326,14 @@
     <div class="section-text">
       <p>
         <strong>Starting to Trust.</strong> This new solution took months to work
-        out and develop. Myself and my product owner spent countless hours in stores
+        out and develop. I spent countless hours with my product owner in stores
         and in meetings with business partners, making sure this solution solved
-        the needs of the user and the business. We were confident it was. The feedback
-        was positve on both sides.
+        the needs of the user and the business. We were confident it did. The feedback
+        was positive on both sides.
       </p>
       <p>
-        So we launched the app enterprise wide. We created training documents in
-        the app as well as printables for stores. In tandum with our UI
+        We launched the app enterprise wide. We created training documents in
+        the app as well as printable guides for stores. In tandem with our UI
         solution, we also spent time with our data partners cleaning and fixing
         our data.
       </p>
@@ -343,16 +342,15 @@
   <div class="article-text">
     <div class="paragraph">
       <p>
-        I won't say we satisfied every associate but the feedback we were
-        getting from leadership and the stores I was able to talk with was
-        positive. After the one time setup of tables, associates found that
-        counting the items was quick due to being able to scan the barcode as
-        well as count on the list of items.
+        The feedback we were getting from leadership and the stores I was able
+        to talk with was positive. After the one-time setup of tables,
+        associates found that counting the items was quick due to being able to
+        scan the barcode as well as count on the list of items.
       </p>
       <p>
-        Through our google analytics, we could see that daily usage of the app
-        and daily completion of the tasks were on the rise. Associates were
-        using the app to complete their work for the day.
+        Through Google Analytics, we could see that daily usage of the app and
+        daily completion of the tasks were on the rise. Associates were using
+        the app to complete their work for the day.
       </p>
     </div>
   </div>
@@ -363,10 +361,10 @@
     <h3>Goals</h3>
     <div class="section-text">
       <p>
-        <strong>Did we meet our KPI's?</strong> The short answer is yes, overtime.
-        We were able to capture shrink numbers and determine that product was being
-        sold around the same amount that was being produced. This was an estimated
-        savings of $4M from enterprise launch.
+        <strong>Did we meet our KPI's?</strong> Overtime, yes. We were able to capture
+        shrink numbers and determine that product was being sold around the same
+        amount that was being produced. This was an estimated savings of $4M from
+        enterprise launch.
       </p>
     </div>
   </div>

@@ -5,7 +5,7 @@
   import { founderImg, groceryImg, placeholderImg, truckerImg } from "./images";
 
   let article1Paragraphs = [
-    "I have had the privalage to work in many different industries, both as a developer and a designer. From hospitals, to banks. Grocery stores to medical research groups and think tanks, I have led a lot of discoveries with some great people. My approach to design problems stems from my belief in collaborative idation to create the best possible outcome for users and businesses. Explorations and discoveries excite me in nature and in product design. Feel free to read my case studies below. More will be added, some may be removed. If you like what you see feel free to contact me. This portfolio takes inspiration from the old National Parks pamphlets and articles.",
+    "I've had the privilege of working in many different industries, both as a developer and a designer. From hospitals, to banks. Grocery stores to medical research groups and think tanks, I've led a lot of discoveries with a lot of great people. My approach to design problems stems from my belief in collaborative ideation to create the best possible outcome for users and businesses. I invite you to read about my work below, where I found my passion for asking questions, analyzing feedback, and improving systems for businesses and customers. If you like what you see feel free to contact me. In my personal life, I love to visit National Parks and hike and camp in my home state of Ohio. This portfolio takes inspiration from early National Parks pamphlets and articles.",
     // Add more paragraphs as needed
   ];
 
