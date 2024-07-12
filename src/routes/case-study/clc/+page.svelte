@@ -55,7 +55,7 @@
         <p>
           <strong>Reaction.</strong> I presented the Analysis findings along with
           the concept mockups based on those findings to the stakeholders of CLC
-          Lodging. Walking through the different heuristics first making sure they
+          Lodging. I walked through the different heuristics first making sure they
           understood what I was about to discuss. After spending time on the poor
           or failing pages, I showed off the concept mocks.
         </p>
@@ -115,15 +115,15 @@
         </p>
         <p>
           <strong>Guidelines.</strong> The last deliverable was a guideline document
-          outlining the design changes made by the design team. Since I was a contractor
+          outlining the design changes made by the design team. Since I was a contractor,
           I wanted to make sure there was a reference for CLC if I was no longer
           engaged with them.
         </p>
         <p>
           Outlined in the document were typography, color and spacing usages.
-          Additional common components were called out so CLC was aware of what
-          had already been created, hopefully reducing the creation of new one
-          off designs.
+          Additional common components were called out, so CLC was aware of what
+          had already been created, hopefully reducing the creation of new
+          one-off designs.
         </p>
       </div>
     </div>
@@ -135,19 +135,19 @@
     <h3>Heuristic Analysis</h3>
     <div class="section-text">
       <p>
-        <strong>Jakob Nielson.</strong> For the analysis I first grabbed Nielson’s
-        10 Usability Heuristics as a reference. Using this foundation I started breaking
+        <strong>Jakob Nielson.</strong> For the analysis I first used Nielson’s 10
+        Usability Heuristics as a reference. Using this foundation I started breaking
         out the app by its different flows and screens. I identified the major flow:
         Login, Search, Hotel Details, and Booking. Alongside this flow were a multitude
-        of one off screens that performed various status or administrative features
+        of one-off screens that performed various status or administrative features
         for the user.
       </p>
       <p>
         From there I decided to break the flow into the four different micro
         flows and perform the analysis on each. I gave each screen in the flow a
-        status; <strong>Good, Poor, Fail.</strong> From there I decided to break
-        the flow into the four different micro flows and perform the analysis on
-        each. I gave each screen in the flow a status;
+        status; <strong>Good, Poor, Fail.</strong> From there I broke the flow down
+        into the four different micro flows and perform the analysis on each. I gave
+        each screen in the flow a status;
       </p>
     </div>
   </section>
@@ -158,13 +158,13 @@
         presentation to show to the client.
       </p>
       <p>
-        <strong>Findings.</strong> Overall the app was mostly in need of a fresh
-        UI with more consistency between component usage. Some key issues of note
-        were it was pretty poor at letting the user know what the error was, leading
-        to frustrations. These frustrations were clearly shown in the app's reviews.
-        Additionally there were components that looked like they were a button and
-        yet it acted as a tab. What created further confusion was that there were
-        other versions of tabs that made the interaction uncertain.
+        <strong>Findings.</strong> Overall, the app was mostly in need of a fresh
+        UI with more consistency between component usage. One key issue was it was
+        pretty poor at letting the user know what the error was, leading to frustrations.
+        These frustrations were clearly shown in the app's reviews. Additionally,
+        there were components that looked like they were a button and yet it acted
+        as a tab. What created further confusion was that there were other versions
+        of tabs that made the interaction uncertain.
       </p>
       <p>
         In addition to the heuristic analysis, I created a set of concept
@@ -180,14 +180,14 @@
     <h3>Concept Mockups</h3>
     <div class="paragraph">
       <p>
-        <strong>Competitor Analysis.</strong> I decided since I didn’t have access
-        to any users, I would have to rely more on my experience and the designs
-        of other competitor apps. I downloaded and went through a myriad of apps:
-        Hopper, Booking.com, Expedia, HotelTonight.
+        <strong>Competitor Analysis.</strong> Since I didn’t have access to any users,
+        I would have to rely more on my experience and the designs of other competitor
+        apps. I downloaded and went through a myriad of similar apps: Hopper, Booking.com,
+        Expedia, HotelTonight.
       </p>
       <p>
-        I really liked how HotelsTonight’s search UI functioned as well as
-        Booking.com, since they themselves had just done a redesign.
+        I liked how HotelsTonight’s search UI functioned as well as Booking.com,
+        since they themselves had just done a redesign.
       </p>
       <p>
         Using these apps in conjunction with my analysis findings, I quickly put
@@ -232,20 +232,20 @@
     <div>
       <div class="">
         <p>
-          <strong>A new discovery.</strong> For the redesign, I needed to first get
-          the best estimate of how many screens there were and what the effort of
-          each screen would be. I first created a sitemap of the app. From there
-          I estimated the effort of each; SM - MD - LG. Once that list was complete
-          and agreed upon with the Project Lead of CLC I set about creating repeating
-          meetings to start discussing each part of the app.
+          <strong>A new discovery.</strong> For the redesign, I needed to get the
+          best estimate of how many screens there were and what the effort of each
+          screen would be. I created a sitemap of the app. From there I estimated
+          the effort of each; SM - MD - LG. Once that list was complete and agreed
+          upon with the Project Lead of CLC I set about creating repeating meetings
+          to start discussing each part of the app.
         </p>
         <p>
-          I first prioritized what I thought were the more important screens to
-          update. This was done in part to let developers start working on some
-          of the more critical logic changes as well as if budget or time ran
-          out I had the more important screens updated. After talking with the
-          PL, I wanted to make sure this was more of a refreshed UI rather than
-          a complete overhaul. Some UX improvements may not be able to be
+          I prioritized what I thought were the most important screens to
+          update. This was done in part to let developers start working on the
+          more critical logic changes, as well as if budget or time ran out I
+          had the more important screens updated. After talking with the PL, I
+          wanted to make sure this was more of a refreshed UI rather than a
+          complete overhaul. Some UX improvements may not be able to be
           implemented.
         </p>
       </div>
@@ -264,16 +264,16 @@
         due to permissions or certain criteria being met.
       </p>
       <p>
-        <strong>Development.</strong> As the lead I also was in charge of answering
-        any questions our development team had. They had been building the app for
-        CLC for some time so there was plenty of questions from them. To my knowledge
-        there was never an active designer on the development team so there were
-        a few hurdles to work through.
+        <strong>Development.</strong> As the lead, I oversaw answering any questions
+        our development team had. They had been building the app for CLC for some
+        time so there was plenty of questions from them. To my knowledge there was
+        never an active designer on the development team so there were a few hurdles
+        to work through.
       </p>
       <p>
         As mentioned, my aim was not to affect too much of the current logic,
-        but instead update UI were I could. Some changes were pushed back on
-        from the development team but overall the changes were seen as an
+        but instead update UI where I could. Some changes were pushed back on
+        from the development team but overall, the changes were seen as an
         improvement that could be completed.
       </p>
       <p>
@@ -282,13 +282,13 @@
         finishing out discovery sessions.
       </p>
       <p>
-        Additionally I made sure to implement a design review meeting as a way
-        to make sure the development team was transitioning to the new
-        structure. Changes like spacing or typography were not adapted as
-        quickly as color changes for them.
+        Additionally, I implemented a design review meeting as a way to make
+        sure the development team was transitioning to the new structure.
+        Changes like spacing or typography were not adapted as quickly as color
+        changes for them.
       </p>
       <p>
-        Overall the team was progressing, albeit slowly. The decision was made
+        Overall, the team was progressing, albeit slowly. The decision was made
         to add on additional developers from my company to speed up the process.
       </p>
       <p>
@@ -305,15 +305,15 @@
     <div class="">
       <div class="col-cnt-2">
         <p>
-          <strong>A new UI.</strong> I created a lot of new components and UI elements
+          <strong>A new UI.</strong> I created many new components and UI elements
           for the redesign, however to save on time I chose to simply have user stories
           created for the smaller screens. In those stories I would call out the
           new UI pattern to be used with the correct spacing in place.
         </p>
         <p>
-          This worked well for the most part but ultimately cost about the same
-          amount of time due to changes being needed after reviewing design from
-          the development team.
+          This worked well but ultimately cost about the same amount of time due
+          to changes being needed after reviewing design from the development
+          team.
         </p>
       </div>
       <img src="{base}/assets/hrz-figure4.png" alt="" />
@@ -335,9 +335,9 @@
     <div class="">
       <div class="col-cnt-2">
         <p>
-          <strong>References.</strong> As part of my deliverable I created both a
-          pdf and a prototype guidelines document for CLC. All mockups were created
-          using Adobe xD. The guidelines document was interactable and included an
+          <strong>References.</strong> As part of my deliverable, I created both
+          a pdf and a prototype guidelines document for CLC. All mockups were created
+          using Adobe xD. The guidelines document was interactive and included an
           introduction for the guideline, page structure, brand colors, typography
           and icons as well as some of the more common components like buttons or
           list items.
