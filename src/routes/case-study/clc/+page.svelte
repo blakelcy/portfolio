@@ -171,7 +171,7 @@
         mockups for the Search, Hotel Details, and Hotel Booking screens.
       </p>
     </div>
-    <img src="{base}/assets/figure1.png" alt="" />
+    <img src="{base}/assets/figure1.png" alt="" class="sm" />
     <figure class="img-figure-text">
       Example slide from the Heuristic Analysis for CLC
     </figure>
@@ -470,7 +470,8 @@
   }
 
   img {
-    width: 100%;
+    max-width: 100%;
+    height: auto;
   }
 
   img.center {

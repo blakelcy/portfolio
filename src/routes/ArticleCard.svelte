@@ -5,21 +5,44 @@
   export let company;
   export let paragraph1;
   export let paragraph2;
-  export let link; // Add a link prop
+  export let link;
+  export let linkAction = false; // Logging the properties to verify their values
+  console.log("ArticleCard Props:", {
+    image,
+    alt,
+    company,
+    paragraph1,
+    paragraph2,
+    link,
+    linkAction,
+  });
 </script>
 
-<a href="{base}{link}" class="article-card">
-  <div class="article-img">
-    <img src={image} {alt} />
-  </div>
-  <p class="card-title">{company}</p>
-  <div class="card-grid">
-    <p>{paragraph1}</p>
-    <p>{paragraph2}</p>
-  </div>
-</a>
+{#if linkAction === false}
+  <a href="{base}{link}" class="article-card">
+    <div class="article-img">
+      <img src={image} {alt} />
+    </div>
+    <p class="card-title">{company}</p>
+    <div class="card-grid">
+      <p>{paragraph1}</p>
+      <p>{paragraph2}</p>
+    </div>
+  </a>
+{:else}
+  <a href={link} class="article-card" target="_blank">
+    <div class="article-img">
+      <img src={image} {alt} />
+    </div>
+    <p class="card-title">{company}</p>
+    <div class="card-grid">
+      <p>{paragraph1}</p>
+      <p>{paragraph2}</p>
+    </div>
+  </a>
+{/if}
 
-<style>
+<style lang="scss">
   .article-card {
     position: relative;
     display: flex;
@@ -33,16 +56,27 @@
     justify-content: center;
     align-items: center;
     overflow: hidden;
-    height: 100%;
+    max-height: 300px;
     margin-bottom: 0.5rem;
+    background-color: #fef2d9;
+
+    @media screen and (min-width: 960px) {
+      max-height: 600px;
+    }
   }
 
   .article-img > img {
-    width: 100%; /* Make the image fill the container horizontally */
-    height: auto; /* Maintain the aspect ratio */
+    width: auto; /* Make the image fill the container horizontally */
+    height: 300px; /* Maintain the aspect ratio */
     display: block; /* Ensure the image behaves as a block element */
     transition: transform 0.33s ease;
     cursor: pointer;
+    padding: 0.5rem 0;
+    filter: sepia(80%);
+
+    @media screen and (min-width: 960px) {
+      height: 500px; /* Maintain the aspect ratio */
+    }
   }
 
   .article-img > img:hover {

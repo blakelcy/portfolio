@@ -24,15 +24,24 @@
     color: white;
 
     & > h1 {
-      font-size: 2rem;
-      max-width: 350px;
+      font-size: 2.5rem;
+      max-width: 450px;
       padding-bottom: 0.5rem;
       line-height: 1.1;
+
+      @media screen and (min-width: 960px) {
+        font-size: 5.5rem;
+        max-width: 100%;
+      }
     }
     & > p {
       font-size: 1rem;
       max-width: 200px;
       line-height: 1.5;
+      @media screen and (min-width: 960px) {
+        font-size: 2.5rem;
+        max-width: 100%;
+      }
     }
   }
 </style>

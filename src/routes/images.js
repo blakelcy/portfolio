@@ -1,5 +1,5 @@
 // images.js
-export const groceryImg = new URL("./grocery.png", import.meta.url).href;
-export const truckerImg = new URL("./trucker.png", import.meta.url).href;
-export const founderImg = new URL("./founder.png", import.meta.url).href;
+export const krogerImg = new URL("./imgBakery.png", import.meta.url).href;
+export const clcImg = new URL("./clcImg.png", import.meta.url).href;
+export const kwipooImg = new URL("./kwipooImg.png", import.meta.url).href;
 export const placeholderImg = "https://picsum.photos/200/200";
