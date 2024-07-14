@@ -58,7 +58,7 @@
     overflow: hidden;
     max-height: 300px;
     margin-bottom: 0.5rem;
-    background-color: #fef2d9;
+    background-color: rgba(177, 182, 69, 0.06);
 
     @media screen and (min-width: 960px) {
       max-height: 600px;
