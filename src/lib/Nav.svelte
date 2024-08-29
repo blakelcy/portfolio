@@ -23,7 +23,7 @@
 
 <style lang="scss">
   nav {
-    background-color: black;
+    background-color: #171513;
     color: white;
     padding: 1rem;
     & > .wrapper {

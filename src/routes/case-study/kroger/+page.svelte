@@ -1,12 +1,14 @@
 <script>
   import { base } from "$app/paths";
-  // @ts-ignore
-  import logoKroger from "$lib/assets/logos/kroger-footer-logo.png?enhanced";
 </script>
 
 <nav>
   <div class="wrapper" style="padding: 3rem 1rem 0rem 1rem;">
-    <img class="nav-img" src="{base}/assets/kroger-footer-logo.png" alt="" />
+    <img
+      class="nav-img"
+      src="{base}/assets/productImages/kroger/kroger-footer-logo.png"
+      alt=""
+    />
     <div class="list-itmes">
       <h3>Roles</h3>
       <ul class="list-outside inline-block">
@@ -169,7 +171,7 @@
       </p>
       <img
         class="center"
-        src="{base}/assets/imgBakery.png"
+        src="{base}/assets/productImages/kroger/imgBakery.png"
         style="max-width: 300px;"
         alt=""
       />
@@ -242,7 +244,11 @@
         and then spend a minute per square coming up with ideas that can help us
         better achieve accurate numbers.
       </p>
-      <img src="{base}/assets/imgCrazy8.jpg" style="max-width: 300px;" alt="" />
+      <img
+        src="{base}/assets/productImages/kroger/imgCrazy8.jpg"
+        style="max-width: 300px;"
+        alt=""
+      />
       <figure class="img-figure-text">Example of Crazy 8's solution.</figure>
       <p>
         We came up with a counting solution. We wanted the associate to be able
@@ -259,7 +265,11 @@
         product would be to scan the barcode on the table, count the products on
         that table, and then get a more accurate production number for the day.
       </p>
-      <img src="{base}/assets/imgFlow.png" style="max-width: 300px;" alt="" />
+      <img
+        src="{base}/assets/productImages/kroger/imgFlow.png"
+        style="max-width: 300px;"
+        alt=""
+      />
       <figure class="img-figure-text center">
         Quick user flow of solution.
       </figure>

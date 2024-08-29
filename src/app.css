@@ -1,3 +1,7 @@
+/* * {
+  outline: 1px solid red;
+} */
+
 body {
   box-sizing: border-box;
   --bg-1: #fffff0;
@@ -92,4 +96,7 @@ h6 {
   font-weight: normal;
   font-style: normal;
   letter-spacing: 2px;
+}
+
+main {
 }

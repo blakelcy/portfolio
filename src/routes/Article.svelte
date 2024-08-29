@@ -1,25 +1,9 @@
 <script>
-  import ArticleCard from "./ArticleCard.svelte";
-
-  export let bar = true;
-  export let bordered = true;
-  export let redText = false;
-  export let gridThree = false;
   export let gridFour = false;
   export let title = "Default";
-  // Define the content for the article
-  export let articleParagraphs = [];
-
-  // Define the data for the ArticleCard components
-  export let articleCards = [];
-
-  // Define a function to update the article cards
-  function updateCards(newCards) {
-    articleCards = newCards;
-  }
 </script>
 
-<section class:redText>
+<section>
   <div class="wrapper">
     <h2>{title}</h2>
     <div class="main-text-grid" class:gridFour>
@@ -40,64 +24,44 @@
         >
       </p>
     </div>
-
-    {#if bar === true}
-      <div class="divider"></div>
-    {/if}
-    <div class="article-grid" class:bordered>
-      {#each articleCards as card, index}
-        <p class="article-layout col-{index + 1}">
-          <ArticleCard {...card} />
-        </p>
-      {/each}
-    </div>
   </div>
 </section>
 
 <style lang="scss">
   section {
-    padding: 1rem;
+    padding: 4rem;
+    max-width: 1600px;
+    margin-inline: auto;
 
     &.redText {
       color: rgb(208, 20, 20);
     }
 
     & > .wrapper {
+      margin-bottom: 1rem;
       & > h2 {
+        font-size: 1.75rem;
         font-weight: 700;
         line-height: 120%;
         margin-bottom: 0.25rem;
         font-family: "CustomFont", sans-serif;
-      }
-
-      & > .article-grid,
-      .main-text-grid {
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-
-        & > p {
-          font-size: 1rem;
-
-          & a {
-            color: #0d0d0d;
-          }
-        }
+        margin-bottom: 1rem;
       }
 
       & > .main-text-grid {
         & > p {
           @media screen and (min-width: 960px) {
+            font-size: 1.125rem;
+            line-height: 175%;
             column-count: 5;
           }
+          & > a {
+            color: red;
+            &:visited {
+              color: red;
+            }
+          }
         }
-      }
-      & > .article-grid {
-        gap: 0.75rem 1rem;
-      }
-      & > .divider {
-        height: 1.5rem;
-        background-color: black;
-        margin: 1rem 0;
       }
     }
   }

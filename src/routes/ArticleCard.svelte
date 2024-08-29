@@ -72,7 +72,8 @@
     transition: transform 0.33s ease;
     cursor: pointer;
     padding: 0.5rem 0;
-    filter: sepia(80%);
+    filter: grayscale(100%) invert(10%) sepia(8%) saturate(350%)
+      hue-rotate(351deg) brightness(105%) contrast(95%);
 
     @media screen and (min-width: 960px) {
       height: 500px; /* Maintain the aspect ratio */

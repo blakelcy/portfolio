@@ -7,7 +7,7 @@
     <img
       style="max-width: 400px"
       class="center"
-      src="{base}/assets/clcLodgingLog.png"
+      src="{base}/assets/productImages/clc/clcLodgingLog.png"
       alt=""
     />
     <div class="list-itmes">
@@ -171,7 +171,7 @@
         mockups for the Search, Hotel Details, and Hotel Booking screens.
       </p>
     </div>
-    <img src="{base}/assets/figure1.png" alt="" class="sm" />
+    <img src="{base}/assets/productImages/clc/figure1.png" alt="" class="sm" />
     <figure class="img-figure-text">
       Example slide from the Heuristic Analysis for CLC
     </figure>
@@ -218,7 +218,7 @@
     <img
       class="center"
       style="max-width: 300px; align-self: start;"
-      src="{base}/assets/figure2.png"
+      src="{base}/assets/productImages/clc/figure2.png"
       alt=""
     />
     <figure class="img-figure-text center">
@@ -249,7 +249,11 @@
           implemented.
         </p>
       </div>
-      <img src="{base}/assets/figure3.png" style="max-width: 500px;" alt="" />
+      <img
+        src="{base}/assets/productImages/clc/figure3.png"
+        style="max-width: 500px;"
+        alt=""
+      />
       <figure class="img-figure-text">
         Mural canvas for CLC discoveries (not all shown)
       </figure>
@@ -316,7 +320,7 @@
           team.
         </p>
       </div>
-      <img src="{base}/assets/hrz-figure4.png" alt="" />
+      <img src="{base}/assets/productImages/clc/hrz-figure4.png" alt="" />
       <figure class="img-figure-text center">
         Redesigned screens of the major flow
       </figure>
@@ -324,7 +328,7 @@
   </div>
   <div class="section-title grid-col-3">
     <div class="test">
-      <img src="{base}/assets/figure5.png" alt="" />
+      <img src="{base}/assets/productImages/clc/figure5.png" alt="" />
       <figure class="img-figure-text">
         Previous screens of the major flow
       </figure>
@@ -343,7 +347,7 @@
           list items.
         </p>
       </div>
-      <img src="{base}/assets/figure6.png" alt="" />
+      <img src="{base}/assets/productImages/clc/figure6.png" alt="" />
       <figure class="img-figure-text">
         Structure page of the guidelines prototype created for CLC
       </figure>
