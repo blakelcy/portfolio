@@ -1,25 +1,91 @@
 <script>
   import { base } from "$app/paths";
+  import ImageCompare from "svelte-image-compare";
 </script>
 
 <nav>
-  <div class="wrapper">
-    <img
-      style="max-width: 400px"
-      class="center"
-      src="{base}/assets/productImages/clc/clcLodgingLog.png"
-      alt=""
-    />
-    <div class="list-itmes">
-      <h3>Roles</h3>
-      <ul>
-        <li>UX Researcher</li>
-        <li>Product Designer</li>
-        <li>Business Analyst</li>
-      </ul>
-    </div>
-  </div>
-  <div class="wrapper">
+  <section class="wrapper">
+    <header>
+      <h4>CLC Lodging</h4>
+      <h1>Changing user perspectives through a modern redesign</h1>
+    </header>
+    <section class="grid">
+      <div class="grid-col">
+        <div class="content">
+          <h3>Role</h3>
+          <p>
+            <strong>As project lead</strong>, I first performed a heuristic
+            analysis on CLC Lodging’s applications. In tandem, I created some
+            concept high fidelity mocks of what a redesign could look like.
+            After presenting this to the client, I was able to show the impact
+            these changes could make for them. Securing a phase 2, I led a small
+            remote team in redesigning screens and developing those screens into
+            the application.
+          </p>
+        </div>
+        <div class="article-text img-col">
+          <div class="flex-img">
+            <img
+              style="max-width: 111px"
+              src="{base}/assets/headshotCasey.png"
+              alt=""
+            />
+            <p>
+              <strong>Casey Blakely.</strong> Senior Analyst and Designer.
+            </p>
+            <img
+              style="max-width: 80px"
+              src="{base}/assets/headshotNiaSimone.png"
+              alt=""
+            />
+            <p>
+              <strong>Nia-Simone.</strong> Analyst and Designer.
+            </p>
+          </div>
+          <div class="col-cnt-1">
+            <p>
+              <strong>Meet the Team.</strong> Casey Blakely (left) led the team with
+              support from Nia-Simone (right). Discovery sessions were set up to
+              go over individual app screens and potential changes. Nia-Simone was
+              then able to redesign screens with oversight and support from Casey.
+              Casey was then able to assist in development efforts by being the analyst/designer,
+              making sure changes were understood.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="grid-col">
+        <div class="content">
+          <h3>Research</h3>
+          <p>
+            <strong>Looking for problems.</strong> The only user feedback I had access
+            to where the comments and reviews left through the different app stores.
+            I also had access to the product owner and community teams of CLC Lodging.
+            With those two areas, I relied on my experience as a product designer
+            to perform industry analysis in order to create a solution.
+          </p>
+          <ul>
+            <li>Ratings and reviews</li>
+            <li>Competitor analysis</li>
+            <li>Heuristic analysis</li>
+            <li>Stakeholder interviews</li>
+          </ul>
+        </div>
+        <div class="content">
+          <h3>Platform</h3>
+          <p>
+            <strong>One brand, two experiences.</strong> CLC Lodging had an already
+            redesigned web portal for it’s users. However, the Android and iOS apps
+            were the outdated experiences and the focus of my efforts.
+          </p>
+          <ul>
+            <li>Mobile (Android and iOS)</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+  </section>
+  <!-- <div class="wrapper">
     <section class="section-title">
       <h3>CLC Lodging Phase 1</h3>
       <div class="section-text">
@@ -127,10 +193,20 @@
         </p>
       </div>
     </div>
-  </div>
+  </div> -->
 </nav>
 
 <div class="wrapper">
+  <div class="image-compare">
+    <ImageCompare
+      before="{base}/assets/productImages/clc/figure1.png"
+      after="{base}/assets/productImages/clc/figure2.png"
+      contain={true}
+    >
+      <span slot="before">BEFORE</span>
+      <span slot="after">AFTER</span>
+    </ImageCompare>
+  </div>
   <section class="section-title">
     <h3>Heuristic Analysis</h3>
     <div class="section-text">
@@ -367,33 +443,54 @@
   nav {
     background-color: black;
     color: white;
-
-    & .wrapper:first-child {
-      padding: 0;
-    }
   }
   .wrapper {
-    display: flex;
-    flex-direction: column;
     padding: 1rem;
+    max-width: 1080px;
+    margin: 0 auto;
+    padding: 2.5rem;
+  }
 
-    & > * {
-      margin-bottom: 1rem;
-    }
+  h1 {
+    font-size: 3rem;
+    font-family: "CustomFont";
+    text-transform: capitalize;
+    margin-bottom: 4rem;
 
     @media screen and (min-width: 960px) {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-      grid-gap: 1rem;
-      grid-auto-flow: dense;
+      font-size: 4rem;
     }
+  }
 
-    @media screen and (min-width: 1200px) {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-      grid-gap: 1rem;
-      grid-auto-flow: dense;
-    }
+  h3 {
+    font-size: 1.125rem;
+    font-weight: 600;
+    margin-bottom: 0.75rem;
+  }
+  h4 {
+    font-size: 1rem;
+    color: #cfcfcf;
+    font-weight: 600;
+  }
+
+  .grid {
+    display: grid;
+    grid-auto-flow: column;
+    gap: 1rem;
+  }
+
+  .content {
+    max-width: 75ch;
+    margin-bottom: 3rem;
+  }
+
+  ul {
+    columns: 2;
+    -webkit-columns: 2;
+    -moz-columns: 2;
+  }
+  li {
+    padding: 2px;
   }
 
   /* Single column display for phones */

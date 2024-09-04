@@ -98,5 +98,24 @@ h6 {
   letter-spacing: 2px;
 }
 
-main {
+.image-compare {
+  outline: red 12px solid;
+  height: 800px;
+  width: auto;
+  margin-bottom: 3rem;
+}
+
+.image-compare img {
+  object-fit: scale-down !important;
+}
+
+.image-compare .arrow-left {
+  left: 6px !important;
+  top: 7px !important;
+  border-right-color: red !important;
+}
+.image-compare .arrow-right {
+  left: 16px !important;
+  bottom: 12px !important;
+  border-left-color: blue !important;
 }

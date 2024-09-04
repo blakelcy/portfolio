@@ -20,8 +20,8 @@
         hike and camp in my home state of Ohio. This portfolio takes inspiration
         from early <a
           href="https://standardsmanual.com/products/parks"
-          target="_blank">National Parks pamphlets and articles.</a
-        >
+          target="_blank">National Parks pamphlets and articles</a
+        > and is created from scratch by me, using Figma and Svelte.
       </p>
     </div>
   </div>
@@ -53,7 +53,7 @@
           @media screen and (min-width: 960px) {
             font-size: 1.125rem;
             line-height: 175%;
-            column-count: 5;
+            column-count: 4;
           }
           & > a {
             color: red;
