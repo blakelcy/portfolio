@@ -1,61 +1,89 @@
 <script>
   import { base } from "$app/paths";
+  import ImageGallery from "$lib/components/ImageGallery.svelte"; // Import the Gallery component
+
+  const images = [
+    {
+      thumbnail: "/assets/productImages/kroger/cap_1.png",
+      full: "/assets/productImages/kroger/cap_1.png",
+      alt: "Description of image 1",
+    },
+    {
+      thumbnail: "/assets/productImages/kroger/cap_2.png",
+      full: "/assets/productImages/kroger/cap_2.png",
+      alt: "Description of image 2",
+    },
+    {
+      thumbnail: "/assets/productImages/kroger/cap_3.png",
+      full: "/assets/productImages/kroger/cap_3.png",
+      alt: "Description of image 1",
+    },
+    {
+      thumbnail: "/assets/productImages/kroger/cap_4.png",
+      full: "/assets/productImages/kroger/cap_4.png",
+      alt: "Description of image 2",
+    },
+    // Add more images as needed
+  ];
 </script>
 
 <nav>
-  <div class="wrapper" style="padding: 3rem 1rem 0rem 1rem;">
-    <img
-      class="nav-img"
-      src="{base}/assets/productImages/kroger/kroger-footer-logo.png"
-      alt=""
-    />
-    <div class="list-itmes">
-      <h3>Roles</h3>
-      <ul class="list-outside inline-block">
-        <li>UX Researcher</li>
-        <li>Product Designer</li>
-      </ul>
-    </div>
-    <i class="disclaimer"
-      >*Not all solutions can be shown due to intellectual property of client*</i
-    >
-  </div>
-  <div class="wrapper">
-    <section class="section-title">
-      <h3>Fresh For Everyone</h3>
-      <div class="section-text col-cnt-2">
-        <p>
-          <strong>"Fresh for Everyone"</strong> is more than just a slogan; it's
-          the brand ethos that Kroger operates under. This universal tagline, in
-          its simplicity and directness, is crafted to immediately convey an understanding
-          of the uniquely egalitarian nature of the American brand. It underscores
-          Kroger’s unwavering commitment and deeply rooted belief that everyone should
-          have access to food that is not only fresh and affordable, but also delicious.
-          This commitment forms the cornerstone of the brand's identity, shaping
-          its operations and initiatives across all levels.
-        </p>
-        <p>
-          With a heavy focus on product design and design lead mentality, Kroger
-          has two pillars that they focus their design experience on. Customer
-          Experience and Associate Experience. CX focused on the customer's
-          journey when shopping online via the website or apps. AX focused on
-          the experience of the tools the associates used to perform their jobs.
-          My contributions were for AX for their fresh departments: Bakery,
-          Deli, Meat & Seafood.
-        </p>
+  <section class="wrapper">
+    <header>
+      <h4>Kroger</h4>
+      <sub>*Not all processes shown*</sub>
+      <h1>Launching an app enterprise wide for bakery associates</h1>
+    </header>
+    <section class="nav-grid">
+      <div class="nav-grid-col">
+        <div class="content">
+          <h3>Role</h3>
+          <p>
+            <strong>As project designer</strong>, I was in charge of two
+            products, Fresh Production and Fresh Production Portal. Fresh
+            Production was our core Android application for all fresh
+            departments within Kroger stores. Our first department was Bakery.
+          </p>
+          <p>
+            Fresh Production Portal was the web app used by division leads to
+            help with administrative tasks for each individual store.
+          </p>
+          <p>
+            This article will focus mainly on the impact I had on bringing the
+            Fresh Production app from 5 test stores, to all stores within the
+            Kroger family.
+          </p>
+        </div>
       </div>
-    </section>
-  </div>
-  <div class="wrapper">
-    <section class="section-title">
-      <h3>Fresh Production</h3>
-      <div class="section-text">
-        <p>
-          <strong>Teamwork is key.</strong> I had an excellent team surrounding and
-          supporting me on this product, but nothing would have gotten accomplished
-          without my amazing product owner Sarah Pruscia and Technical Lead Ryan
-          Ware.
-        </p>
+      <div class="nav-grid-col">
+        <div class="content">
+          <h3>Process and Research</h3>
+          <p>
+            <strong>Understanding the job.</strong> I inherited the app from my colleague,
+            therefore I had to quickly ramp up on what was being solved and what
+            issues were currently hampering progress.
+          </p>
+          <p>
+            To accomplish this I visited or called each test store to understand
+            how they used or felt about the app in it's current state, met with
+            our busines partners to determine goals and KPI's, and connected
+            with my development team to start learning our sprint cycles and
+            processes.
+          </p>
+          <p>
+            I will go into more details in this article but at a glance, these
+            are the high level research and design methodologies I implemented
+            to start discovering and improving Fresh Production.
+          </p>
+          <ul>
+            <li>In store interviews</li>
+            <li>Discovery sessions</li>
+            <li>Wireframe Interviews</li>
+            <li>SME & Business Interviews</li>
+            <li>Design System</li>
+            <li>Design Thinking</li>
+          </ul>
+        </div>
       </div>
     </section>
     <div class="article-text img-col">
@@ -78,6 +106,14 @@
           <strong>Ryan Ware</strong> knew Kroger's technical landscape inside and
           out, often leading to quicker and more quality solutions.
         </p>
+        <img
+          style="max-width: 111px"
+          src="{base}/assets/headshotCasey.png"
+          alt=""
+        />
+        <p>
+          <strong>Casey Blakely.</strong> Senior Analyst and Designer.
+        </p>
       </div>
       <div class="col-cnt-2">
         <p>
@@ -94,13 +130,13 @@
         </p>
       </div>
     </div>
-  </div>
+  </section>
 </nav>
 
 <div class="wrapper">
-  <section class="section-title">
+  <div class="article-grid">
     <h3>The Problem</h3>
-    <div class="section-text">
+    <div class="article-paragraph">
       <p>
         <strong>Updating Old Processes.</strong> In 2020, the world shut down for
         most people. Remote work became the new normal and software companies thrived.
@@ -108,25 +144,33 @@
         could work their jobs remotely, their in-store associates were considered
         front line workers and had to go in to stores. This disrupted how much product
         designers were able to validate their solutions as access to their core users
-        was limited by safety regulations.
+        was limited by safety regulations. Such was the state of the product I inherited
+        when joining Kroger in early 2021.
       </p>
       <p>
-        Such was the state of the product I inherited when joining Kroger in
-        early 2021. <strong>Fresh Production</strong> was the app being created to
-        replace the old hardware and process for bakery associates to plan the amount
-        of stock they needed for a given day. The team had seen heavy turnover in
-        key leadership positions leading to a slow progress due to lack of direction.
+        <strong>Fresh Production</strong> was the app being created to replace the
+        old hardware and process for bakery associates to plan the amount of stock
+        they needed for a given day. The team had seen heavy turnover in key leadership
+        positions leading to a slow progress due to lack of direction.
       </p>
     </div>
-  </section>
-  <div class="article-text">
-    <div class="paragraph">
+
+    <ImageGallery title="Old Method of tracking production" {images} />
+  </div>
+  <div class="article-flex article-flex--col">
+    <h3>Level Setting</h3>
+    <div class="article-paragraph">
       <p>
-        I started to get familiar with the current state of the app and how
-        user's were reacting to it. We had five test stores using our app, one
-        of which was local to me in Cincinnati, OH. The rest were out of state.
-        So, I set up Teams calls to discuss certain flows of the app and get
-        feedback.
+        I needed to get familiar with the current state of the app and how
+        user's were reacting to it. After talking with my team and business
+        parnters, I understood what we were trying to accomplish. Now I needed
+        to know where we were in the solution and how our test stores were using
+        the new process.
+      </p>
+      <p>
+        We had five test stores using our app, one of which was local to me in
+        Cincinnati, OH. The rest were out of state. So, I set up Teams calls to
+        discuss certain flows of the app and get feedback.
       </p>
       <p>
         Talking to users is one of the best parts about being a Product
@@ -138,23 +182,90 @@
       <p>
         For the stores I was able to go in to, the Cincinnati store did not
         like, trust or use the app. The Michigan store used the app but didn't
-        trust the data. These interviews gave way to our first set of goals.
+        trust the data. I was beginning to see some repeating feedback. Users
+        didn't want to change because the app wasn't accurate and ultimately
+        wasn't predicting the needed items to make for the day. These interviews
+        gave way to our first set of goals.
       </p>
     </div>
   </div>
-  <div class="section-title">
+  <div class="article-grid">
     <h3>Success Metrics</h3>
-    <div class="paragraph">
+    <div class="article-paragraph article-paragraph__img">
+      <div>
+        <p>
+          <strong>KPI's.</strong> There were multiple KPI’s (Key Performance Indicators)
+          we established from quarter to quarter. In the beginning we had three key
+          metrics to measure for our success
+        </p>
+        <ul>
+          <li>Adoption from associates</li>
+          <li>
+            Shrink Reduction in the amount of product thrown away per store
+          </li>
+          <li>Financial Savings by stocking appropriate product amounts</li>
+        </ul>
+      </div>
+
+      <img
+        src="{base}/assets/productImages/kroger/fp_user.webp"
+        alt=""
+        class="article-paragraph-image"
+      />
+    </div>
+  </div>
+  <div class="article-flex article-flex--col">
+    <h3>Current App</h3>
+    <div class="article-paragraph">
       <p>
-        <strong>KPI's.</strong> There were multiple KPI’s (Key Performance Indicators)
-        we established from quarter to quarter. In the beginning we had three key
-        metrics to measure for our success
+        <strong>Three Tasks.</strong> Bakery associates were tasked with three methods
+        of stocking goods on the floor. Today's preparation, tomorrow's preparation
+        and thawing freezer items. Each one would show what food they needed to prepare,
+        and how much. The associate then needed to enter in the amount they actually
+        prepared for the day. This entry data would then be used to help produce
+        accurate numbers for the following day.
       </p>
-      <ul>
-        <li>Adoption from associates</li>
-        <li>Shrink Reduction in the amount of product thrown away per store</li>
-        <li>Financial Savings by stocking appropriate product amounts</li>
-      </ul>
+    </div>
+    <img src="{base}/assets/productImages/kroger/fp_App.png" alt="" />
+    <div class="article-paragraph">
+      <p>
+        It was important that the associate entered in the actual number of
+        produced goods. We initially added a feature that asked the associate
+        why they overproduced or underproduced. We found that associates rarely
+        entered in meaningful data. When I interviewed some associates about
+        this, they said they usually ignored this feature because it just slowed
+        them down.
+      </p>
+      <p>
+        Even with correct entries, our recommendated amount to make was
+        consistently off, especially in Thaw & Sell. We needed to figure out how
+        to make that reccommendation more accurate.
+      </p>
+    </div>
+  </div>
+  <div class="article-grid">
+    <h3>Solving Data</h3>
+    <div class="article-paragraph">
+      <p>
+        <strong>Where does the data come from?</strong> Kroger has an entire separate
+        company devoted to their data analysis and engineering. So we reached out
+        to our partner to better understand how our numbers were so off.
+      </p>
+      <p>
+        To help them achieve this, I wanted to conduct stakeholder interviews as
+        well as perform a heuristic analysis on their current app.
+      </p>
+      <p>
+        After gathering what information and direction I could from those
+        exercises I would create some concept mockups for some of their main
+        flows.
+      </p>
+      <p>
+        With these changes, I hoped to achieve a more thoughtful UI with an
+        enhanced user experience for their userbase so that they would be able
+        to easily book lodging while on the road and CLC would see an
+        improvement to their ratings.
+      </p>
     </div>
   </div>
 </div>
@@ -408,51 +519,129 @@
   nav {
     background-color: black;
     color: white;
-
-    & .wrapper:first-child {
-      padding: 0;
-    }
+  }
+  .nav-grid {
+    display: grid;
+    grid-auto-flow: column;
+    gap: 1rem;
   }
 
-  .nav-img {
-    width: auto;
-    padding-left: 6rem;
-
-    @media screen and (min-width: 960px) {
-      max-height: 160px;
-    }
+  .content {
+    max-width: 75ch;
+    margin-bottom: 3rem;
   }
 
-  .disclaimer {
-    font-size: 0.75rem;
-    text-align: center;
+  ul {
+    columns: 2;
+    -webkit-columns: 2;
+    -moz-columns: 2;
+  }
+  li {
+    padding: 2px;
   }
   .wrapper {
-    display: flex;
-    flex-direction: column;
-    padding: 2rem 1rem 1rem 1rem;
+    padding: 1rem;
+    max-width: 1080px;
+    margin: 0 auto;
+    padding: 2.5rem;
+  }
 
-    & > * {
-      margin-bottom: 1rem;
-    }
+  h1 {
+    font-size: 3rem;
+    font-family: "CustomFont";
+    text-transform: capitalize;
+    margin-bottom: 4rem;
 
     @media screen and (min-width: 960px) {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-      grid-gap: 1rem;
-      grid-auto-flow: dense;
-    }
-
-    @media screen and (min-width: 1200px) {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-      grid-gap: 1rem;
-      grid-auto-flow: dense;
+      font-size: 4rem;
     }
   }
 
-  /* Single column display for phones */
+  h3 {
+    font-size: 1.125rem;
+    font-weight: 600;
+    margin-bottom: 0.75rem;
+  }
+  h4 {
+    font-size: 1rem;
+    color: #cfcfcf;
+    font-weight: 600;
+  }
+  .article-grid {
+    display: grid;
+    grid-template-columns: 12ch 1fr;
+    gap: 0.75rem;
+    margin-bottom: 6rem;
+  }
 
+  .article-grid h3,
+  .article-flex h3 {
+    font-size: 1.125rem;
+    font-weight: 600;
+    line-height: 100%;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    font-family: "CustomFont", sans-serif;
+  }
+  .article-grid h3 {
+    text-align: right;
+    padding-top: 2rem;
+  }
+
+  .article-paragraph {
+    columns: 2;
+    margin-bottom: 4rem;
+  }
+
+  .article-paragraph.article-paragraph__img {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0.75rem;
+    margin-bottom: 0;
+  }
+
+  .article-paragraph strong {
+    padding-left: 32px;
+  }
+
+  .article-paragraph p {
+    font-size: 1rem;
+    line-height: 1.7;
+  }
+
+  .article-paragraph ul {
+    columns: 1;
+  }
+
+  .article-paragraph-image {
+    border: 2px solid #171513;
+    border-radius: 0.5rem;
+  }
+
+  .article-grid img,
+  .article-flex img {
+    mix-blend-mode: darken;
+  }
+
+  .article-grid img {
+    grid-column: 2 / -1;
+  }
+
+  .article-flex {
+    display: flex;
+    margin-bottom: 6rem;
+  }
+  .article-flex--col {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .article-flex--col img {
+    margin-bottom: 3rem;
+  }
+  .article-flex h3 {
+    padding-bottom: 2rem;
+  }
   .section-title,
   .article-text {
     @media screen and (min-width: 960px) {
@@ -530,65 +719,11 @@
 
   img {
     width: 100%;
+    height: auto;
   }
-
-  img.center {
-    margin: 0 auto;
-    @media screen and (min-width: 960px) {
-      margin: 0;
-    }
+  .image-compare {
+    grid-column: 1 / -1;
   }
-
-  .img-figure-text {
-    text-align: right;
-    color: rgba(13, 13, 13, 0.6);
-    margin-top: 0.5rem;
-    font-size: 0.75rem;
-
-    &.center {
-      text-align: center;
-    }
-  }
-
-  .list-itmes {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    @media screen and (min-width: 960px) {
-      flex-direction: row;
-    }
-    & h3 {
-      padding-bottom: 1rem;
-      text-align: center;
-      text-decoration: underline;
-
-      @media screen and (min-width: 960px) {
-        padding-bottom: 0px;
-        text-align: left;
-        text-decoration: none;
-      }
-    }
-    & ul {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-
-      @media screen and (min-width: 960px) {
-        flex-direction: row;
-        gap: 1.5rem;
-      }
-    }
-  }
-
-  blockquote {
-    padding: 1rem;
-    background-color: #6f4930;
-    color: #fff;
-    border-radius: 0.75rem;
-    font-style: italic;
-  }
-
   .btn-container {
     display: flex;
     flex-direction: column;

@@ -1,5 +1,6 @@
 <script>
   import { base } from "$app/paths";
+  // @ts-ignore
   import ImageCompare from "svelte-image-compare";
 </script>
 
@@ -9,8 +10,8 @@
       <h4>CLC Lodging</h4>
       <h1>Changing user perspectives through a modern redesign</h1>
     </header>
-    <section class="grid">
-      <div class="grid-col">
+    <section class="nav-grid">
+      <div class="nav-grid-col">
         <div class="content">
           <h3>Role</h3>
           <p>
@@ -32,14 +33,6 @@
             />
             <p>
               <strong>Casey Blakely.</strong> Senior Analyst and Designer.
-            </p>
-            <img
-              style="max-width: 80px"
-              src="{base}/assets/headshotNiaSimone.png"
-              alt=""
-            />
-            <p>
-              <strong>Nia-Simone.</strong> Analyst and Designer.
             </p>
           </div>
           <div class="col-cnt-1">
@@ -85,201 +78,133 @@
       </div>
     </section>
   </section>
-  <!-- <div class="wrapper">
-    <section class="section-title">
-      <h3>CLC Lodging Phase 1</h3>
-      <div class="section-text">
-        <p>
-          <strong>Who is CLC Lodging?</strong> A comprehensive lodging solution for
-          every business travel program - built to scale as you do. CLC dramatically
-          streamlines lodging programs to save you time and money at every step -
-          from reservations to reporting and reconciliation.
-        </p>
-        <p>
-          <strong>Requests.</strong> CLC approached BDO, the company I was
-          working for, asking for us to review their app, figure out what
-          improvements needed to be made and present a few updated concept
-          mockups to them. It was decided to run a <i>Heuristic Analysis</i> of their
-          current mobile application as a guide for improvements to be made.
-        </p>
-      </div>
-    </section>
-    <div class="article-text img-col">
-      <div class="flex-img">
-        <img
-          style="max-width: 111px"
-          src="{base}/assets/headshotCasey.png"
-          alt=""
-        />
-        <p>
-          <strong>Casey Blakely.</strong> Senior Analyst and Designer/Researcher,
-          Casey performed the initial Heuristic Analysis on the CLC Mobile application
-          as well as created concept redesign mocks.
-        </p>
-      </div>
-      <div class="">
-        <p>
-          <strong>Reaction.</strong> I presented the Analysis findings along with
-          the concept mockups based on those findings to the stakeholders of CLC
-          Lodging. I walked through the different heuristics first making sure they
-          understood what I was about to discuss. After spending time on the poor
-          or failing pages, I showed off the concept mocks.
-        </p>
-        <p>
-          Talking through the different changes I was proposing I wanted to make
-          sure the client understood why these would be beneficial and an
-          improvement for their app. Showcasing the importance of visual
-          consistency and hierarchy, the client was receptive to my concepts and
-          ultimately wanted to move forward with a full redesign of the app.
-        </p>
-      </div>
-    </div>
-  </div>
-  <div class="wrapper">
-    <section class="section-title">
-      <h3>CLC Lodging Phase 2</h3>
-      <div class="section-text">
-        <p>
-          <strong>An App Redesigned.</strong> With an informative Heuristics eval
-          and some newly designed mockups, CLC was eager to move forward with a full
-          redesign of their Android and iOS app.
-        </p>
-        <p>
-          A new team member was added, Nia-Simone Ecleston, and together Casey
-          led discovery sessions to uncover further understanding of the app's
-          functionality and pain points.
-        </p>
-      </div>
-    </section>
-    <div class="article-text img-col">
-      <div class="flex-img">
-        <img
-          style="max-width: 111px"
-          src="{base}/assets/headshotCasey.png"
-          alt=""
-        />
-        <p>
-          <strong>Casey Blakely.</strong> Senior Analyst and Designer.
-        </p>
-        <img
-          style="max-width: 80px"
-          src="{base}/assets/headshotNiaSimone.png"
-          alt=""
-        />
-        <p>
-          <strong>Nia-Simone.</strong> Analyst and Designer.
-        </p>
-      </div>
-      <div class="col-cnt-2">
-        <p>
-          <strong>Meet the Team.</strong> Casey Blakely (left) led the team with
-          support from Nia-Simone (right). Discovery sessions were set up to go over
-          individual app screens and potential changes. Nia-Simone was then able
-          to redesign screens with oversight and support from Casey. Casey was then
-          able to assist in development efforts by being the analyst/designer, making
-          sure changes were understood.
-        </p>
-        <p>
-          <strong>Guidelines.</strong> The last deliverable was a guideline document
-          outlining the design changes made by the design team. Since I was a contractor,
-          I wanted to make sure there was a reference for CLC if I was no longer
-          engaged with them.
-        </p>
-        <p>
-          Outlined in the document were typography, color and spacing usages.
-          Additional common components were called out, so CLC was aware of what
-          had already been created, hopefully reducing the creation of new
-          one-off designs.
-        </p>
-      </div>
-    </div>
-  </div> -->
 </nav>
 
 <div class="wrapper">
-  <div class="image-compare">
-    <ImageCompare
-      before="{base}/assets/productImages/clc/figure1.png"
-      after="{base}/assets/productImages/clc/figure2.png"
-      contain={true}
-    >
-      <span slot="before">BEFORE</span>
-      <span slot="after">AFTER</span>
-    </ImageCompare>
-  </div>
-  <section class="section-title">
-    <h3>Heuristic Analysis</h3>
-    <div class="section-text">
+  <div class="article-grid">
+    <h3>The Goal</h3>
+    <div class="article-paragraph">
       <p>
-        <strong>Jakob Nielson.</strong> For the analysis I first used Nielson’s 10
-        Usability Heuristics as a reference. Using this foundation I started breaking
-        out the app by its different flows and screens. I identified the major flow:
-        Login, Search, Hotel Details, and Booking. Alongside this flow were a multitude
-        of one-off screens that performed various status or administrative features
+        <strong>Improve Ratings.</strong> CLC approached us asking if we could help
+        improve their ratings. They knew that the app was pretty outdated visually
+        and knew from reviews of some of the things that weren’t working, but needed
+        some help pinpointing and prioritizing enhancements.
+      </p>
+      <p>
+        To help them achieve this, I wanted to conduct stakeholder interviews as
+        well as perform a heuristic analysis on their current app.
+      </p>
+      <p>
+        After gathering what information and direction I could from those
+        exercises I would create some concept mockups for some of their main
+        flows.
+      </p>
+      <p>
+        With these changes, I hoped to achieve a more thoughtful UI with an
+        enhanced user experience for their userbase so that they would be able
+        to easily book lodging while on the road and CLC would see an
+        improvement to their ratings.
+      </p>
+    </div>
+    <img
+      src="{base}/assets/productImages/clc/clcRatingsImage.png"
+      alt=""
+      class="sm"
+    />
+  </div>
+  <div class="article-grid">
+    <h3>Interview</h3>
+    <div class="article-paragraph article-paragraph__img">
+      <div>
+        <p>
+          <strong>Talking with product ownership.</strong> There was one main product
+          owner for the CLC Lodging apps and was one of my favorite product owners
+          to have worked with. She knew the product inside and out and was able to
+          clearly walk me through the app and it’s nuances. Turns out there were
+          a lot of “you can only see this page if...” scenarios.
+        </p>
+        <p>
+          I also met with other product team members who were able to aggregate
+          user reviews across different platforms. From this I was able to
+          understand user pain points.
+        </p>
+        <p>
+          With these conversations happening, I wanted to gather my thoughts, as
+          well as help facilitate thoughts of my product owner, inside a Mural
+          board.
+        </p>
+        <p>
+          This is one of my preferred methods of quickly capturing notes and
+          ideas from my interviews.
+        </p>
+      </div>
+      <img
+        src="{base}/assets/productImages/clc/figure3.png"
+        alt=""
+        class="sm"
+      />
+    </div>
+  </div>
+  <div class="article-flex article-flex--col">
+    <h3>Research</h3>
+    <div class="article-paragraph">
+      <p>
+        <strong>Jakob Nielson.</strong> For the analysis I first grabbed
+        <a
+          href="https://www.nngroup.com/articles/ten-usability-heuristics/"
+          target="_blank">Nielson’s 10 Usability Heuristics</a
+        > as a reference. Using this foundation I started breaking out the the app
+        by it’s different flows and screens. I identified the major flow: Login,
+        Search, Hotel Details, and Booking. Alongside this flow were a multitude
+        of one off screens that performed various status or administrative features
         for the user.
       </p>
       <p>
         From there I decided to break the flow into the four different micro
         flows and perform the analysis on each. I gave each screen in the flow a
-        status; <strong>Good, Poor, Fail.</strong> From there I broke the flow down
-        into the four different micro flows and perform the analysis on each. I gave
-        each screen in the flow a status;
+        status; Good, Poor, Fail. If the screen didn’t pass a particular
+        heuristic I marked and explained why.
       </p>
-    </div>
-  </section>
-  <div class="article-text img-col">
-    <div class="paragraph col-cnt-2">
       <p>
         After doing this for the entirety of the app I created a PowerPoint
         presentation to show to the client.
       </p>
       <p>
-        <strong>Findings.</strong> Overall, the app was mostly in need of a fresh
-        UI with more consistency between component usage. One key issue was it was
-        pretty poor at letting the user know what the error was, leading to frustrations.
-        These frustrations were clearly shown in the app's reviews. Additionally,
-        there were components that looked like they were a button and yet it acted
-        as a tab. What created further confusion was that there were other versions
-        of tabs that made the interaction uncertain.
-      </p>
-      <p>
-        In addition to the heuristic analysis, I created a set of concept
-        mockups for the Search, Hotel Details, and Hotel Booking screens.
+        <strong>Findings.</strong> Overall the app was mostly in need of a fresh
+        UI with more consistency between component usage. Some key issues of note
+        were it was pretty poor at letting the user know what the error was, leading
+        to frustrations. These frustrations were clearly shown in the apps reviews.
+        Additionally, there were components that looked like they were a button for
+        example, and yet it acted as a tab. However there were other UI versions
+        of tabs making the interaction confusing.
       </p>
     </div>
     <img src="{base}/assets/productImages/clc/figure1.png" alt="" class="sm" />
-    <figure class="img-figure-text">
-      Example slide from the Heuristic Analysis for CLC
-    </figure>
   </div>
-  <div class="section-title">
+  <div class="article-grid">
     <h3>Concept Mockups</h3>
-    <div class="paragraph">
+    <div class="article-paragraph">
       <p>
-        <strong>Competitor Analysis.</strong> Since I didn’t have access to any users,
-        I would have to rely more on my experience and the designs of other competitor
-        apps. I downloaded and went through a myriad of similar apps: Hopper, Booking.com,
-        Expedia, HotelTonight.
+        <strong>Competitor Analysis.</strong> I decided since I didn’t have access
+        to any users, I would have to rely more on my experience and the designs
+        of other competitor apps. I downloaded and went through a meriad of apps:
+        Hopper, Booking.com, Expedia, HotelTonight.
       </p>
       <p>
-        I liked how HotelsTonight’s search UI functioned as well as Booking.com,
-        since they themselves had just done a redesign.
+        I really liked how HotelsTonight’s search UI functioned as well as
+        Booking.com, since they themselves had just done a redesign.
       </p>
       <p>
         Using these apps in conjunction with my analysis findings, I quickly put
         together some concept mocks, making sure to focus on spacing,
         typographical hierarchy and a modern consistency.
       </p>
-    </div>
-  </div>
-  <div class="article-text img-col">
-    <div class="">
       <p>
-        <strong>Reaction.</strong> I presented the Analysis findings along with the
-        concept mockups based on those findings to the stakeholders of CLC Lodging.
-        Walking through the different heuristics first making sure they understood
-        what I was about to discuss. After spending time on the poor or failing pages,
-        I showed off the concept mocks.
+        <strong>Recommendations.</strong> I presented the Analysis findings along
+        with the concept mockups based on those finding to the stakeholders of CLC
+        Lodging. Walking through the different heuristics first making sure they
+        understood what I was about to discuss. After spending time on the poor or
+        failing pages, I showed off the concepts mocks.
       </p>
       <p>
         Talking through the different changes I was proposing I wanted to make
@@ -289,147 +214,20 @@
         ultimately wanted to move forward with a full redesign of the app.
       </p>
     </div>
-  </div>
-  <div class="article-text img-col">
-    <img
-      class="center"
-      style="max-width: 300px; align-self: start;"
-      src="{base}/assets/productImages/clc/figure2.png"
-      alt=""
-    />
-    <figure class="img-figure-text center">
-      Mockup of the Hotel Details screen
-    </figure>
-  </div>
-</div>
-<div class="wrapper">
-  <div class="section-title grid-col-3">
-    <h3>Full Redesign</h3>
-    <div>
-      <div class="">
-        <p>
-          <strong>A new discovery.</strong> For the redesign, I needed to get the
-          best estimate of how many screens there were and what the effort of each
-          screen would be. I created a sitemap of the app. From there I estimated
-          the effort of each; SM - MD - LG. Once that list was complete and agreed
-          upon with the Project Lead of CLC I set about creating repeating meetings
-          to start discussing each part of the app.
-        </p>
-        <p>
-          I prioritized what I thought were the most important screens to
-          update. This was done in part to let developers start working on the
-          more critical logic changes, as well as if budget or time ran out I
-          had the more important screens updated. After talking with the PL, I
-          wanted to make sure this was more of a refreshed UI rather than a
-          complete overhaul. Some UX improvements may not be able to be
-          implemented.
-        </p>
-      </div>
-      <img
-        src="{base}/assets/productImages/clc/figure3.png"
-        style="max-width: 500px;"
-        alt=""
-      />
-      <figure class="img-figure-text">
-        Mural canvas for CLC discoveries (not all shown)
-      </figure>
-    </div>
-  </div>
-  <div class="article-text grid-col-3">
-    <div class="">
-      <p>
-        I lead the discovery sessions with support from Nia-Simone. The goal
-        each time for me was to fully understand how that page or flow
-        functioned, and if there were any hidden screens that I was not aware of
-        due to permissions or certain criteria being met.
-      </p>
-      <p>
-        <strong>Development.</strong> As the lead, I oversaw answering any questions
-        our development team had. They had been building the app for CLC for some
-        time so there was plenty of questions from them. To my knowledge there was
-        never an active designer on the development team so there were a few hurdles
-        to work through.
-      </p>
-      <p>
-        As mentioned, my aim was not to affect too much of the current logic,
-        but instead update UI where I could. Some changes were pushed back on
-        from the development team but overall, the changes were seen as an
-        improvement that could be completed.
-      </p>
-      <p>
-        Attending the SCRUM rituals became part of my tasks, walking through and
-        sizing stories, attending standup, and answering questions on top of
-        finishing out discovery sessions.
-      </p>
-      <p>
-        Additionally, I implemented a design review meeting as a way to make
-        sure the development team was transitioning to the new structure.
-        Changes like spacing or typography were not adapted as quickly as color
-        changes for them.
-      </p>
-      <p>
-        Overall, the team was progressing, albeit slowly. The decision was made
-        to add on additional developers from my company to speed up the process.
-      </p>
-      <p>
-        The design team was able to come in under budget which allowed for me to
-        spend some additional time with the development team and stakeholder,
-        making sure nothing was missed or inaccurately developed.
-      </p>
+    <div class="image-compare">
+      <ImageCompare
+        before="{base}/assets/productImages/clc/oldVersion.png"
+        after="{base}/assets/productImages/clc/newVersion.png"
+        contain={true}
+        overlay={false}
+      >
+        <span slot="before">BEFORE</span>
+        <span slot="after">AFTER</span>
+      </ImageCompare>
     </div>
   </div>
 </div>
-<div class="wrapper">
-  <div class="section-title grid-col-3">
-    <h3>Redesigned Mockups</h3>
-    <div class="">
-      <div class="col-cnt-2">
-        <p>
-          <strong>A new UI.</strong> I created many new components and UI elements
-          for the redesign, however to save on time I chose to simply have user stories
-          created for the smaller screens. In those stories I would call out the
-          new UI pattern to be used with the correct spacing in place.
-        </p>
-        <p>
-          This worked well but ultimately cost about the same amount of time due
-          to changes being needed after reviewing design from the development
-          team.
-        </p>
-      </div>
-      <img src="{base}/assets/productImages/clc/hrz-figure4.png" alt="" />
-      <figure class="img-figure-text center">
-        Redesigned screens of the major flow
-      </figure>
-    </div>
-  </div>
-  <div class="section-title grid-col-3">
-    <div class="test">
-      <img src="{base}/assets/productImages/clc/figure5.png" alt="" />
-      <figure class="img-figure-text">
-        Previous screens of the major flow
-      </figure>
-    </div>
-  </div>
-  <div class="section-title grid-col-3">
-    <h3>Guidelines and handoffs</h3>
-    <div class="">
-      <div class="col-cnt-2">
-        <p>
-          <strong>References.</strong> As part of my deliverable, I created both
-          a pdf and a prototype guidelines document for CLC. All mockups were created
-          using Adobe xD. The guidelines document was interactive and included an
-          introduction for the guideline, page structure, brand colors, typography
-          and icons as well as some of the more common components like buttons or
-          list items.
-        </p>
-      </div>
-      <img src="{base}/assets/productImages/clc/figure6.png" alt="" />
-      <figure class="img-figure-text">
-        Structure page of the guidelines prototype created for CLC
-      </figure>
-    </div>
-  </div>
-</div>
+<!--  -->
 
 <div class="wrapper">
   <div class="btn-container">
@@ -443,6 +241,25 @@
   nav {
     background-color: black;
     color: white;
+  }
+  .nav-grid {
+    display: grid;
+    grid-auto-flow: column;
+    gap: 1rem;
+  }
+
+  .content {
+    max-width: 75ch;
+    margin-bottom: 3rem;
+  }
+
+  ul {
+    columns: 2;
+    -webkit-columns: 2;
+    -moz-columns: 2;
+  }
+  li {
+    padding: 2px;
   }
   .wrapper {
     padding: 1rem;
@@ -472,29 +289,69 @@
     color: #cfcfcf;
     font-weight: 600;
   }
-
-  .grid {
+  .article-grid {
     display: grid;
-    grid-auto-flow: column;
-    gap: 1rem;
+    grid-template-columns: 12ch 1fr;
+    gap: 0.75rem;
+    margin-bottom: 6rem;
   }
 
-  .content {
-    max-width: 75ch;
-    margin-bottom: 3rem;
+  .article-grid h3,
+  .article-flex h3 {
+    font-size: 1.125rem;
+    font-weight: 600;
+    line-height: 100%;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    font-family: "CustomFont", sans-serif;
+  }
+  .article-grid h3 {
+    text-align: right;
+    padding-top: 2rem;
   }
 
-  ul {
+  .article-paragraph {
     columns: 2;
-    -webkit-columns: 2;
-    -moz-columns: 2;
-  }
-  li {
-    padding: 2px;
+    margin-bottom: 4rem;
   }
 
-  /* Single column display for phones */
+  .article-paragraph.article-paragraph__img {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0.75rem;
+    margin-bottom: 0;
+  }
 
+  .article-paragraph strong {
+    padding-left: 32px;
+  }
+
+  .article-paragraph p {
+    font-size: 1rem;
+    line-height: 1.7;
+  }
+
+  .article-grid img,
+  .article-flex img {
+    mix-blend-mode: darken;
+  }
+
+  .article-grid img {
+    grid-column: 2 / -1;
+  }
+
+  .article-flex {
+    display: flex;
+    margin-bottom: 6rem;
+  }
+  .article-flex--col {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .article-flex h3 {
+    padding-bottom: 2rem;
+  }
   .section-title,
   .article-text {
     @media screen and (min-width: 960px) {
@@ -571,61 +428,11 @@
   }
 
   img {
-    max-width: 100%;
+    width: 100%;
     height: auto;
   }
-
-  img.center {
-    margin: 0 auto;
-    @media screen and (min-width: 960px) {
-      margin: 0;
-    }
-  }
-
-  .img-figure-text {
-    text-align: left;
-    color: rgba(13, 13, 13, 0.6);
-    margin-top: 0.5rem;
-    font-size: 0.75rem;
-
-    &.center {
-      text-align: center;
-
-      @media screen and (min-width: 960px) {
-        text-align: left;
-      }
-    }
-  }
-
-  .list-itmes {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    @media screen and (min-width: 960px) {
-      flex-direction: row;
-    }
-    & h3 {
-      padding-bottom: 1rem;
-      text-align: center;
-      text-decoration: underline;
-
-      @media screen and (min-width: 960px) {
-        padding-bottom: 0px;
-        text-align: left;
-        text-decoration: none;
-      }
-    }
-    & ul {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-
-      @media screen and (min-width: 960px) {
-        flex-direction: row;
-        gap: 1.5rem;
-      }
-    }
+  .image-compare {
+    grid-column: 1 / -1;
   }
   .btn-container {
     display: flex;

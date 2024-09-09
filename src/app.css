@@ -7,12 +7,12 @@ body {
   --bg-1: #fffff0;
   --bg-2: #faf0e6;
   --bg-3: hsl(206, 20%, 80%);
-  --fg-1: #0d0d0d;
+  --fg-1: #171513;
   --fg-2: hsl(0, 0%, 20%);
   --fg-2: hsl(0, 0%, 30%);
   --link: hsl(208, 77%, 47%);
   --link-hover: hsl(208, 77%, 55%);
-  --link-active: hsl(208, 77%, 40%);
+  --link-active: #171513;
   --border-radius: 4px;
   --font: "Helvetica Neue", sans-serif;
   --font-mono: ui-monospace, "Cascadia Code", "Source Code Pro", Menlo, Consolas,
@@ -87,6 +87,11 @@ h6 {
   isolation: isolate;
 }
 
+a:active,
+a:visited {
+  color: var(--link-active);
+}
+
 @font-face {
   font-family: "CustomFont";
   src:
@@ -98,24 +103,47 @@ h6 {
   letter-spacing: 2px;
 }
 
+.image-compare,
+.image-wrapper {
+  border: 1px solid #171513;
+  padding: 0 2rem;
+  margin-bottom: 3rem;
+  border-radius: 0.5rem;
+  background-color: #fcf5ee;
+}
+
+.image-wrapper {
+  padding: 2rem;
+}
+
 .image-compare {
-  outline: red 12px solid;
   height: 800px;
   width: auto;
-  margin-bottom: 3rem;
 }
 
 .image-compare img {
   object-fit: scale-down !important;
 }
 
+.image-compare .before-label,
+.image-compare .after-label {
+  font-size: 2rem;
+  padding-top: 1.5rem;
+}
+
 .image-compare .arrow-left {
   left: 6px !important;
   top: 7px !important;
-  border-right-color: red !important;
+  border-right-color: #171513 !important;
 }
 .image-compare .arrow-right {
   left: 16px !important;
   bottom: 12px !important;
-  border-left-color: blue !important;
+  border-left-color: #edb40f !important;
+}
+
+.image-compare .handle,
+.image-compare .handle::after,
+.image-compare .handle::before {
+  border-color: #171513 !important;
 }
