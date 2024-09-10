@@ -3,20 +3,6 @@
   import Pamphlet from "$lib/components/Pamphlet.svelte";
   // @ts-ignore
   import ImageCompare from "svelte-image-compare";
-
-  const pamphlets = [
-    {
-      title: "Kroger",
-      role: "Product Designer",
-      description:
-        "Lead product designer for Kroger’s Fresh Departments. I was responsible for a web portal and Android application that helped department leaders and associates better account for production amounts in the bakeries, delis and butchers enterprise wide.",
-      link: "/case-study/kroger",
-      heroImg: "/assets/scenery/mountain-lake.png",
-      productImg: "/assets/productImages/kroger/imgBakery.png",
-      altText: "Mountain view from the slopes of Humboldt in Colorado",
-    },
-  ];
-
   // Function to prepend base to internal links
   function getFullPath(link) {
     if (link.startsWith("http")) {
@@ -24,6 +10,18 @@
     }
     return `${base}${link}`; // Internal link, prepend base
   }
+  const pamphlets = [
+    {
+      title: "Kroger",
+      role: "Product Designer",
+      description:
+        "Lead product designer for Kroger’s Fresh Departments. I was responsible for a web portal and Android application that helped department leaders and associates better account for production amounts in the bakeries, delis and butchers enterprise wide.",
+      link: "/case-study/kroger",
+      heroImg: getFullPath("/assets/scenery/mountain-lake.png"),
+      productImg: getFullPath("/assets/productImages/kroger/imgBakery.png"),
+      altText: "Mountain view from the slopes of Humboldt in Colorado",
+    },
+  ];
 </script>
 
 <nav>

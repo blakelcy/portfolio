@@ -2,27 +2,33 @@
   import { base } from "$app/paths";
   import ImageGallery from "$lib/components/ImageGallery.svelte"; // Import the Gallery component
   import Pamphlet from "$lib/components/Pamphlet.svelte";
-
+  // Function to prepend base to internal links
+  function getFullPath(link) {
+    if (link.startsWith("http")) {
+      return link; // External link, return as is
+    }
+    return `${base}${link}`; // Internal link, prepend base
+  }
   const images = [
     {
-      thumbnail: "/assets/productImages/kroger/cap_1.png",
-      full: "/assets/productImages/kroger/cap_1.png",
-      alt: "Description of image 1",
+      thumbnail: getFullPath("/assets/productImages/kroger/cap_1.png"),
+      full: getFullPath("/assets/productImages/kroger/cap_1.png"),
+      alt: "Example image 1 of the old way of computer assisted production",
     },
     {
-      thumbnail: "/assets/productImages/kroger/cap_2.png",
-      full: "/assets/productImages/kroger/cap_2.png",
-      alt: "Description of image 2",
+      thumbnail: getFullPath("/assets/productImages/kroger/cap_2.png"),
+      full: getFullPath("/assets/productImages/kroger/cap_2.png"),
+      alt: "Example image 2 of the old way of computer assisted production",
     },
     {
-      thumbnail: "/assets/productImages/kroger/cap_3.png",
-      full: "/assets/productImages/kroger/cap_3.png",
-      alt: "Description of image 1",
+      thumbnail: getFullPath("/assets/productImages/kroger/cap_3.png"),
+      full: getFullPath("/assets/productImages/kroger/cap_3.png"),
+      alt: "Example image 3 of the old way of computer assisted production",
     },
     {
-      thumbnail: "/assets/productImages/kroger/cap_4.png",
-      full: "/assets/productImages/kroger/cap_4.png",
-      alt: "Description of image 2",
+      thumbnail: getFullPath("/assets/productImages/kroger/cap_4.png"),
+      full: getFullPath("/assets/productImages/kroger/cap_4.png"),
+      alt: "Example image 4 of the old way of computer assisted production",
     },
     // Add more images as needed
   ];
@@ -34,20 +40,12 @@
       description:
         "Lead product designer for CLC Lodging's request for UX improvements to their mobile application. Heuristic Analysis revealed a need for more recognizable UI patterns and user flows. I led a small team in gathering requirements in order to enhance the application's user experience as well as update it's UI to a more modern feel.",
       link: "/case-study/clc",
-      heroImg: "/assets/scenery/river-rapids.png",
-      productImg: "/assets/productImages/clc/figure2.png",
+      heroImg: getFullPath("/assets/scenery/river-rapids.png"),
+      productImg: getFullPath("/assets/productImages/clc/figure2.png"),
       altText:
         "A flowing river cascading over rocks from Yosemite National Park",
     },
   ];
-
-  // Function to prepend base to internal links
-  function getFullPath(link) {
-    if (link.startsWith("http")) {
-      return link; // External link, return as is
-    }
-    return `${base}${link}`; // Internal link, prepend base
-  }
 </script>
 
 <nav>
