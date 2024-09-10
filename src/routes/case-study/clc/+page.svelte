@@ -1,7 +1,29 @@
 <script>
   import { base } from "$app/paths";
+  import Pamphlet from "$lib/components/Pamphlet.svelte";
   // @ts-ignore
   import ImageCompare from "svelte-image-compare";
+
+  const pamphlets = [
+    {
+      title: "Kroger",
+      role: "Product Designer",
+      description:
+        "Lead product designer for Kroger’s Fresh Departments. I was responsible for a web portal and Android application that helped department leaders and associates better account for production amounts in the bakeries, delis and butchers enterprise wide.",
+      link: "/case-study/kroger",
+      heroImg: "/assets/scenery/mountain-lake.png",
+      productImg: "/assets/productImages/kroger/imgBakery.png",
+      altText: "Mountain view from the slopes of Humboldt in Colorado",
+    },
+  ];
+
+  // Function to prepend base to internal links
+  function getFullPath(link) {
+    if (link.startsWith("http")) {
+      return link; // External link, return as is
+    }
+    return `${base}${link}`; // Internal link, prepend base
+  }
 </script>
 
 <nav>
@@ -228,12 +250,18 @@
   </div>
 </div>
 <!--  -->
+<div class="wrapper">
+  <div class="article-flex article-flex--col">
+    <h3>Continue Reading</h3>
+  </div>
+</div>
+<Pamphlet
+  pamphlets={pamphlets.map((p) => ({ ...p, link: getFullPath(p.link) }))}
+/>
 
 <div class="wrapper">
   <div class="btn-container">
-    <button><a href="{base}/">Return Home</a></button><button
-      ><a href="./../kroger">Kroger</a></button
-    >
+    <button><a href="{base}/">Return Home</a></button>
   </div>
 </div>
 
@@ -244,8 +272,12 @@
   }
   .nav-grid {
     display: grid;
-    grid-auto-flow: column;
+    grid-auto-flow: row;
     gap: 1rem;
+
+    @media screen and (min-width: 960px) {
+      grid-auto-flow: column;
+    }
   }
 
   .content {
@@ -291,9 +323,13 @@
   }
   .article-grid {
     display: grid;
-    grid-template-columns: 12ch 1fr;
+    grid-template-columns: 1fr;
     gap: 0.75rem;
     margin-bottom: 6rem;
+
+    @media screen and (min-width: 960px) {
+      grid-template-columns: 12ch 1fr;
+    }
   }
 
   .article-grid h3,
@@ -304,22 +340,32 @@
     letter-spacing: 1px;
     text-transform: uppercase;
     font-family: "CustomFont", sans-serif;
+    @media screen and (min-width: 960px) {
+      text-align: right;
+    }
   }
   .article-grid h3 {
-    text-align: right;
+    text-align: center;
     padding-top: 2rem;
   }
 
   .article-paragraph {
-    columns: 2;
+    columns: 1;
     margin-bottom: 4rem;
+    @media screen and (min-width: 960px) {
+      columns: 2;
+    }
   }
 
   .article-paragraph.article-paragraph__img {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: 1fr;
     gap: 0.75rem;
     margin-bottom: 0;
+
+    @media screen and (min-width: 960px) {
+      grid-template-columns: repeat(2, 1fr);
+    }
   }
 
   .article-paragraph strong {
@@ -331,13 +377,26 @@
     line-height: 1.7;
   }
 
+  .article-paragraph ul {
+    columns: 1;
+  }
+
+  .article-paragraph-image {
+    border: 2px solid #171513;
+    border-radius: 0.5rem;
+  }
+
   .article-grid img,
   .article-flex img {
     mix-blend-mode: darken;
   }
 
   .article-grid img {
-    grid-column: 2 / -1;
+    grid-column: 1 / -1;
+
+    @media screen and (min-width: 960px) {
+      grid-column: 2 / -1;
+    }
   }
 
   .article-flex {
@@ -349,45 +408,27 @@
     align-items: center;
   }
 
+  .article-flex--col img {
+    margin-bottom: 3rem;
+  }
   .article-flex h3 {
     padding-bottom: 2rem;
   }
-  .section-title,
   .article-text {
+    display: flex;
+    gap: 0.5rem;
     @media screen and (min-width: 960px) {
       display: flex;
       gap: 0.5rem;
     }
   }
 
-  .section-title > h3 {
-    margin-top: 2rem;
-    margin-bottom: 0.75rem;
-    text-align: center;
-    text-transform: uppercase;
-    font-family: "CustomFont", sans-serif;
-
-    @media screen and (min-width: 960px) {
-      text-align: right;
-    }
-  }
-
   .img-col {
+    flex-direction: column;
+    grid-column: span 2;
     @media screen and (min-width: 960px) {
       flex-direction: column;
       grid-column: span 2;
-    }
-  }
-
-  .grid-col-2 {
-    @media screen and (min-width: 960px) {
-      grid-column: span 2;
-    }
-  }
-
-  .grid-col-3 {
-    @media screen and (min-width: 960px) {
-      grid-column: span 3;
     }
   }
 
@@ -412,8 +453,10 @@
 
   .flex-img {
     display: flex;
-    align-items: end;
-    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    justify-content: start;
     margin-bottom: 0.75rem;
 
     & > p {
@@ -424,6 +467,7 @@
 
     @media screen and (min-width: 960px) {
       justify-content: start;
+      flex-direction: row;
     }
   }
 
@@ -434,9 +478,20 @@
   .image-compare {
     grid-column: 1 / -1;
   }
+
+  blockquote {
+    background-color: #6f4930;
+    color: white;
+    text-decoration: none;
+    font-style: italic;
+    padding: 1.5rem;
+    margin-bottom: 0.5rem;
+    border-radius: 1rem;
+  }
   .btn-container {
     display: flex;
     flex-direction: column;
+    justify-content: center;
     gap: 1rem;
 
     @media screen and (min-width: 960px) {

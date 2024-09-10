@@ -43,7 +43,7 @@
   });
 </script>
 
-<div class="image-wrapper">
+<div class="image-wrapper autoShow">
   <h3>{title}</h3>
   <div class="image-gallery">
     {#each images as image, i}
@@ -74,7 +74,7 @@
   </div>
 {/if}
 
-<style>
+<style lang="scss">
   .image-wrapper {
     grid-column: -1 /1;
   }
@@ -84,8 +84,12 @@
   }
   .image-gallery {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(2, 1fr);
     gap: 1rem;
+
+    @media screen and (min-width: 960px) {
+      grid-template-columns: repeat(4, 1fr);
+    }
   }
 
   .thumbnail {

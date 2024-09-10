@@ -1,6 +1,7 @@
 <script>
   import { base } from "$app/paths";
   import ImageGallery from "$lib/components/ImageGallery.svelte"; // Import the Gallery component
+  import Pamphlet from "$lib/components/Pamphlet.svelte";
 
   const images = [
     {
@@ -25,6 +26,28 @@
     },
     // Add more images as needed
   ];
+
+  const pamphlets = [
+    {
+      title: "CLC Lodging",
+      role: "Product Designer & Business Analyst",
+      description:
+        "Lead product designer for CLC Lodging's request for UX improvements to their mobile application. Heuristic Analysis revealed a need for more recognizable UI patterns and user flows. I led a small team in gathering requirements in order to enhance the application's user experience as well as update it's UI to a more modern feel.",
+      link: "/case-study/clc",
+      heroImg: "/assets/scenery/river-rapids.png",
+      productImg: "/assets/productImages/clc/figure2.png",
+      altText:
+        "A flowing river cascading over rocks from Yosemite National Park",
+    },
+  ];
+
+  // Function to prepend base to internal links
+  function getFullPath(link) {
+    if (link.startsWith("http")) {
+      return link; // External link, return as is
+    }
+    return `${base}${link}`; // Internal link, prepend base
+  }
 </script>
 
 <nav>
@@ -50,7 +73,7 @@
           </p>
           <p>
             This article will focus mainly on the impact I had on bringing the
-            Fresh Production app from 5 test stores, to all stores within the
+            Fresh Production app from five test stores, to all stores within the
             Kroger family.
           </p>
         </div>
@@ -119,9 +142,9 @@
         <p>
           <strong>Meet the Team.</strong> Sarah Pruscia (left) joined our team a
           few months after I myself. Before her, we were a team without a product
-          owner. Myself and the technical lead Ryan Ware (right), were wearing multiple
-          hats, trying to keep the project moving forward. Once the three came together,
-          progress of the app sped along.
+          owner. Myself (right) and the technical lead Ryan Ware (center), were wearing
+          multiple hats, trying to keep the project moving forward. Once the three
+          came together, progress of the app sped along.
         </p>
 
         <p>
@@ -140,7 +163,7 @@
       <p>
         <strong>Updating Old Processes.</strong> In 2020, the world shut down for
         most people. Remote work became the new normal and software companies thrived.
-        Kroger was in a unique situation however. While the general operations employees
+        Kroger was in a unique situation, however. While the general operations employees
         could work their jobs remotely, their in-store associates were considered
         front line workers and had to go in to stores. This disrupted how much product
         designers were able to validate their solutions as access to their core users
@@ -178,6 +201,14 @@
         see their reactions and find out real problems they have that you can
         solve. In Kroger's case, I got to see how their bakery associates worked
         and what they had to do on a daily basis.
+      </p>
+      <p>
+        My Teams interviews were limited in what I could do to interact with my
+        users. Usually they joined by a store phone which meant they couldn't
+        share any screens. So, I had them walk along with me in the app, asking
+        questions related to the flow and expected data. This worked well enough
+        to determine that while the flow made sense, the data didn't and they
+        frequently felt they needed to make more.
       </p>
       <p>
         For the stores I was able to go in to, the Cincinnati store did not
@@ -242,6 +273,10 @@
         to make that reccommendation more accurate.
       </p>
     </div>
+    <blockquote>
+      They didn't trust the numbers and didn't want to get in trouble for under
+      producing.
+    </blockquote>
   </div>
   <div class="article-grid">
     <h3>Solving Data</h3>
@@ -252,171 +287,117 @@
         to our partner to better understand how our numbers were so off.
       </p>
       <p>
-        To help them achieve this, I wanted to conduct stakeholder interviews as
-        well as perform a heuristic analysis on their current app.
+        I can't devolve the exact algorithm for determining how much to produce
+        for a given store, but we were able to determine the reason for why the
+        data was off. We didn't currently have a way to know just what was in
+        the freezer vs what was already on the sales floor. Those two areas were
+        essentially the same number in our systems.
       </p>
       <p>
-        After gathering what information and direction I could from those
-        exercises I would create some concept mockups for some of their main
-        flows.
-      </p>
-      <p>
-        With these changes, I hoped to achieve a more thoughtful UI with an
-        enhanced user experience for their userbase so that they would be able
-        to easily book lodging while on the road and CLC would see an
-        improvement to their ratings.
+        Because of this we couldn't give an accurate number. However, we now had
+        a problem we could solve.
       </p>
     </div>
   </div>
-</div>
-<div class="wrapper">
-  <div class="section-title">
-    <h3>App Breakdown</h3>
-    <div class="paragraph">
-      <p>
-        <strong>The Three Tasks.</strong> Bakery associates were tasked with three
-        methods of stocking goods on the floor. Today's preparation, tomorrow's preparation
-        and thawing freezer items. Each one would show what food they needed to prepare,
-        and how much. The associate then needed to enter in the amount they actually
-        prepared for the day.
-      </p>
-      <img
-        class="center"
-        src="{base}/assets/productImages/kroger/imgBakery.png"
-        style="max-width: 300px;"
-        alt=""
-      />
-      <figure class="img-figure-text center">
-        Simplified recreation of Fresh Production.
-      </figure>
-    </div>
-  </div>
-  <div class="article-text">
-    <div class="paragraph">
-      <p>
-        Often the associates would over-produce, claiming that the
-        recommendation was inaccurate. To their credit, the app could not
-        account for was local events that may drive production needs up.
-      </p>
-      <p>
-        <strong>Prep for Today.</strong> Associates in the Bakery baked a lot of
-        fresh goods daily. Those goods, prepped the day before in the
-        <strong>Prep for Tomorrow</strong> task flow, were packaged and placed on
-        the store floor. This was able to be accurately accounted for because the
-        product prepped had a different ID than the product created. We knew how
-        much quantity was in the store and from that could calculate usage.
-      </p>
-      <p>
-        <strong>Thaw & Sell.</strong> Because thawed items had the same ID both in
-        the freezer and on the store floor, it was very difficult to know accurate
-        quantities. We could tell when an item was sold, but we had no idea how much
-        was on the floor at any given time. The only measure we had was how much
-        the associate said they "produced" that day. This contributed to further
-        inaccuracies in what to produce on a given day. Our data was not correct.
-      </p>
-    </div>
-  </div>
-</div>
-
-<div class="wrapper">
-  <div class="section-title">
-    <h3>Design Solution</h3>
-    <div class="section-text">
-      <p>
-        <strong>Design Thinking.</strong> After talking and visiting with the associates
-        in the store, it was now time to solve any issues we uncovered and were priority
-        for the team. We first would add a story to our backlog, assigned to me so
-        that I can start mocking out a potential solution. Since we had such a robust
-        Design System in place, most of my “low fidelity” wireframes were more in
-        the “high fidelity” realm. I would often just “sketch” in Sketch, our chosen
-        design tool. For more complex issues, or for newer, non-design system components,
-        I would revert to pen and paper to quickly hash out ideas. For the beginning
-        of this app however, we had the design in place. The problems came from accuracy
-        of numbers and user adoption.
-      </p>
-
-      <p>
-        I ran a several workshops with the team to brainstorm solutions for the
-        accuracy issue. I knew this was the bigger deterrent in terms of user
-        adoption.
-      </p>
-      <blockquote>
-        They didn't trust the numbers and didn't want to get in trouble for
-        under producing.
-      </blockquote>
-    </div>
-  </div>
-  <div class="article-text">
-    <div class="paragraph col-cnt-2">
-      <p>
-        We performed a few exercises, one of which was <strong
-          >Crazy 8's.</strong
-        > I had our team of developers fold a piece of paper into 8 identical squares
-        and then spend a minute per square coming up with ideas that can help us
-        better achieve accurate numbers.
-      </p>
+  <div class="article-grid">
+    <h3>Solving Thaw & Sell</h3>
+    <div class="article-paragraph article-paragraph__img">
+      <div>
+        <p>
+          <strong>Design Thinking.</strong> I ran a several workshops with the team
+          to brainstorm solutions for the accuracy issue. I knew this was the bigger
+          deterrent in terms of user adoption, and I believe great solutions come
+          from the entire team, not just the product designer.
+        </p>
+        <p>
+          Essentially I wanted the team to rapidly come up with ideas for
+          solving how we can know salesfloor numbers vs overall numbers. We
+          eventually landed on giving the associate a way to count a table after
+          seeing one of our counterpart apps implement something similar.
+        </p>
+        <p>
+          Now I needed to come up wit the design solution. I like to sketch out
+          designs when I'm starting off on a new screen. I find it helps me
+          create ideas faster and not worry as much about the final details. One
+          excercise I use is called Crazy 8's which lets me create eight screens
+          in rapid succession.
+        </p>
+      </div>
       <img
         src="{base}/assets/productImages/kroger/imgCrazy8.jpg"
-        style="max-width: 300px;"
         alt=""
+        class="sm"
       />
-      <figure class="img-figure-text">Example of Crazy 8's solution.</figure>
+    </div>
+  </div>
+  <div class="article-flex article-flex--col">
+    <h3>Design Solution</h3>
+    <div class="article-paragraph">
       <p>
-        We came up with a counting solution. We wanted the associate to be able
-        to scan a certain display table and then count what was on it. This
-        required multiple steps and a flow that needed to be both easy and
-        accurate.
+        <strong>Rapid Prototyping and Testing.</strong> I wanted the associate to
+        be able to scan a certain display table and then count what was on it. This
+        required multiple steps and a flow that needed to be both easy and accurate.
       </p>
-
       <p>
-        Our MVP (minimum viable product) to get this tested ended up being a
-        onetime setup where the associate would print out a unique barcode,
-        stick it to their physical table, and scan in items to that table. Once
-        that setup was complete then the daily interaction for their frozen
-        product would be to scan the barcode on the table, count the products on
-        that table, and then get a more accurate production number for the day.
+        Before the scanning, which is an integrated aspect of the device used,
+        could even happen, I needed to a way for the user to setup the table.
+        Ideally this is a one time event that the associate had to perform,
+        followed by an easy to edit flow in case they needed to change out what
+        was on a table.
       </p>
-      <img
-        src="{base}/assets/productImages/kroger/imgFlow.png"
-        style="max-width: 300px;"
-        alt=""
-      />
-      <figure class="img-figure-text center">
-        Quick user flow of solution.
-      </figure>
       <p>
-        I prototyped the screens out and did an initial user test using
-        InVision.
+        Once a table was setup, the associate would then be asked to count that
+        table. With the scanning capability of the device, I wanted the user to
+        be able to quickly scan a barcode on the table that would pull up the
+        correct table in the app, allowing them to make an accurate count. The
+        barcode was another solution we saw from other associate app teams.
+      </p>
+      <p>
+        The final piece was to make sure the associate could easily and quickly
+        count that item. They have to perform multiple counts throughout their
+        day for various apps, so we knew adding a new counting task wasn't going
+        to be appreciated. I didn't see any other immediate choice given our
+        data problems.
+      </p>
+    </div>
+    <img src="{base}/assets/productImages/kroger/fp_Count.png" alt="" />
+    <div class="article-paragraph">
+      <p>
+        Above is an excerpt of the whole solution. The part shown is when the
+        associate has already created some tables and is able to scan the
+        barcode to access the counting flow.
+      </p>
+      <p>
+        From the counting flow the can quickly see what products they have to
+        count on that table before doing their production. Once all tables have
+        been completely counted, they can then start their daily production.
       </p>
     </div>
   </div>
-</div>
-<div class="wrapper">
-  <div class="section-title">
+  <div class="article-grid">
     <h3>The Testing</h3>
-    <div class="section-text">
+    <div class="article-paragraph">
       <p>
         <strong>Into the Stores.</strong> My process for testing was to wire up the
         mockups into InVision, do some basic interactions so the associate could
         tap through the flow, and pull it up on my phone to walk the associates through
-        the new screens, asking questions along the way. I would give the associate
-        a high level overview of what they are going to be seeing with the problem
-        we are hoping to solve, but largely let them interact with the prototype
-        on their own and observe any struggles they encounter or any validations
-        of the designs.
+        the new screens, asking questions along the way.
+      </p>
+      <p>
+        I would give the associate a high level overview of what they were going
+        to be seeing, with the problem we were hoping to solve, but largely let
+        them interact with the prototype on their own and observe any struggles
+        they encounter or any validations of the designs.
       </p>
       <p>
         Testing proved to be a little tricky to work through. They would notice
-        things like wrong product imagery or incorrect product in the activity
+        things like wrong product imagery or incorrect product in the activity,
         which would distract them from what I was actually trying to test. They
         wouldn’t be sure what was tappable or not, a limitation of the
         prototyping tool and how I would not wire up the sections of the app I
         wasn’t trying to test.
       </p>
-    </div>
-  </div>
-  <div class="article-text">
-    <div class="paragraph col-cnt-2">
+
       <p>
         For the new counting feature, I tested in a few stores that weren’t
         familiar with the app to get a fresh impression, as well as another trip
@@ -430,88 +411,72 @@
         directly impacted the amount they produced, greatly increased the trust
         in the app.
       </p>
+
+      <blockquote>
+        They would notice things like wrong product imagery or incorrect product
+        in the activity, which would distract them from what I was actually
+        trying to test.
+      </blockquote>
       <p>
-        Once we were satisfied with the feedback, we worked on developing this
-        new process. Once development was finished we did another round of
-        testing with the actual device in our test stores. This allowed us to
-        continually fix issues, create new enhancements, and ultimately push
-        this app out to all bakery departments across the country.
+        Once I had gathered the feedback and made any tweaks necessary, the team
+        worked on developing this new process. Once development was finished we
+        did another round of testing with the actual device in our test stores.
+        This allowed us to continually fix issues, create new enhancements, and
+        ultimately push this app out to all bakery departments across the
+        country.
       </p>
     </div>
   </div>
-</div>
-
-<div class="wrapper">
-  <div class="section-title">
+  <div class="article-grid">
     <h3>Deploy the App</h3>
-    <div class="section-text">
-      <p>
-        <strong>Starting to Trust.</strong> This new solution took months to work
-        out and develop. I spent countless hours with my product owner in stores
-        and in meetings with business partners, making sure this solution solved
-        the needs of the user and the business. We were confident it did. The feedback
-        was positive on both sides.
-      </p>
-      <p>
-        We launched the app enterprise wide. We created training documents in
-        the app as well as printable guides for stores. In tandem with our UI
-        solution, we also spent time with our data partners cleaning and fixing
-        our data.
-      </p>
-    </div>
-  </div>
-  <div class="article-text">
-    <div class="paragraph">
-      <p>
-        The feedback we were getting from leadership and the stores I was able
-        to talk with was positive. After the one-time setup of tables,
-        associates found that counting the items was quick due to being able to
-        scan the barcode as well as count on the list of items.
-      </p>
-      <p>
-        Through Google Analytics, we could see that daily usage of the app and
-        daily completion of the tasks were on the rise. Associates were using
-        the app to complete their work for the day.
-      </p>
-    </div>
-  </div>
-</div>
+    <div class="article-paragraph article-paragraph__img">
+      <div>
+        <p>
+          <strong>Starting to Trust.</strong> This new solution took months to work
+          out and develop. I spent countless hours with my product owner in stores
+          and in meetings with business partners, making sure this solution solved
+          the needs of the user and the business. We were confident it did. The feedback
+          was positive on both sides.
+        </p>
+        <p>
+          We launched the app enterprise wide. We created training documents in
+          the app as well as printable guides for stores. In tandem with our UI
+          solution, we also spent time with our data partners cleaning and
+          fixing our data.
+        </p>
+        <p>
+          The feedback we were getting from leadership and the stores I was able
+          to talk with was positive. After the one-time setup of tables,
+          associates found that counting the items was quick due to being able
+          to scan the barcode as well as count on the list of items.
+        </p>
+        <p>
+          Through Google Analytics, we could see that daily usage of the app and
+          daily completion of the tasks were on the rise. Associates were using
+          the app to complete their work for the day.
+        </p>
+      </div>
 
-<div class="wrapper">
-  <div class="section-title">
-    <h3>Goals</h3>
-    <div class="section-text">
-      <p>
-        <strong>Did we meet our KPI's?</strong> Overtime, yes. We were able to capture
-        shrink numbers and determine that product was being sold around the same
-        amount that was being produced. This was an estimated savings of $4M from
-        enterprise launch.
-      </p>
-    </div>
-  </div>
-  <div class="section-title">
-    <h3>Next Up</h3>
-    <div class="section-text">
-      <p>
-        <strong>Expand into more departments!</strong> After Bakery was launched
-        we immediately went into discovery with the Deli Department. New challenges
-        awaited us in terms of temperature control, pre-sliced deli meats, and rotisserie
-        chicken!
-      </p>
-      <p>
-        Feel free to ask me more about this process. I applied much of what I
-        learned from Bakery towards this new department but ultimately the
-        worlds were very different and new solutions needed to be created.
-      </p>
+      <img
+        src="{base}/assets/productImages/kroger/fp_userCounting.webp"
+        alt=""
+        class="article-paragraph-image"
+      />
     </div>
   </div>
 </div>
+<div class="wrapper">
+  <div class="article-flex article-flex--col">
+    <h3>Continue Reading</h3>
+  </div>
+</div>
+<Pamphlet
+  pamphlets={pamphlets.map((p) => ({ ...p, link: getFullPath(p.link) }))}
+/>
 
 <div class="wrapper">
   <div class="btn-container">
-    <button><a href="{base}/">Return Home</a></button><button
-      ><a href="./../clc">CLC Lodging</a></button
-    >
+    <button><a href="{base}/">Return Home</a></button>
   </div>
 </div>
 
@@ -522,8 +487,12 @@
   }
   .nav-grid {
     display: grid;
-    grid-auto-flow: column;
+    grid-auto-flow: row;
     gap: 1rem;
+
+    @media screen and (min-width: 960px) {
+      grid-auto-flow: column;
+    }
   }
 
   .content {
@@ -569,9 +538,13 @@
   }
   .article-grid {
     display: grid;
-    grid-template-columns: 12ch 1fr;
+    grid-template-columns: 1fr;
     gap: 0.75rem;
     margin-bottom: 6rem;
+
+    @media screen and (min-width: 960px) {
+      grid-template-columns: 12ch 1fr;
+    }
   }
 
   .article-grid h3,
@@ -582,22 +555,32 @@
     letter-spacing: 1px;
     text-transform: uppercase;
     font-family: "CustomFont", sans-serif;
+    @media screen and (min-width: 960px) {
+      text-align: right;
+    }
   }
   .article-grid h3 {
-    text-align: right;
+    text-align: center;
     padding-top: 2rem;
   }
 
   .article-paragraph {
-    columns: 2;
+    columns: 1;
     margin-bottom: 4rem;
+    @media screen and (min-width: 960px) {
+      columns: 2;
+    }
   }
 
   .article-paragraph.article-paragraph__img {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: 1fr;
     gap: 0.75rem;
     margin-bottom: 0;
+
+    @media screen and (min-width: 960px) {
+      grid-template-columns: repeat(2, 1fr);
+    }
   }
 
   .article-paragraph strong {
@@ -624,7 +607,11 @@
   }
 
   .article-grid img {
-    grid-column: 2 / -1;
+    grid-column: 1 / -1;
+
+    @media screen and (min-width: 960px) {
+      grid-column: 2 / -1;
+    }
   }
 
   .article-flex {
@@ -642,42 +629,21 @@
   .article-flex h3 {
     padding-bottom: 2rem;
   }
-  .section-title,
   .article-text {
+    display: flex;
+    gap: 0.5rem;
     @media screen and (min-width: 960px) {
       display: flex;
       gap: 0.5rem;
     }
   }
 
-  .section-title > h3 {
-    margin-top: 2rem;
-    margin-bottom: 0.75rem;
-    text-align: center;
-    text-transform: uppercase;
-    font-family: "CustomFont", sans-serif;
-
-    @media screen and (min-width: 960px) {
-      text-align: right;
-    }
-  }
-
   .img-col {
+    flex-direction: column;
+    grid-column: span 2;
     @media screen and (min-width: 960px) {
       flex-direction: column;
       grid-column: span 2;
-    }
-  }
-
-  .grid-col-2 {
-    @media screen and (min-width: 960px) {
-      grid-column: span 2;
-    }
-  }
-
-  .grid-col-3 {
-    @media screen and (min-width: 960px) {
-      grid-column: span 3;
     }
   }
 
@@ -702,8 +668,10 @@
 
   .flex-img {
     display: flex;
-    align-items: end;
-    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    justify-content: start;
     margin-bottom: 0.75rem;
 
     & > p {
@@ -714,6 +682,7 @@
 
     @media screen and (min-width: 960px) {
       justify-content: start;
+      flex-direction: row;
     }
   }
 
@@ -724,9 +693,20 @@
   .image-compare {
     grid-column: 1 / -1;
   }
+
+  blockquote {
+    background-color: #6f4930;
+    color: white;
+    text-decoration: none;
+    font-style: italic;
+    padding: 1.5rem;
+    margin-bottom: 0.5rem;
+    border-radius: 1rem;
+  }
   .btn-container {
     display: flex;
     flex-direction: column;
+    justify-content: center;
     gap: 1rem;
 
     @media screen and (min-width: 960px) {
