@@ -54,6 +54,14 @@
             <p>
               <strong>Casey Blakely.</strong> Senior Analyst and Designer.
             </p>
+            <img
+              style="max-width: 111px"
+              src="{base}/assets/headshotNiaSimone.png"
+              alt=""
+            />
+            <p>
+              <strong>Nia-Simone.</strong> Business Analyst.
+            </p>
           </div>
           <div class="col-cnt-1">
             <p>
